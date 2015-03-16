@@ -1,0 +1,96 @@
+<!--#include virtual="/header_footer/header.html" -->  
+
+<div id="announcements">
+  <h2>Upcoming Events</h2>
+  <iframe id="agenda"
+  src="http://www.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=phrivnjgo1i6s4iisp61ige25g%40group.calendar.google.com&amp;color=%23528800&amp;ctz=America%2FLos_Angeles"
+  style=" border-width:0 " width="300" height="700" frameborder="0" scrolling="no">
+  </iframe>
+</div>
+
+<div id="constant_home"><!-- This stuff shouldn't change over time... -->  
+
+<div id="execs">
+
+  <h2>Vote for 2015-2016 Executive Board!</h2>
+  <p>
+  The SWE 2015-2016 Executive Board Ballot</a> will open on Monday, March 16th at 6:30pm.
+</p><p>
+  The information on the candidates can be found <a href="/elections/"> here</a> right now. </p>
+</div>
+<!--
+<div id="officers">
+  <h2>Apply for an officer position!</h2>
+  <p>
+<a href="https://tinyurl.com/sweofficerapp2014">Apply</a> to be an officer next year!
+</p><p>
+Officer position descriptions and responsibilities can be found <a href="https://tinyurl.com/sweofficerdescriptions">here</a>.
+ </p>
+</div>
+-->
+
+<!-- EMAIL SIGNUP -->
+<div id="email_signup">
+  <h2 class="email-signup">Sign-up for our mailing list:</h3>
+<p> Interested in joining the SWE mailing list? Email <script type="text/javascript">mail2('ucb.swe.pr', 'gmail', '0', '', 'ucb.swe.pr[at]gmail[dot]com')</script>
+with "[Mailing List Sign Up]" in the subject. Thank you! </p>
+  <!--<form method="post" action="/contacts.shtml">
+  <input class="emailInput" type="text" size="14" maxlength="30" name="email"/>
+  <input type="submit" value="Submit" />
+  <script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6Lc8MMISAAAAAOg2ro7IqXtg-vRZbr0VofefDrZH">
+  <iframe src="http://api.recaptcha.net/noscript?k=6Lc8MMISAAAAAOg2ro7IqXtg-vRZbr0VofefDrZH"></iframe><br />
+  </script>
+  </form>-->
+</div><!-- EMAIL SIGNUP (END)-->
+
+<div id="committees">
+    <h2>Get involved and apply for a Committee</h2>
+  <p>
+<a href="http://www.tinyurl.com/swe-committee-2014">Apply</a> to be part of a committee!
+</p><p>
+Committee descriptions and responsibilities can be found <a href="http://swe.berkeley.edu/committees/">here</a>.
+ </p>
+</div>
+
+<div id="house">
+<h2>Get involved and apply for a House</h2>
+  <p>
+<a href="http://tinyurl.com/SWE-House-Signup-2014">Apply</a> to be part of a house!
+</p><p>
+Committee descriptions and responsibilities can be found <a href="http://swe.berkeley.edu/house/">here</a>.
+ </p>
+</div>
+
+<div id="corporate-thanks">
+  <h2>Thank You for Your Support!</h2>
+  <p>
+  We thank all of our <a href="/sponsors/">corporate sponsors</a> for their support.
+  If you are interested in becoming a sponsor, check out our <a href="/corporatepackage/">Corporate Packages page</a>.
+  </p>
+</div>
+
+<div id="national_plug">
+  <h2>Become a National Member</h2>
+  <p>
+  If you are interested in becoming a national member of <a href="http://www.swe.org" target="_blank">Society of Women Engineers</a>
+  you can learn more
+  <a href="/nationalmember/">here</a>.
+  National membership offers the support of a strong network in academia, government, and industry.
+  It also makes you eligible for the more than $500,000 in scholarships awarded each year.
+  </p>
+</div>
+
+<!-- BUY T-SHIRTS -->
+<div id="tshirts">
+  <h2>SWE T-Shirts</h2>
+  <p>
+Sign up <a href="https://docs.google.com/forms/d/1Gw_aUIM-XH3MpPZcvgbhNSfrWAXawDIIImelAegXPxM/viewform"> here</a> to order a SWE T-shirt, or come to our general meetings to purchase one!
+
+  </p><p>
+  <img src="/index/SWETShirt.png"/>
+  </p>
+</div>
+
+</div><!-- end of persistent index.html stuff -->
+
+<!--#include virtual="/header_footer/footer.html" -->

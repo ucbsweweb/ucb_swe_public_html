@@ -1,0 +1,17 @@
+<!--#include virtual="/header_footer/header.html" -->
+<h2 class="title">Corporate Sponsors</h2>
+<p>
+For information about becoming a corporate sponsor, look at our
+<a href="/corporatepackages/">Corporate Packages</a> page.
+</p>
+
+<h3>Golden Bear Sponsors:</h3>
+<img class="corporateLogos" src="logos/cisco.gif"/>
+
+<h3>Silver Bear Sponsors:</h3>
+<h3>Bronze Bear Sponsors:</h3>
+<img class="corporateLogos" src="logos/cbs_interactive.gif"/>
+<img class="corporateLogos" src="logos/intel.gif"/>
+<img class="corporateLogos" src="logos/microsoft.gif"/>
+
+<!--#include virtual="/header_footer/footer.html" -->

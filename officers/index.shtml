@@ -1,0 +1,316 @@
+<!--#include virtual="/header_footer/header.html" -->
+<link rel="stylesheet" href="/contactstyle.css" />
+<h1>2014-2015 Contact Information</h1>
+<h3>General contact</h3>
+<p>
+   Please email
+   <script type="text/javascript">
+      mail2('swe.berkeley', 'gmail', '0', '', 'swe.berkeley[at]gmail.com')
+   </script>if you have any questions that you wish to direct to all officers.
+</p>
+<h3>Committee contact</h3>
+<p>Please email the committees if you have questions that you wish to direct to a committee:</p>
+<p>Social: ucb.swe.social@gmail.com</p>
+<p>PR: ucb.swe.pr@gmail.com</p>
+<p>Corporate: corporate.ucbswe@gmail.com</p>
+<p>EWI: swe.ewi@gmail.com</p>
+<p>Outreach: swe.berkeley.outreach@gmail.com</p>
+   <h3>Executives</h3>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <h4>President</h4>
+      <img src="/officers/jessica.JPG" alt="Jessica Sun" style="width:240px;height:155px">
+      <p>
+         Jessica Sun:<br>
+         <script type="text/javascript">
+            mail2('jessicasun', 'berkeley.edu', '-1', '', 'jessicasun[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>VP of Outreach</h4>
+      <img src="/officers/joanna.JPG" alt="Joanna Wu" style="width:240px;height:155px">
+      <p>
+         Joanna Wu:<br>
+         <script type="text/javascript">
+            mail2('wujoanna', 'berkeley.edu', '-1', '', 'wujoanna[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>VP of Corporate Relations</h4>
+      <img src="/officers/shir.JPG" alt="Shir Nehama" style="width:240px;height:155px">
+      <p>
+         Shir Nehama:<br>
+         <script type="text/javascript">
+            mail2('snehamajr', 'gmail.com', '-1', '', 'snehamajr[at]gmail[dot]com')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>Secretary</h4>
+      <img src="/officers/aleksandrina.JPG" alt="Allie Stoyanova" style="width:240px;height:155px">
+      <p>
+         Allie Stoyanova:<br>
+         <script type="text/javascript">
+            mail2('alya93', 'gmail.com', '-1', '', 'alya93[at]gmail[dot]com')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Treasurer</h4>
+      <p>
+         Lesley Chiang:<br>
+         <script type="text/javascript">
+            mail2('chiang.lesley', 'gmail.com', '-1', '', 'chiang[dot]lesley[at]gmail[dot]com')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr>
+</table>
+   <h3>Officers</h3>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <h4>Public Relations</h4>
+      <p>
+         <br>Nicole Parker:<br>
+         <script type="text/javascript">
+            mail2('nicoleparkervancouver', 'gmail.com', '-1', '', 'nicoleparkervancouver[at]gmail[dot]com')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Public Relations</h4>
+      <img src="/officers/isabel.JPG" alt="Isabel Yang" style="width:240px;height:155px">
+      <p>
+         Isabel Yang:<br>
+         <script type="text/javascript">
+            mail2('isabelyang', 'berkeley.edu', '-1', '', 'isabelyang[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <h4>Web Developer and Historian</h4>
+      <img src="/officers/anran.JPG" alt="Anran Li" style="width:240px;height:155px">
+      <p>
+         Anran Li:<br>
+         <script type="text/javascript">
+            mail2('anranli', 'berkeley.edu', '-1', '', 'anranli[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>Social Coordinator</h4>
+      <img src="/officers/amyf.JPG" alt="Amy Fong" style="width:240px;height:155px">
+      <p>
+         Amy Fong:<br>
+         <script type="text/javascript">
+            mail2('afong', 'berkeley.edu', '-1', '', 'afong[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Intersocietal Coordinator</h4>
+      <img src="/officers/anshu.JPG" alt="Anshu Maskara" style="width:240px;height:155px">
+      <p>
+         Anshu Maskara:<br>
+         <script type="text/javascript">
+            mail2('anshumaskara', 'berkeley.edu', '-1', '', 'anshumaskara[at]berkeley[dot]edu')
+         </script>
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <h4>Membership Director</h4>
+      <img src="/officers/joyce.JPG" alt="Joyce Toh" style="width:240px;height:155px">
+      <p>
+         Joyce Toh<br>
+         <script type="text/javascript">
+            mail2('joycetoh', 'berkeley.edu', '-1', '', 'joycetoh[at]berkeley[dot]edu')
+         </script>
+      </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>Elementary Outreach</h4>
+      <img src="/officers/ilakya.JPG" alt="Ilakya  Palanisamy" style="width:240px;height:155px">
+      <p>
+         Ilakya Palanisamy:<br>
+         <script type="text/javascript">
+            mail2('ilakyap', 'gmail.com', '-1', '', 'ilakyap[at]gmail[dot]com')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Middle and High School Outreach</h4>
+      <p>
+         <br>Sahithi Rani<br>
+         <script type="text/javascript">
+            mail2('sahithilrani', 'gmail.com', '-1', '', 'sahithilrani[at]gmail[dot]com')
+         </script>
+         <br />
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <h4>Associate Treasurer</h4>
+      <img src="/officers/grace.JPG" alt="Grace Vasiknanonte" style="width:240px;height:155px">
+      <p>
+         Grace Vasiknanonte:<br>
+         <script type="text/javascript">
+            mail2('gvasik', 'hotmail.com', '-1', '', 'gvasik[at]hotmail[dot]com')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>EWI Coordinator</h4>
+      <img src="/officers/elizabeth.JPG" alt="Elizabeth Chu" style="width:240px;height:155px">
+      <p>
+         Elizabeth Chu:<br>
+         <script type="text/javascript">
+            mail2('eakchu', 'berkeley.edu', '-1', '', 'eakchu[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>EWI Coordinator</h4>
+      <img src="/officers/kelly.JPG" alt="Kelly Liu" style="width:240px;height:155px">
+      <p>
+         Kelly Liu<br>
+         <script type="text/javascript">
+            mail2('kelly.liu', 'berkeley.edu', '-1', '', 'kelly[dot]liu[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   
+   
+   
+</tr>
+</table>
+
+
+   <h3>Chairs</h3>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <h4>Mini University</h4>
+      <img src="/officers/angela.JPG" alt="Angela Lin" style="width:240px;height:155px">
+      <p>
+         Angela Lin:<br>
+         <script type="text/javascript">
+            mail2('angelaslin', 'berkeley.edu', '-1', '', 'angelaslin[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Junior Solar Sprint Challenge</h4>
+      <img src="/officers/nidhi.JPG" alt="Nidhi Swamy" style="width:240px;height:155px">
+      <p>
+         Nidhi Swamy:<br>
+         <script type="text/javascript">
+            mail2('nidhi.swamy', 'berkeley.edu', '-1', '', 'nidhi[dot]swamy[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <h4>External Relations </h4>
+      <img src="/officers/julia.JPG" alt="Julia Welsch" style="width:240px;height:155px">
+      <p>
+         Julia Welsch:<br>
+         <script type="text/javascript">
+            mail2('jwelsch', 'berkeley.edu', '-1', '', 'jwelsch[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>Shadow an Engineer</h4>
+      <img src="/officers/apoorva.JPG" alt="Apoorva Dornadula" style="width:240px;height:155px">
+      <p>
+         Apoorva Dornadula:<br>
+         <script type="text/javascript">
+            mail2('nexusapoorvacus19', 'gmail.com', '-1', '', 'nexusapoorvacus19[at]gmail[dot]com')
+         </script>
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Shadow an Engineer</h4>
+      <img src="/officers/nikki.JPG" alt="Nikki Panditi" style="width:240px;height:155px">
+      <p>
+         Nikki Panditi:<br>
+         <script type="text/javascript">
+            mail2('npanditi', 'berkeley.edu', '-1', '', 'npanditi[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   
+   <td><div class="contactprofile">
+      <h4>Professional Development Week</h4>
+      <p>
+         <br>Heather Hughes:<br>
+         <script type="text/javascript">
+            mail2('heatherhughes', 'berkeley.edu', '-1', '', 'heatherhughes[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr>
+</table>
+
+   <h3>Advisors</h3>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <h4>Senior Advisor</h4>
+      <img src="/officers/anna.JPG" alt="Anna Ngo" style="width:240px;height:155px">
+      <p>
+         Anna Ngo:<br>
+         <script type="text/javascript">
+            mail2('anna.ngo', 'berkeley.edu', '-1', '', 'anna[dot]ngo[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Faculty Advisor</h4>
+      <p>
+         Amy Herr:<br>
+         <script type="text/javascript">
+            mail2('aeh', 'berkeley.edu', '-1', '', 'aeh[at]berkeley[dot]edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+         <h4>Section Counselor</h4>
+         <p>
+            Betsy Huigens:<br>
+            <script type="text/javascript">
+               mail2('betsey.huigens', 'swe.org', '-1', '', 'betsy[dot]huigens[at]swe[dot]org')
+            </script>
+            <br />
+         </p>
+   </div></td>
+</tr>
+</table>
+<!--#include virtual="/header_footer/footer.html" -->

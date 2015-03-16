@@ -1,0 +1,72 @@
+<!--#include virtual="/header_footer/header.html" -->
+<div class="outreach_sciSch">
+  <h2 class="title">SWE Science Scholars</h2>
+  <p>
+  SWE Science Scholars are 2 hour fun engineering projects and lessons from 10am-12pm for local 
+	middle school students. This is a continuation program for <a href="outreach_saturdays.shtml">SWE Science Saturdays</a>. 
+	Spaces are given to those who register on a first come first serve basis!
+  </p>
+  <p>
+  A $2 dollar donation is suggested but not required from students to cover the cost of supplies. 
+	In contrast to previous years, we are no longer using PayPal for donations, so this donation 
+	would be in-person at the event should you choose to give one.
+  </p>
+  
+  <h3>Sign-up:</h3>
+  <ul>
+    <li>
+    Your child must be in 6th, 7th, or 8th grade
+    (if younger - please see <a href="outreach_saturdays.shtml">SWE Science Saturdays</a>)
+    </li>
+    <li>
+    Sign Up by filling out the <a href="http://www.tinyurl.com/ScholarsRegistration14-15">SWE Science Scholars Form</a>.
+Please note that the registration process has changed from previous years. We will now be doing monthly pre-registrations  in order to maximize the number of students who are able to participate in our classes. The registration days/times are as follows:<br>
+
+<table style="width:30%"> 
+<tr> <th>SWE Science Date</th>
+     <th>Registration Open Date</th>
+</tr>
+<tr>
+     <td> Feb 7th </td>
+     <td> Jan 26th </td>
+</tr>
+<tr>
+     <td> Mar 14th </td>
+     <td> Feb 9th </td>
+</tr>
+<tr>
+     <td> Apr 4th </td>
+     <td> Mar 16th </td>
+</tr>
+<tr>
+     <td> May 2nd </td>
+     <td> Apr 6th </td>
+</tr>
+</table>
+    <strong>
+      Please note: In contrast to previous years, filling out the SWE Science Scholars Form does not 
+necessarily mean you are registered for the class. You will receive an email confirmation within 3-5 business 
+days (ideally by the Friday of the week you sign up) informing you as to whether you have gotten into the 
+class, are waitlisted, or if the class is all full.
+    </strong>
+    
+</li>
+    <li>
+    Fill out the <a href="documents/MedicalTreatmentAuthorizationForm.pdf" target="_blank">Medical Waiver Form</a>.
+    Please print, sign, and scan it to 
+    <script type="text/javascript">mail2('swesciencescholars', 'gmail', '0', '', 'swesciencescholars[at]gmail.com')</script>.
+    or return it to us on the day of the event.
+    </li>
+    <li>
+    A confirmation email will be sent to you with details as to whether you are registered or waitlisted for a class, where the class will take place, and any additional information such as the room location
+    <a href="http://berkeley.edu/map/maps/CD34.html" target="_blank">UC Berkeley Campus</a>.
+    </li>
+    <li>
+    If your child cannot attend an event for which he or she is already confirmed, please cancel your registration for that SWE Science Scholars by emailing us as soon as possible, so another student can take your student’s place at SWE Science Scholars.     </li>
+  </ul>
+  <p>
+  Email questions to
+  <script type="text/javascript">mail2('swesciencescholars', 'gmail', '0', '', 'swesciencescholars[at]gmail.com')</script>.
+  </p>
+</div> <!-- end of outreach_sciSch -->
+<!--#include virtual="/header_footer/footer.html" -->

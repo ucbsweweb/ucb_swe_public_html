@@ -1,0 +1,685 @@
+@import url(reset.css);
+
+@font-face {
+font-family:"Lato Light";
+src:url(/header_footer/fonts/LatoLight/Lato-Light.eot?) format(eot), url(/header_footer/fonts/LatoLight/Lato-Light.woff) format(woff), url(/header_footer/fonts/LatoLight/Lato-Light.ttf) format(truetype), url(/header_footer/fonts/LatoLight/Lato-Light.svg#Lato-Light) format(svg);
+font-weight:400;
+font-style:normal;
+}
+
+body {
+background:#FFF;
+background-image:url(/header_footer/images/ps_neutral.png);
+background-repeat:repeat;
+font-family:"Lato Light", "Century Gothic", sans-serif;
+font-size:14px;
+}
+
+p {
+margin:20px 20px 5px;
+font-size:12px;
+color:#000;
+font-weight:normal;
+}
+
+p a,li a {
+text-decoration:underline;
+}
+
+p a:hover,li a:hover {
+text-decoration:underline;
+color:red;
+}
+
+.red {
+color:red;
+}
+
+h1,h2 {
+font-weight:700;
+font-size:32px;
+color:#093;
+margin:20px 0 0 20px;
+}
+
+h3,h4,h5 {
+font-weight:700;
+font-size:20px;
+color:#000;
+margin:10px 0 0 10px;
+}
+
+ol {
+list-style:decimal;
+}
+
+ul {
+list-style:disc;
+}
+
+ul,ol {
+padding:0 0 0 2em;
+}
+
+.youtube-iframe {
+text-align:center;
+padding:20px;
+}
+
+.wrapper {
+width:100%;
+height:100%;
+text-align:center;
+clear:both;
+margin:auto;
+}
+
+.wrapper iframe.pdfViewer,.wrapper #membershipSpreadsheet {
+text-align:center;
+width:950px;
+height:750px;
+margin:10px 10px 0;
+padding:0;
+}
+
+.wrapper iframe.pdfViewer {
+height:1260px;
+}
+
+.wrapper #slides_viewer {
+height:740px;
+}
+
+.wrapper .title {
+font-size:32px;
+text-align:center;
+margin:0;
+padding:5px 0 0;
+}
+
+#header-wrapper {
+height:120px;
+background:#093;
+}
+
+#header {
+width:1000px;
+height:120px;
+vertical-align:middle;
+text-align:center;
+margin:0 auto;
+}
+
+#header img {
+vertical-align:middle;
+float:left;
+width:100px;
+height:100px;
+padding:10px 25px 0 0;
+}
+
+#header a.header_text1 {
+margin-top:20px;
+color:#FFF;
+font-size:22px;
+float:left;
+}
+
+#header a.header_text2 {
+color:#FFF;
+font-size:60px;
+float:left;
+}
+
+#header a:hover {
+color:#FFF;
+}
+
+#navbar-wrapper {
+position:relative;
+top:-400px;
+background-color:rgba(0,0,0,.75);
+}
+
+#navbar {
+width:1000px;
+height:25px;
+vertical-align:middle;
+text-align:left;
+margin:0 auto;
+}
+
+#navbar li {
+list-style:none;
+font-size:16px;
+font-weight:700;
+float:left;
+margin:0;
+padding:2px;
+}
+
+#navbar li a {
+display:block;
+color:#FFF;
+text-decoration:none;
+padding:1px 10px;
+}
+
+#navbar li ul {
+display:none;
+background-color:rgba(0,0,0,0.75);
+}
+
+#navbar li:hover ul,#navbar li.hover ul {
+display:block;
+position:absolute;
+margin:0;
+padding:0;
+}
+
+#navbar li:hover li,#navbar li.hover li {
+float:none;
+}
+
+#navbar li:hover li a,#navbar li.hover li a {
+color:#fff;
+}
+
+#navbar li ul li a img {
+height:1em;
+}
+
+#headerimage {
+background-image:url("/header_footer/images/swebanquet.png");
+background-position: center top;
+background-repeat:no-repeat;
+position:relative;
+width:100%;
+height:400px;
+vertical-align:middle;
+text-align:center;
+overflow:hidden;
+margin:0 auto;
+background-size: cover;
+}
+
+#headerimage img {
+position:absolute;
+width:100%;
+height:auto;
+min-height:400px;
+left:0;
+}
+
+#mediaBar {
+position:relative;
+top:-62px;
+margin:0;
+}
+
+#mediaBar a img,#plusone {
+float:right;
+height:32px;
+padding:0 5px 5px 0;
+}
+
+#body-wrapper {
+position:relative;
+width:1000px;
+height:auto;
+text-align:center;
+margin:0 auto;
+top:-25px;
+}
+
+.content-wrapper {
+color:#000;
+}
+
+.circle {
+	border-radius: 50%; 
+	float:left;
+	color:#000;
+	width:100px;
+	height:100px;
+	float:left;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.circles {
+height: 50px;
+width: 50px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border: none;
+background-color: #C0C0C0;
+margin: auto 10px;
+float:left;
+}
+
+.content-wrapper p{
+color:#000
+font-size:12px;
+}
+
+#footer-wrapper {
+width:100%;
+height:70px;
+background:#093;
+clear:both;
+}
+
+#footer {
+position:relative;
+clear:both;
+height:70px;
+width:1000px;
+text-align:left;
+margin:0 auto;
+padding:0;
+}
+
+#footer .copyright {
+position:absolute;
+bottom:0;
+right:0;
+float:right;
+font-size:10px;
+color:FFFFFF;
+margin:5px;
+padding:5px;
+}
+
+#footer img {
+float:right;
+height:130px;
+padding:0;
+}
+
+#footer .search {
+position:absolute;
+bottom:0;
+left:0;
+color:FFFFFF;
+padding:5px;
+}
+
+#footer input {
+margin:10px 2px 0 0;
+}
+
+.line-separator{
+height:1px;
+background:#C0C0C0;
+border-bottom:1px solid #C0C0C0;
+}
+
+#agenda {
+padding:15px 0;
+}
+
+#announcements {
+text-align:left;
+float:right;
+width:400px;
+padding:0 7px;
+}
+
+#constant_home {
+text-align:left;
+float:left;
+width:500px;
+padding:0 7px;
+}
+
+#front-slide-show {
+margin:30px 0 0 10px;
+}
+
+#email_signup form {
+margin:5px 0 0 50px;
+}
+
+#email_signup iframe,input {
+margin:20px 0 0 5px;
+padding:0;
+}
+
+#email_signup input.emailInput {
+width:18em;
+}
+
+#tshirts img {
+width:190px;
+}
+
+#gcalendar {
+width:970px;
+height:530px;
+}
+
+#gmTable,#upcomingEvents,#membershipLevels {
+border-color:#007c3d;
+border-style:solid;
+border-width:thick;
+margin:0 auto;
+}
+
+#membershipLevels {
+margin:10px auto;
+}
+
+#gmTable td,#upcomingEvents td,#membershipLevels td {
+vertical-align:text-top;
+text-align:left;
+font-weight:700;
+font-size:18px;
+border-color:#007c3d;
+border-style:double;
+border-width:medium;
+}
+
+#gmTable td,#membershipLevels td {
+padding:10px;
+}
+
+.newsletter h3 {
+font-size:20px;
+margin:0 0 0 15px;
+}
+
+.newsletter .months {
+float:left;
+padding:15px 0 0;
+}
+
+.newsletter .year {
+float:left;
+padding:15px 0 0 35px;
+}
+
+.newsletter .year select,.newsletter .year input {
+margin:10px 0 0 15px;
+padding:0;
+}
+
+.newsletter .months input {
+margin:5px;
+padding:0;
+}
+
+.newsletter .view {
+clear:both;
+position:relative;
+left:300px;
+}
+
+.newsletter .warning {
+font-size:12px;
+text-align:center;
+margin:0;
+padding:5px 0 0;
+}
+
+.contact {
+width:470px;
+height:300px;
+float:left;
+text-align:center;
+}
+
+.contact a img,.contact img,.individual a img,.individual img {
+height:150px;
+padding:10px;
+}
+
+.individual img {
+float:right;
+}
+
+.about p img {
+display:block;
+margin:0 auto;
+}
+
+.about h2 {
+font-size:20px;
+}
+
+.outreach_form input {
+margin:3px;
+padding:3px;
+}
+
+.outreach_form .text {
+width:20em;
+margin:5px 0 15px;
+padding:3px;
+}
+
+.outreach_form .col0,.outreach_form .col1 {
+float:left;
+width:470px;
+}
+
+.outreach_form .scholarEvents,.outreach_form .saturdayEvents {
+width:470px;
+float:left;
+}
+
+.outreach_form .recaptcha {
+clear:both;
+margin:0;
+padding:10px 10px 0 50px;
+}
+
+#saturdayEvents,#scholarEvents {
+display:none;
+}
+
+#mainEWILinks {
+text-align:center;
+font-size:25px;
+}
+
+#ewiInfoTable {
+border-color:#007c3d;
+border-style:solid;
+border-width:thick;
+margin:15px auto;
+padding:10px;
+}
+
+#ewiInfoTable td {
+vertical-align:text-top;
+text-align:left;
+font-weight:700;
+font-size:18px;
+border-color:#007c3d;
+border-style:double;
+border-width:medium;
+padding:10px;
+}
+
+.tabs {
+position:relative;
+width:920px;
+margin:40px auto;
+}
+
+.tabs input {
+position:absolute;
+z-index:1000;
+width:210px;
+height:40px;
+left:0;
+top:0;
+opacity:0;
+-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+filter:alpha(opacity=0);
+cursor:pointer;
+}
+
+.tabs input#tab-2 {
+left:210px;
+}
+
+.tabs input#tab-3 {
+left:420px;
+}
+
+.tabs input#tab-4 {
+left:630px;
+}
+
+.tabs label {
+background:linear-gradient(top,#5ba4a40%,#4e8c8a100%);
+font-size:15px;
+line-height:40px;
+height:40px;
+position:relative;
+float:left;
+display:block;
+width:190px;
+color:#385c5b;
+text-transform:uppercase;
+font-weight:700;
+text-align:center;
+text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+border-radius:3px 3px 0 0;
+box-shadow:2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+padding:0 20px;
+}
+
+.tabs label:after {
+content:'';
+background:#fff;
+position:absolute;
+bottom:-2px;
+left:0;
+width:100%;
+height:2px;
+display:block;
+}
+
+.tabs input:hover + label {
+background:#5ba4a4;
+}
+
+.tabs label:first-of-type {
+z-index:4;
+box-shadow:2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tab-label-2 {
+z-index:3;
+}
+
+.tab-label-3 {
+z-index:2;
+}
+
+.tab-label-4 {
+z-index:1;
+}
+
+.tabs input:checked + label {
+background:#fff;
+z-index:6;
+}
+
+.content {
+background:#fff;
+position:relative;
+width:100%;
+height:700px;
+z-index:5;
+box-shadow:0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+border-radius:0 3px 3px 3px;
+}
+
+.content div {
+position:absolute;
+top:0;
+left:0;
+z-index:1;
+opacity:0;
+-webkit-transition:opacity linear .1s;
+-moz-transition:opacity linear .1s;
+-o-transition:opacity linear .1s;
+-ms-transition:opacity linear .1s;
+transition:opacity linear .1s;
+padding:10px 40px;
+}
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,.tabs input.tab-selector-2:checked ~ .content .content-2,.tabs input.tab-selector-3:checked ~ .content .content-3,.tabs input.tab-selector-4:checked ~ .content .content-4 {
+z-index:100;
+-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+filter:alpha(opacity=100);
+opacity:1;
+-webkit-transition:opacity ease-out .2s .1s;
+-moz-transition:opacity ease-out .2s .1s;
+-o-transition:opacity ease-out .2s .1s;
+-ms-transition:opacity ease-out .2s .1s;
+transition:opacity ease-out .2s .1s;
+}
+
+.content div h2,.content div h3 {
+color:#398080;
+}
+
+.content div p {
+font-size:14px;
+line-height:22px;
+font-style:italic;
+text-align:left;
+color:#777;
+padding-left:15px;
+font-family:Cambria, Georgia, serif;
+border-left:8px solid rgba(63,148,148,0.1);
+margin:0;
+}
+
+.content div p a {
+font-size:14px;
+line-height:22px;
+font-style:italic;
+text-align:left;
+color:#398080;
+font-family:Cambria, Georgia, serif;
+margin:0;
+}
+
+.content div p a:hover {
+color:#385c5b;
+}
+
+li,#gmTable,#membershipLevels,.newsletter .year input {
+padding:5px;
+}
+
+#navbar li a:hover,#navbar li ul li a:hover,#navbar .nav-singleton:hover {
+color:#dfd545;
+}
+
+.careers h3,.upcomingEvents h3,.membership h3,.elections h3,.about h3,.ewi h3 {
+width:930px;
+border-bottom:10px double #007c3d;
+margin:0 auto;
+padding:10px 0 0;
+}
+
+.corporateLogos,.outreachSponsorLogos {
+height:90px;
+padding:15px;
+}
+
+.contacts h3,.news h3,.apps-forms h3 {
+clear:both;
+width:930px;
+border-bottom:10px double #007c3d;
+}
+
+.outreach_form .other,.clear-shadow {
+clear:both;
+}

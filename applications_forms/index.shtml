@@ -1,0 +1,44 @@
+<!--#include virtual="/header_footer/header.html" -->
+<div class="apps-forms">
+  <h1>Applications and Forms</h1>
+
+
+  <h3>Get involved and apply for a Committee</h3>
+  <p>
+<a href="http://www.tinyurl.com/swe-committee-2014">Apply</a> to be part of a committee!
+</p><p>
+Committee descriptions and responsibilities can be found <a href="http://swe.berkeley.edu/committees/">here</a>.
+ </p>
+
+<h3>Get involved and apply for a House</h3>
+  <p>
+<a href="http://tinyurl.com/SWE-House-Signup-2014">Apply</a> to be part of a house!
+</p><p>
+Committee descriptions and responsibilities can be found <a href="http://swe.berkeley.edu/house/">here</a>.
+ </p>
+
+<!--
+  <h3>Committee Applications</h3>
+	<p>
+	Join a committee! Read about and sign up for a committee <a href="https://docs.google.com/forms/d/1_zOjrVwvDQPrufxvwxzfdBsRYcUq-HquUVTOosE1BDY/viewform">here</a>.
+	</p><p>
+	If you have any questions regarding a committee, the officers in charge of each committee and their emails have been listed. Please direct all general questions about the committee sign-up process to swe.berkeley@gmail.com, with the subject line [Committee Sign-up Process]. Thanks for your interest in joining a committee and we look forward to working with you!
+	</p>
+-->
+<h3>House Points Submission</h3>
+	<p>
+	Please fill out the form <a href="https://docs.google.com/forms/d/1zvvGQqUOJWnQijBbDv5gbEX5cV9LncP4v4-gSGnRZgE/viewform">here</a> within 2 days of the event.
+	</p><p>
+	If you have any questions regarding the points request or the house program, please contact our Membership Director Nana (nlow386 [at] berkeley.edu).
+	</p>
+
+	
+  <h3>Reimbursement Form FY2014</h3>
+  <p>
+  Use this form if you require reimbursement for money spent on a SWE event: 
+  <a href="https://docs.google.com/spreadsheet/viewform?formkey=dElMQzF1WEdMTXk4b29pYmVwazFBSnc6MQ#gid=0" target="_blank">Google Form</a>
+  </p>
+
+
+</div>
+<!--#include virtual="/header_footer/footer.html" -->

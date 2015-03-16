@@ -1,0 +1,83 @@
+
+<!--#include virtual="/header_footer/header.html" -->
+<div class="outreach_sciSat">
+  <h2 class="title">SWE Science Saturdays</h2>
+
+  <p class="red">
+    <strong> Attention returning SWE Science Saturday Parents:</strong> Welcome back! The sign up process
+    has been changed from previous years. It is described below, with major changes in <strong>BOLD</strong>.
+  </p>
+
+  <p>SWE Science Saturdays are 2 hour fun engineering lessons and challenges from 10am-12pm for 4th and 5th 
+	graders from local elementary schools. Spaces are given to those who register on a first come first serve basis!
+  </p>
+  <p>
+	A $2 dollar donation is suggested but not required from students to cover the cost of supplies. In contrast to 
+	previous years, we are no longer using PayPal for donations, so this donation would be in-person at the event 
+	should you choose to give one.
+  </p>
+  <p>
+	**Note: In the past, we have been fairly lenient about letting students who are not registered for a class attend 
+	because our classes were smaller and we love doing science experiments with your students! However, safety is our 
+	first priority, and as a result we are no longer able to accommodate students who are not registered. Having more 
+	students than we planned for presents a risk because we do not have enough volunteers to supervise all your students 
+	and make sure they are accounted for and safe. Thank you!
+  </p>
+  
+  <h3>Sign-up:</h3>
+  <ol>
+    <li>
+    Your child must be in 4th or 5th grade
+    (if older - please see <a href="outreach_scholars.shtml">SWE Science Scholars</a>)
+    </li>
+    <li>
+    Sign Up by filling out the <a href="http://www.tinyurl.com/SaturdaysRegistration14-15">SWE Science Saturday Form</a>.
+Please note that the registration process has changed from previous years. We will now be doing monthly pre-registrations  in order to maximize the number of students who are able to participate in our classes. The registration days/times are as follows:
+<table style="width:30%"> 
+<tr> <th>SWE Science Date</th>
+     <th>Registration Open Date</th>
+</tr>
+<tr>
+     <td> Feb 7th </td>
+     <td> Jan 26th </td>
+</tr>
+<tr>
+     <td> Mar 14th </td>
+     <td> Feb 9th </td>
+</tr>
+<tr>
+     <td> Apr 4th </td>
+     <td> Mar 16th </td>
+</tr>
+<tr>
+     <td> May 2nd </td>
+     <td> Apr 6th </td>
+</tr>
+</table>
+    <strong>
+      Please note: In contrast to previous years, filling out the SWE Science Saturday Form does not 
+necessarily mean you are registered for the class. You will receive an email confirmation within 3-5 business 
+days (ideally by the Friday of the week you sign up) informing you as to whether you have gotten into the 
+class, are waitlisted, or if the class is all full.
+    </strong>
+    
+</li>
+    <li>
+    Fill out the <a href="documents/MedicalTreatmentAuthorizationForm.pdf" target="_blank">Medical Waiver Form</a>.
+    Please print, sign, and scan it to 
+    <script type="text/javascript">mail2('swesciencesaturday', 'gmail', '0', '', 'swesciencesaturday[at]gmail.com')</script>.
+    or return it to us on the day of the event.
+    </li>
+    <li>
+    A confirmation email will be sent to you with details as to whether you are registered or waitlisted for a class, where the class will take place, and any additional information such as the room location
+    <a href="http://berkeley.edu/map/maps/CD34.html" target="_blank">UC Berkeley Campus</a>.
+    </li>
+    <li>
+    If your child cannot attend an event for which he or she is already confirmed, please cancel your registration for that SWE Science Saturday by emailing us as soon as possible, so another student can take your student’s place at SWE Science Saturday.     </li>
+  </ul>
+  <p>
+  Email questions to
+  <script type="text/javascript">mail2('swesciencesaturday', 'gmail', '0', '', 'swesciencesaturday[at]gmail.com')</script>.
+  </p>
+</div> <!-- end of outreach_sciSat -->
+<!--#include virtual="/header_footer/footer.html" -->

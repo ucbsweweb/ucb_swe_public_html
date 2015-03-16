@@ -1,0 +1,17 @@
+
+<!--#include virtual="/header_footer/header.html" -->
+<div class="outreach_genInfo">
+  <h2 class="title">Welcome to SWE Science!</h2>
+
+  <p>
+  Registration opens on Thursday, September 19th, at noon (12pm). 
+  </p>
+  <p>
+  Please return back then to register your student or child for our event series!
+  </p>
+  <p>
+  Thank you for your interest in SWE Science! We look forward to working with your students!    </p>
+  </p>
+
+</div> <!-- end of outreach_genInfo -->
+<!--#include virtual="/header_footer/footer.html" -->

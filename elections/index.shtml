@@ -1,0 +1,138 @@
+<!--#include virtual="/header_footer/header.html" -->
+<link rel="stylesheet" href="/contactstyle.css" />
+<h1>2014-2015 Elections</h1>
+<h3>General infomation</h3>
+<p>
+Thank you for taking the time to vote for SWE's executive board for 2015/2016! <br/>
+<br/>
+Candidate speeches will occur at General Meeting #3. The ballot will be posted after the meeting.<br/>
+Mon, March 16	<br/>
+6:30pm-8:00pm<br/>
+290 Hearst Memorial Mining Building<br/>
+<a href="https://www.facebook.com/events/1610192735865680/">Facebook Event</a><br>
+<br/>
+NOTE: You MUST be a SWE National Member in order to vote for the SWE executive board. For more information about membership, please visit <a href="http://www.swe.org">swe.org</a>. <br/>
+Please email
+   <script type="text/javascript">
+      mail2('swe.berkeley', 'gmail', '0', '', 'swe.berkeley[at]gmail.com')
+   </script>if you have any questions.
+</p>
+<h3>Ballot</h3>
+<p>The ballot will be posted here after GM3!</p>
+   <h3>Candidates</h3>
+<h2><b>President</b></h2>
+<table>
+<tr>
+   <td><div class="contactprofile">
+
+      
+      <img src="/officers/jessica.JPG" alt="Jessica Sun" style="width:240px;height:155px">
+      <p>
+         <b>Jessica Sun</b><br/>
+         <a href="https://www.facebook.com/sunjessica">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+</tr>
+</table>
+<h2><b>Vice President</b></h2>
+<table>
+<tr>
+   <td><div class="contactprofile">
+
+      
+      <img src="/officers/amyf.JPG" alt="Amy Fong" style="width:240px;height:155px">
+      <p>
+         <b>Amy Fong</b><br/>
+         <a href="https://www.facebook.com/amy.fong.58">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+</tr>
+</table>
+<h2><b>VP of Corporate</b></h2>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <img src="/officers/elizabeth.JPG" alt="Elizabeth Chu" style="width:240px;height:155px">
+      <p>
+         <b>Elizabeth Chu</b><br/>
+         <a href="https://www.facebook.com/elizabeth.chu.24">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <img src="/officers/apoorva.JPG" alt="Apoorva Dornadula" style="width:240px;height:155px">
+      <p>
+         <b>Apoorva Dornadula</b><br/>
+         <a href="https://www.facebook.com/adornadula">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+</tr>
+</table>
+<h2><b>VP of Outreach</b></h2>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <img src="/officers/angela.JPG" alt="Angela Lin" style="width:240px;height:155px">
+      <p>
+         <b>Angela Lin</b><br/>
+         <a href="https://www.facebook.com/angela.lin.5220">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <img src="/officers/ilakya.JPG" alt="Ilakya  Palanisamy" style="width:240px;height:155px">
+      <p>
+         <b>Ilakya  Palanisamy</b><br/>
+         <a href="https://www.facebook.com/ilakya.palanisamy">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+</tr>
+</table>
+<h2><b>Secretary</b></h2>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <img src="/officers/kelly.JPG" alt="Kelly Liu" style="width:240px;height:155px">
+      <p>
+         <b>Kelly Liu</b><br/>
+         <a href="https://www.facebook.com/liu.kelly">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <img src="/officers/joyce.JPG" alt="Joyce Toh" style="width:240px;height:155px">
+      <p>
+         <b>Joyce Toh</b><br/>
+         <a href="https://www.facebook.com/joyce.toh.3">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+</tr>
+</table>
+</table>
+<h2><b>Treasurer</b></h2>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <img src="/officers/grace.JPG" alt="Grace Vasiknanonte" style="width:240px;height:155px">
+      <p>
+         <b>Grace Vasiknanonte</b><br/>
+         <a href="https://www.facebook.com/grace.vasiknanonte">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <img src="/officers/isabel.JPG" alt="Isabel Yang" style="width:240px;height:155px">
+      <p>
+         <b>Isabel Yang</b><br/>
+         <a href="https://www.facebook.com/isabelyangg">Facebook Profile</a><br/>
+         <a href="">Slides</a><br/>
+      </p>
+   </div></td>
+</tr>
+</table>
+<!--#include virtual="/header_footer/footer.html" -->
