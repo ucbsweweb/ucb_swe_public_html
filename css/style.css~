@@ -194,7 +194,7 @@ li{
     padding: 0;
     height: 70px;
     width: 970px;
-    background: #191919;
+    background: #FFFFFF;
 }
 #footer .copyright {
     position: absolute;

@@ -4,6 +4,7 @@
 <!--   <script type="text/javascript" src="http://rndpic.appspot.com/user/swe.berkeley.pictures?height=120u"></script> -->
 <!-- <img src="about/outstanding_silver.gif"> -->
 <form class="search" method="get" action="http://www.google.com/search" target="_blank">
+<font color ="white"> 
   <input type="submit" value="Search" />
   <input type="text"   name="q" size="20" maxlength="255" value=""/><br />
   <input type="radio"  name="sitesearch" value="swe.berkeley.edu" checked />swe.berkeley.edu
@@ -12,7 +13,7 @@
   <input type="radio"  name="sitesearch" value="" />The Web
 </form>
 
-<p class="copyright">All Rights Reserved &copy; 2011 SWE, UC Berkeley Section</p>
+<p class="copyright">All Rights Reserved &copy; 2011 SWE, UC Berkeley Section</p></font>
 </div>
 </div><!-- end of wrapper -->
 
