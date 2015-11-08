@@ -2,7 +2,6 @@
 <!--#include virtual="/header_footer/header.html" -->
 <div class="outreach_sciSat">
   <h2 class="title">SWE Science Saturdays</h2>
-
   <p class="red">
     <strong> Attention returning SWE Science Saturday Parents:</strong> Welcome back! The sign up process
     has been changed from previous years. It is described below, with major changes in <strong>BOLD</strong>.
@@ -31,33 +30,29 @@
     (if older - please see <a href="outreach_scholars.shtml">SWE Science Scholars</a>)
     </li>
     <li>
-    Sign Up by filling out the <a href="http://www.tinyurl.com/SaturdaysRegistration14-15">SWE Science Saturday Form</a>.
+    Sign Up by filling out the <a href="http://www.tinyurl.com/ScienceRegistration15-16">SWE Science Saturday Form</a>.
 Please note that the registration process has changed from previous years. We will now be doing monthly pre-registrations  in order to maximize the number of students who are able to participate in our classes. The registration days/times are as follows:
 <table style="width:30%"> 
 <tr> <th>SWE Science Date</th>
-     <th>Registration Open Date</th>
+  <!--   <th>Registration Open Date</th> -->
 </tr>
 <tr>
-     <td> Feb 7th </td>
-     <td> Jan 26th </td>
+     <td> Sep 19th </td>
 </tr>
 <tr>
-     <td> Mar 14th </td>
-     <td> Feb 9th </td>
+     <td> Oct 10th </td>
 </tr>
 <tr>
-     <td> Apr 4th </td>
-     <td> Mar 16th </td>
+     <td> Nov 14th </td>
 </tr>
 <tr>
-     <td> May 2nd </td>
-     <td> Apr 6th </td>
+     <td> Dec 5th </td>
+   <!--  <td> Apr 6th </td> -->
 </tr>
 </table>
     <strong>
       Please note: In contrast to previous years, filling out the SWE Science Saturday Form does not 
-necessarily mean you are registered for the class. You will receive an email confirmation within 3-5 business 
-days (ideally by the Friday of the week you sign up) informing you as to whether you have gotten into the 
+necessarily mean you are registered for the class. You will receive an email confirmation the Monday before the SWE Science event informing you as to whether you have gotten into the 
 class, are waitlisted, or if the class is all full.
     </strong>
     
@@ -73,11 +68,13 @@ class, are waitlisted, or if the class is all full.
     <a href="http://berkeley.edu/map/maps/CD34.html" target="_blank">UC Berkeley Campus</a>.
     </li>
     <li>
-    If your child cannot attend an event for which he or she is already confirmed, please cancel your registration for that SWE Science Saturday by emailing us as soon as possible, so another student can take your student’s place at SWE Science Saturday.     </li>
+    If your child cannot attend an event for which he or she is already confirmed, please cancel your registration for that SWE Science Saturday by emailing us as soon as possible, so another student can take your student's place at SWE Science Saturday.     </li>
   </ul>
   <p>
+<br>
   Email questions to
-  <script type="text/javascript">mail2('swesciencesaturday', 'gmail', '0', '', 'swesciencesaturday[at]gmail.com')</script>.
+  <script type="text/javascript">mail2('swesciencesaturday', 'gmail', '0', '', 'swesciencesaturday@gmail.com')</script>.
   </p>
+<img src="/outreach/outreach_flier.png">
 </div> <!-- end of outreach_sciSat -->
 <!--#include virtual="/header_footer/footer.html" -->

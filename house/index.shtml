@@ -1,17 +1,24 @@
 
 <!--#include virtual="/header_footer/header.html" -->
 <div class="membership">
-  <h1>Houses</h1>
+  <h1>The House Program</h1>
    <p> 
-   Please take a look at the details below, and sign up for a house <a href="http://tinyurl.com/SWE-House-Signup-2014">here (tinyurl.com/SWE-House-Signup-2014)</a>!
+   Please take a look at the details below, and sign up for a house <a href="http://tinyurl.com/swe-hp-2015" target="_blank">here</a>! Applications due Friday 9/18.
   </p>
   <p>
-Please email questions to Joyce at berkeley.swe.membership@gmail.com.
+Please email questions to Kelly at 
+<script type="text/javascript">
+            mail2('kelly.liu', 'berkeley.edu', '-1', '', 'kelly.liu@berkeley.edu')
+         </script>
   </p>
+<h3>Mission Statement </h3>
+<p>The SWE House Program is dedicated to promoting and fostering friendships, culture, traditions, and professionalism. Members of the House Program bond through friendly and fun competition events, close-knit study and reflection circles, and a point-system that encourages and tracks participation. As members of the House Program, we grow together through our adversities and goals, and become a support system for the year. The House Program follows the ideals of SWE as women engineers who build relationships to become the future leaders in our community.
+</p>
 <h3>Overview </h3>
 <p>
   "While you are at SWE, your triumphs will earn you house points, while any rule-breaking will lose house points. At the end of the year, the house with the most points is awarded the house cup, a great honour."
   <ol>
+    <li> Join the House Program if you are looking to connect with other women engineers in a low-key but fun setting! </li>
     <li> 4 houses </li>
     <li> Earn points: attending events, hanging out with your family while taking selfies, being active in a committee </li>
     <li> Your house will be put to the test at House Competitions </li>
@@ -21,90 +28,16 @@ Please email questions to Joyce at berkeley.swe.membership@gmail.com.
     <li> If members are VERY adamant about switching into a particular group, they must contact the Membership Director directly. This procedure can be done anytime during the semester unless it's 30 days before semester award ceremony </li>
     <li> Houses will stay the same for an entire academic year. </li>
     <li> The Head of House should be your main point of contact for any official House business. However any officer in your house can be a mentor. </li>
+
   </ol>
   </p>
-
+<img src="/house/house_pics/house_info.png" style="width:700px">
 
   <h3>Houses</h3>
-  <table id="membershipLevels">
-    <tr>
-      <td>81 pts</td>
-      <td>
-	<p> <b>SWE Shells</b> </p>
-	<p>  Officers: Sahiti, Nicole, Jessica, Angela, Kelly </p>
-	<p>  Colors: Coral and mint </p>
-	<p>  Mascot: Patrick </p>
-	<p>  Traits: Enjoys the outdoors </p>
-      </td>
-    </tr>
+<img src="/house/house_pics/houses.png" style="width:700px">
 
-    <tr>
-      <td>76 pts</td>
-      <td>
-	<p> <b>Fire-Breathers</b> </p>
-	<p>  Officers: Shir, Amy, Anshu, Anna, Apoorva </p>
-	<p>  Colors: Purple and Yellow </p>
-	<p>  Mascot: Dragon </p>
-	<p>  Traits: Sociable, open </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>83 pts</td>
-      <td>
-	<p> <b>Picnic House</b> </p>
-	<p>  Officers: Allie, Lesley, Elizabeth, Anran, Nikki, Heather </p> 
-	<p>  Colors: Grass Green and Sky Blue </p>
-	<p>  Mascot: Yogi Bear </p>
-	<p> Traits: Explore Berkeley </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>77 pts</td>
-      <td>
-	<p> <b>SWE Snowmen</b> </p>
-	<p>  Officers: Grace, Nidhi, Julia, Joanna, Isabel, Ilakya </p>  
-	<p>  Colors: Azure and Lavender </p>
-	<p>  Mascot: Olaf </p>
-	<p>  Traits: Cooking, baking </p>
-      </td>
-    </tr>
-  </table>
-
-  <!--<h3>Rules </h3>
-  <p>
-  <ol>
-    <li> Membership Director and President will be impartial and thus won't be sorted in a particular group. </li>
-    <li> Only officers are allowed to give/take points </li>
-    <li> If officers are found guilty of point bais, penalty of 20 points will be deducted from their House </li>
-    <li> Points must be submitted within 2 days of the event. Please fill out the <a href="https://docs.google.com/forms/d/1zvvGQqUOJWnQijBbDv5gbEX5cV9LncP4v4-gSGnRZgE/viewform">point submission form</a>.</li>
-    <li> Houses and Committees are two entirely separate entities. However we strongly encourage SWE members to partake in both. </li>
-    <li>  If members are VERY adamant about switching into a particular group, they must contact the Membership Director directly. This procedure can be done anytime during the semester unless it's 30 days before semester award ceremony </li>
-    <li> Houses will stay the same for an entire academic year. Present this system to Spring Admits. </li>
-    <li> The Head of House should be your main point of contact for any official House business. However any officer in your house can be a mentor. </li>
-  </ol>
-  </p>
-
-  <h3>Point System</h3>
-  <p>
-    <li> 2 points- per person for showing up for a SWE event/infosession (includes officers) </li>
-    <li> 5 points- if more than half of the House is in attendance at same event (includes officers) </li>
-    <li> 10 points- if all members in group are in attendance at the same event </li>
-    <li> 5 points- per person (up to 2 awarded at each event) given by one event coordinator to volunteers who were actively helping at the event </li>
-    <li> 20 points- if one person attends 75% of all SWE events </li>
-    <li> 10 points- per person (excluding officers) for getting SWE national membership </li>
-    <li> 2 points- per new friend each SWE member brings to an event </li>
-    <li> 5 points- per person/event (includes officers) for leadership role in planning/hosting event, newsletter, etc. </li>
-    <li> 3 points- House bonding not during a SWE event (Must send picture and have more than 25% of members in attendance and in the picture) </li>
-    <li> 10 points- House bonding not during a SWE event (Must send picture and have more than 50% of members in attendance and in the picture) </li>
-    <li> 1 point - for every 5 box tops collected for the Outreach box top program (drop-offs at GMs or give the box tops to your head of house who should then give them to either Denise, Amy T., or Nana). </li>
-  </ol>
-  </p>
-  <p>
-	Note: Additional points may also be awarded at the discretion of the Membership Director and President for really cool things. One such example could be having 
-	your entire house dress up as Harry Potter characters for Halloween, but now that we've used it as an example, you really have to dazzle us if you do this!
-  </p>-->
+<h3>How to Join</h3>
+<img src="/house/house_pics/house_overview.png" style="width:700px">
 
 </div>
 

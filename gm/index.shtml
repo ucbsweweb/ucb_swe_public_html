@@ -7,6 +7,44 @@
   See the most recent slides below.
 </p>
 
+<h3> Fall 2015 Schedule </h3>
+<table id="gmTable">
+  <tr>
+    <td class="gmDate">Wed, September 9</td>
+    <td class="gmInfo">
+      <p>6:30pm-8:30pm</p>
+      <p>290 Hearst Memorial Mining Building</p>
+      <p><a href="GM1Fall2015.pdf">Slides</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="gmDate">Thu, October 8</td>
+    <td class="gmInfo">
+      <p>6:30pm-8:30pm</p>
+      <p>290 Hearst Memorial Mining Building</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="gmDate">Tue, November 10</td>
+    <td class="gmInfo">
+      <p>6:30pm-8:30pm</p>
+      <p>290 Hearst Memorial Mining Building</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="gmDate">Mon, December 7</td>
+    <td class="gmInfo">
+      <p>6:30pm-8:30pm</p>
+      <p>Wozniak Lounge</p>
+    </td>
+  </tr>
+
+
+</table>
+
 <h3> Spring 2015 Schedule </h3>
 <table id="gmTable">
   <tr>
@@ -22,7 +60,8 @@
     <td class="gmDate">Thu, February 19</td>
     <td class="gmInfo">
       <p>6:30pm-8:00pm</p>
-      <p>290 Hearst Memorial Mining Building</p> 
+      <p>290 Hearst Memorial Mining Building</p>
+      <p><a href="GM2Spring2015.pdf">Slides</a></p> 
     </td>
   </tr>
 
@@ -40,6 +79,7 @@
     <td class="gmInfo">
       <p>6:30pm-8:00pm</p>
       <p>290 Hearst Memorial Mining Building</p>
+      <p><a href="GM4Spring2015.pdf">Slides</a></p>
     </td>
   </tr>
 
@@ -47,43 +87,6 @@
 </table>
 
 
-<h3> Fall 2014 Schedule </h3>
-<table id="gmTable">
-  <tr>
-    <td class="gmDate">Tue, September 2</td>
-    <td class="gmInfo">
-      <p>6:30pm-8:00pm</p>
-      <p>290 Hearst Memorial Mining Building</p>
-      <p><a href="GM1SlidesF14.pdf">Slides</a></p> 
-    </td>
-  </tr>
-
-  <tr>
-    <td class="gmDate">Wed, October 8</td>
-    <td class="gmInfo">
-      <p>6:30pm-8:00pm</p>
-      <p>290 Hearst Memorial Mining Building</p> 
-    </td>
-  </tr>
-
-  <tr>
-    <td class="gmDate">Thu, November 6</td>
-    <td class="gmInfo">
-      <p>6:00pm-8:30pm</p>
-      <p>240 Bechtel</p>
-    </td>
-  </tr>
-
-  <tr>
-    <td class="gmDate">Wed, December 3</td>
-    <td class="gmInfo">
-      <p>6:30pm-8:00pm</p>
-      <p>290 Hearst Memorial Mining Building</p>
-    </td>
-  </tr>
-
-  
-</table>
 <!--<iframe-->
 <!--   class="pdfViewer"-->
 <!--   id="landscape-viewer"-->

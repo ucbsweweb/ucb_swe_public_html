@@ -26,7 +26,7 @@ font-family:"Calibri", sans-serif;
 h1 {
 font-weight:bold;
 font-size:32px;
-color:#093;
+color:#6b6290;
 margin:20px 0 20px 0;
 text-align:center;
 font-family:"Lato Light", "Century Gothic", sans-serif;
@@ -35,7 +35,7 @@ font-family:"Lato Light", "Century Gothic", sans-serif;
 h2 {
 font-weight:bold;
 font-size:24px;
-color:#093;
+color:#6b6290;
 margin:20px 0 8px 0;
 text-align:left;
 font-family:"Lato Light", "Century Gothic", sans-serif;
@@ -48,7 +48,7 @@ color:#000;
 margin:12px 0 8px 0;
 text-align:left;
 width:1000px;
-border-bottom:medium solid #093;
+border-bottom:medium solid #6b6290;
 font-family:"Lato Light", "Century Gothic", sans-serif;
 }
 
@@ -113,7 +113,7 @@ height:773px;
 /*** Header Start ***/
 #header-wrapper {
 height:120px;
-background:#093;
+background:#f0efed;
 text-align:center;
 font-family:"Lato Light", "Century Gothic", sans-serif;
 }
@@ -136,24 +136,25 @@ margin:10px 25px 0px 0px;
 
 #header a.header_text1 {
 margin-top:20px;
-color:#FFF;
+color:#5b5478;
 font-size:24px;
 float:left;
+font-style:italic;
 }
 
 #header a.header_text2 {
-color:#FFF;
+color:#000;
 font-size:60px;
 float:left;
 }
 
 #header a:hover {
-color:#FFF;
+color:#000;
 }
 
 #navbar-wrapper {
 position:relative;
-top:-400px;
+top:-600px;
 background-color:rgba(0,0,0,.75);
 font-family:"Lato Light", "Century Gothic", sans-serif;
 }
@@ -187,7 +188,7 @@ background-color:rgba(0,0,0,0.75);
 }
 
 #navbar li:hover a,#navbar li.hover a {
-color:#093;
+color:#6b6290;
 }
 
 #navbar li:hover ul,#navbar li.hover ul {
@@ -206,11 +207,11 @@ color:#fff;
 }
 
 #navbar li:hover li:hover a,#navbar li.hover li.hover a {
-color:#063;
+color:#6b6290;
 }
 
 #header-cover{
-background-image:url("/header_footer/images/swecoverupdated1.png");
+background-image:url("/header_footer/images/group.png");
 background-repeat:no-repeat;
 background-position:40% 50%;
 -webkit-background-size:cover;
@@ -219,13 +220,14 @@ background-position:40% 50%;
 display:block;
 position:relative;
 width:100%;
-height:400px;
+height:600px;
 overflow:hidden;
 margin:0;
 }
 
 #mediaBar {
 position:relative;
+display:block;
 top:-62px;
 margin:0;
 }
@@ -283,7 +285,7 @@ font-size:12px;
 #footer-wrapper {
 width:100%;
 height:70px;
-background:#093;
+background:#5b5478;
 clear:both;
 font-family:"Lato Light", "Century Gothic", sans-serif;
 }
@@ -381,7 +383,7 @@ height:530px;
 
 /*** Table Start ***/
 #gmTable,#upcomingEvents,#membershipLevels {
-border-color:#007c3d;
+border-color:#6b6290;
 border-style:solid;
 border-width:thick;
 margin:0 auto;
@@ -396,7 +398,7 @@ vertical-align:text-top;
 text-align:left;
 font-weight:700;
 font-size:18px;
-border-color:#007c3d;
+border-color:#6b6290;
 border-style:double;
 border-width:medium;
 }

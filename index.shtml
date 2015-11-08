@@ -4,7 +4,7 @@
   <h2>Upcoming Events</h2>
   <iframe id="agenda"
   src="http://www.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=phrivnjgo1i6s4iisp61ige25g%40group.calendar.google.com&amp;color=%23528800&amp;ctz=America%2FLos_Angeles"
-  style=" border-width:0 " width="300" height="700" frameborder="0" scrolling="no">
+  style=" border-width:0 " width="300" height="500" frameborder="0" scrolling="no">
   </iframe>
 </div>
 
@@ -17,26 +17,13 @@
   The SWE 2015-2016 <a href="http://www.tinyurl.com/votesweexecs">Executive Board Ballot</a> is open.
 </p><p>
   The information on the candidates and elections process can be found <a href="/elections/"> here</a> right now. </p>
-</div>-->
-
-<div id="officers">
-  <h2>Apply to be a Fall 2015 Officer</h2>
-<p>
-If you would like to get more involved with SWE beyond a general or committee member, <a href="https://tinyurl.com/sweofficerapp2015">apply</a> to be an officer next year! Applications are open until Monday, March 30th at 5pm.
-<br/><br/>
-Officer position descriptions and responsibilities can be found <a href="https://tinyurl.com/sweofficerdescriptions">here</a>. Officer positions will now be a semesterly commitment.<br/>
-<br/>
-No prior officer experience necessary. There will be no formal elections and speeches as with the executive positions. Callback interviews may occur on a need basis. <br/>
- </p>
-</div>
 
 
 <!-- EMAIL SIGNUP -->
 <div id="email_signup">
   <h2 class="email-signup">Sign-up for our mailing list:</h3>
-<p> Interested in joining the SWE mailing list? Email <script type="text/javascript">mail2('ucb.swe.pr', 'gmail', '0', '', 'ucb.swe.pr[at]gmail[dot]com')</script>
-with "[Mailing List Sign Up]" in the subject. Thank you! </p>
-  <!--<form method="post" action="/contacts.shtml">
+	<p>We are transitioning to Berkeley's own email service - Berkeley Mailing List. If you would like to keep updated with SWE Berkeley's events, click <a href="https://calmail.berkeley.edu/manage/list/listinfo/swe.berkeley@lists.berkeley.edu">here</a> to subscribe to our new mailing list: swe.berkeley@lists.berkeley.edu. Make sure to enter the email address that you would like to receive your SWEmail. You may also enter your name and a privacy password if you want.</p>  
+<!--<form method="post" action="/contacts.shtml">
   <input class="emailInput" type="text" size="14" maxlength="30" name="email"/>
   <input type="submit" value="Submit" />
   <script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6Lc8MMISAAAAAOg2ro7IqXtg-vRZbr0VofefDrZH">
@@ -45,22 +32,22 @@ with "[Mailing List Sign Up]" in the subject. Thank you! </p>
   </form>-->
 </div><!-- EMAIL SIGNUP (END)-->
 
+
 <div id="committees">
     <h2>Get involved and apply for a Committee</h2>
   <p>
-<a href="http://www.tinyurl.com/swe-committee-2014">Apply</a> to be part of a committee!
-</p><p>
-Committee descriptions and responsibilities can be found <a href="http://swe.berkeley.edu/committees/">here</a>.
- </p>
+<a href="https://docs.google.com/forms/d/1PENFGzPjJNhiCxeY_51N-BwMt7NwfKvFH-jvcs3P4U4/viewform" target="_blank">Apply</a> to be part of a committee!
+</p>
+<p>
+Committee descriptions can be found <a href="http://swe.berkeley.edu/committees/">here</a>. 
 </div>
 
-<div id="house">
-<h2>Get involved and apply for a House</h2>
-  <p>
-<a href="http://tinyurl.com/SWE-House-Signup-2014">Apply</a> to be part of a house!
-</p><p>
-Committee descriptions and responsibilities can be found <a href="http://swe.berkeley.edu/house/">here</a>.
- </p>
+<div id="committees">
+    <h2>Join the House Program</h2>
+<p>House sign-ups are due 9/18 and the form can be found <a href="http://tinuurlcom/swe-hp-2015" target="_blank">here</a>.</p>
+<p>Click <a href="http://swe.berkeley.edu/house/">here</a> for more information about our house program.
+</p>
+
 </div>
 
 <div id="corporate-thanks">
@@ -82,14 +69,19 @@ Committee descriptions and responsibilities can be found <a href="http://swe.ber
   </p>
 </div>
 
+<div id="alumni">
+  <h2>Sign up for our Alumni Newsletter</h2>
+<p>Interested in joining the SWE Alumni Newsletter Listserv? Subscribe by adding your email, name, and (optional) password via <a href="https://calmail.berkeley.edu/manage/list/listinfo/swe.alumni@lists.berkeley.edu" target="_blank"> this link</a>.
+</p></div>
 <!-- BUY T-SHIRTS -->
 <div id="tshirts">
   <h2>SWE T-Shirts</h2>
   <p>
-Sign up <a href="https://docs.google.com/forms/d/1Gw_aUIM-XH3MpPZcvgbhNSfrWAXawDIIImelAegXPxM/viewform"> here</a> to order a SWE T-shirt, or come to our general meetings to purchase one!
-
+	Come to our general meetings to purchase a SWE t-shirt! </p>
+<p>$15 for anyone, or $10 for national members
   </p><p>
-  <img src="/index/SWETShirt.png"/>
+  <img src="/index/2015_shirt_front.png" style="height:180px"/>
+  <img src="/index/2015_shirt_back.png" style="height:180px"/>
   </p>
 </div>
 

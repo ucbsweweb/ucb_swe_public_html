@@ -2,6 +2,9 @@
 include("../header_footer/header.html");
 echo("<h2 class=\"title\">Newsletter</h2>");
 echo("<p>Click on each link to download a PDF of the newsletter.</p>");
+echo("<p>If you'd like to sign up for our alumni newletter, click ");
+echo '<a href="https://docs.google.com/forms/d/1LxZbgUna2Dp-_Rj_A0gWM3_PcfBvAZkGq5rmXFAXQ4w/viewform?formkey=dEtfV2NJZnpoMUxJeGNYOEZGZjBPRVE6MQ#gid=0"><u>here</u></a>';
+echo(".");
 
 $pdfs = Array();
 $stuff = scandir(".");
