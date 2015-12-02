@@ -3,29 +3,26 @@
 <div class="about">
   <h1>About Us</h1>
   <p>
-  Society of Women Engineers is a national nonprofit organization. 
-  Its objective is to encourage and empower women to reach their full potential as engineers. 
-  SWE strives to highlight the achievements and contributions of women as leaders and engineers. 
-  Supporting both students and professionals, 
-  SWE consists of over 17,000 members in 90 sections and 300 student sections.
-  </p>
+	Society of Women Engineers is a national nonprofit organization. Its objective is to encourage and empower women to reach their full potential as engineers. SWE strives to highlight the achievements and contributions of women as leaders and engineers. Supporting both students and professionals, SWE consists of over 17,000 members in 90 sections and 300 student sections.
+  
+</p>
   <p>
-  The UC Berkeley student chapter has been established for approximately 30 years and 
-  supports students through professional development, social events and outreach to 
-  young women interested in engineering and science.
+	The UC Berkeley student chapter has been established since 1975 and supports students through professional development, social events and outreach to young women interested in the STEM field.
   </p>
 
   <p>
-    In 2012, we were awarded the Outstanding Collegiate Section Silver Award.
+	In FY10, we were awarded Strategic Communications Print Newsletter 1st Place Award and Outstanding Collegiate Section Silver Award. In FY13, we were awarded the Outstanding Collegiate Section Silver Award. In FY14, we were awarded the Professional Development for Large Collegiate Sections. 
 	<br/>
-    <img src="outstanding_silver.jpg">
+<p>
+	Our UC Berkeley representatives in Nashville at WE15.<br>
+    <img src="NC15_group.png" style="height:300px">
   </p>
+</p>
 
   <p>
-    At the SWE National Conference (2011) we were awarded "Strategic Communications Print Newsletter 1st  Place Award".
-    One of our Public Relations officers, Amy Zhang (left), received the award from National SWE President, Melissa Tata (right).
+	Our 2015-2016 Section President, Jessica Sun (left) with National SWE President Colleen M. Layman (right) at WE15.
 	<br/>
-    <img src="amy.jpg" style="width: 300px">
+    <img src="professional_award_15.png" style="width: 400px">
   </p>
 
   <h3>Mission (adopted in 1986)</h3>
@@ -53,7 +50,7 @@
   <h3 id="officerStructure">Officer Structure</h3>
   <p>
     Detailed descriptions of officer positions are available 
-    <a href="SWEPositionDescriptions.pdf" target="_blank">here</a>.
+    <a href="https://docs.google.com/document/d/1Dk5R8fSpYqHUwya2qTfMc9dLLkjuaW9UM34Wc_tCMrw/edit#bookmark=kix.svuja5vrz68b" target="_blank">here</a>.
   </p>
   <h2>Executives:</h2>
   <ul>
@@ -77,34 +74,5 @@
     </li>
   </ul>
   
-  <h2>National and Regional Officers:</h2>
-  <ul>
-    <li>Leadership Coach: provides proactive leadership coaching and education to the section</li>
-    <li>Senator:  Region Council as the voting collegiate member for the region</li>
-  </ul>
-  
-  <h2>Officers:</h2>
-  <ul>
-    <li>Associate Treasurer: Assists in managing funds</li>
-    <li>Corporate: Organizes infosessions geared towards professional development</li>
-    <li>Public Relations: Publicity including flyering, tabling, weekly emails, and GM newsletters</li>
-    <li>Social Coordinator: Sets up social events and oversees chairs for events</li>
-    <li>Intersocietal Coordinator: Organizes events with other organizations</li>
-    <li>Elementary Outreach: Oversees outreach events aimed at elementary school students</li>
-    <li>Middle and High School Outreach: Oversees outreach events aimed at middle and high school students</li>
-    <li>EWI Coordinators: Organize our annual Evening With Industry</li>
-    <li>Membership Director: Coordinates recruitment events and encourages national membership</li>
-    <li>Webmaster: Updates and maintains website</li>
-	<li>Web Developer: Develops the website and helps with technical issues</li>
-	<li>Historian: Responsible for keeping historical records of our public relations publications</li>
-	<li>Senior Adviser: Gives advice on running the club</li>
-  </ul>
-
-  <h2>Chairs:</h2>
-  <ul>
-    <li>Outreach - E4K: Responsible for organizing Engineering 4 Kids event in the spring</li>
-	<li>Outreach - JSSC: Responsible for organizing Junior Sprint Solar Challenger in the fall</li>
-	<li>Corporate - Shadow an Engineer: Responsible for organizing Shadow an Engineer program in the fall and spring</li>
-  </ul>
 </div>
 <!--#include virtual="/header_footer/footer.html" -->
