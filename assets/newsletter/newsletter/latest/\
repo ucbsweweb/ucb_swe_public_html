@@ -1,0 +1,11 @@
+<!--#include virtual="/header_footer/header.html" -->
+<br  />
+<p>The complete newsletter for GM1, Spring 2016 can be found below or by clicking <a href="GM2Sp16.pdf">here</a>.</p>
+<iframe
+class="pdfViewer"
+id="portrait-viewer"
+src="http://docs.google.com/gview?url=http://swe.berkeley.edu/newsletter/latest/GM2Sp16.pdf&embedded=true"
+frameborder="0">
+</iframe>
+
+<!--#include virtual="/header_footer/footer.html" -->

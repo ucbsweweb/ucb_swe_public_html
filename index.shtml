@@ -1,86 +1,64 @@
-<!--#include virtual="/header_footer/header.html" -->  
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
 
-<div id="announcements">
-  <h2>Upcoming Events</h2>
-  <iframe id="agenda"
-  src="http://www.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=phrivnjgo1i6s4iisp61ige25g%40group.calendar.google.com&amp;color=%23528800&amp;ctz=America%2FLos_Angeles"
-  style=" border-width:0 " width="300" height="500" frameborder="0" scrolling="no">
-  </iframe>
-</div>
+    <!-- Meta-Information -->
+    <title>UC Berkeley SWE</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="ACME Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div id="constant_home"><!-- This stuff shouldn't change over time... -->  
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-<!--<div id="execs">
+    <!-- Our Website CSS Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-  <h2>Vote for 2015-2016 Executive Board!</h2>
-  <p>
-  The SWE 2015-2016 <a href="http://www.tinyurl.com/votesweexecs">Executive Board Ballot</a> is open.
-</p><p>
-  The information on the candidates and elections process can be found <a href="/elections/"> here</a> right now. </p>
+</head>
+<body ng-app="sweweb">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Our Website Content Goes Here -->
+
+<!-- Facebook Utility  -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=691164481009376";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
-<!-- EMAIL SIGNUP -->
-<div id="email_signup">
-  <h2 class="email-signup">Sign-up for our mailing list:</h3>
-	<p>We are transitioning to Berkeley's own email service - Berkeley Mailing List. If you would like to keep updated with SWE Berkeley's events, click <a href="https://calmail.berkeley.edu/manage/list/listinfo/swe.berkeley@lists.berkeley.edu">here</a> to subscribe to our new mailing list: swe.berkeley@lists.berkeley.edu. Make sure to enter the email address that you would like to receive your SWEmail. You may also enter your name and a privacy password if you want.</p>  
-<!--<form method="post" action="/contacts.shtml">
-  <input class="emailInput" type="text" size="14" maxlength="30" name="email"/>
-  <input type="submit" value="Submit" />
-  <script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6Lc8MMISAAAAAOg2ro7IqXtg-vRZbr0VofefDrZH">
-  <iframe src="http://api.recaptcha.net/noscript?k=6Lc8MMISAAAAAOg2ro7IqXtg-vRZbr0VofefDrZH"></iframe><br />
-  </script>
-  </form>-->
-</div><!-- EMAIL SIGNUP (END)-->
+<div ng-include='"templates/header.html"'></div>
+<div ng-view></div>
+<div ng-include='"templates/footer.html"'></div>
+
+<!-- Vendor: Javascripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Vendor: Angular, followed by our custom Javascripts -->
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-route.min.js"></script>
 
 
-<div id="committees">
-    <h2>Get involved and apply for a Committee</h2>
-  <p>
-<a href="https://docs.google.com/forms/d/1PENFGzPjJNhiCxeY_51N-BwMt7NwfKvFH-jvcs3P4U4/viewform" target="_blank">Apply</a> to be part of a committee!
-</p>
-<p>
-Committee descriptions can be found <a href="http://swe.berkeley.edu/committees/">here</a>. 
-</div>
+<!-- Our Website Javascripts -->
+<script src="assets/js/main.js"></script>
 
-<div id="committees">
-    <h2>Join the House Program</h2>
-<p>House sign-ups are due 9/18 and the form can be found <a href="http://tinuurlcom/swe-hp-2015" target="_blank">here</a>.</p>
-<p>Click <a href="http://swe.berkeley.edu/house/">here</a> for more information about our house program.
-</p>
-
-</div>
-
-<div id="corporate-thanks">
-  <h2>Thank You for Your Support!</h2>
-  <p>
-  We thank all of our <a href="/sponsors/">corporate sponsors</a> for their support.
-  If you are interested in becoming a sponsor, check out our <a href="/corporatepackage/">Corporate Packages page</a>.
-  </p>
-</div>
-
-<div id="national_plug">
-  <h2>Become a National Member</h2>
-  <p>
-  If you are interested in becoming a national member of <a href="http://www.swe.org" target="_blank">Society of Women Engineers</a>
-  you can learn more
-  <a href="/nationalmember/">here</a>.
-  National membership offers the support of a strong network in academia, government, and industry.
-  It also makes you eligible for the more than $500,000 in scholarships awarded each year.
-  </p>
-</div>
-
-<!-- BUY T-SHIRTS -->
-<div id="tshirts">
-  <h2>SWE T-Shirts</h2>
-  <p>
-	Come to our general meetings to purchase a SWE t-shirt! </p>
-<p>$15 for anyone, or $10 for national members
-  </p><p>
-  <img src="/index/2015_shirt_front.png" style="height:180px"/>
-  <img src="/index/2015_shirt_back.png" style="height:180px"/>
-  </p>
-</div>
-
-</div><!-- end of persistent index.html stuff -->
-
-<!--#include virtual="/header_footer/footer.html" -->
+</body>
+</html>

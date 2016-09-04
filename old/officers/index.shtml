@@ -1,0 +1,393 @@
+<!--#include virtual="/header_footer/header.html" -->
+<link rel="stylesheet" href="/contactstyle.css" />
+<h1>Spring 2016 Contact Information</h1>
+<h3>General contact</h3>
+<p>
+   Please email
+   <script type="text/javascript">
+      mail2('swe.berkeley', 'gmail', '0', '', 'swe.berkeley@gmail.com')
+   </script> if you have any questions that you wish to direct to all officers.
+</p>
+<h3>Committee Contacts</h3>
+<p>Please email the committees if you have questions that you wish to direct to a committee:</p>
+<p>Social:
+   <script type="text/javascript">
+      mail2('ucb.swe.berkeley', 'gmail', '0', '', 'ucb.swe.social@gmail.com')
+   </script>
+</p>
+<p>PR:
+   <script type="text/javascript">
+      mail2('ucb.swe.pr', 'gmail', '0', '', 'ucb.swe.pr@gmail.com')
+   </script>
+ </p>
+<p>Corporate:
+   <script type="text/javascript">
+      mail2('corporate.ucbswe', 'gmail', '0', '', 'corporate.ucbswe@gmail.com')
+   </script>
+ </p>
+<p>EWI:
+   <script type="text/javascript">
+      mail2('swe.ewi', 'gmail', '0', '', 'swe.ewi@gmail.com')
+   </script>
+</p>
+<p>Outreach:
+   <script type="text/javascript">
+      mail2('swe.berkeley.outreach', 'gmail', '0', '', 'swe.berkeley.outreach@gmail.com')
+   </script>
+</p>
+   <h3>Executives</h3>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <h4>President</h4>
+	<img src="/officers/officer_photos/elizabeth.png" style="width:200px">
+<p>         
+Elizabeth Chu:<br>
+         <script type="text/javascript">
+            mail2('eakchu', 'berkeley.edu', '-1', '', 'eakchu@berkeley.edu')
+         </script>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Vice President</h4>
+	<img src="/officers/sp16/joy.png" style="width:200px">
+      <p>
+	Joy Gu:<br>
+        <script type="text/javascript">
+	   mail2('jgu9', 'berkeley.edu', '-1', '', 'jgu9@berkeley.edu')
+	</script>
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>VP of Outreach</h4>
+	<img src="/officers/sp16/angela.png" style="width:200px">
+<p>
+       Angela Lin:<br>
+         <script type="text/javascript">
+            mail2('angelaslin', 'gmail.com', '-1', '', 'angelaslin@gmail.com')
+         </script>
+      </p>
+   </div></td>
+   </tr><tr>
+   <td><div class="contactprofile">
+      <h4>VP of Corporate Relations</h4>
+	<img src="/officers/sp16/waverly.png" style="width:200px">
+	<p>
+        Waverly Runion:<br>
+         <script type="text/javascript">
+            mail2('wxrunion', 'berkeley.edu', '-1', '', 'wxrunion@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Secretary</h4>
+	<img src="/officers/sp16/annie.png" style="width:200px">
+      <p>
+         Annie Pan:<br>
+         <script type="text/javascript">
+            mail2('anniepan', 'berkeley.edu', '-1', '', 'anniepan@berkely.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Treasurer</h4>
+	<img src="/officers/sp16/tanisha.png" style="width:200px">
+      <p>
+         Tanisha Randhawa:<br>
+         <script type="text/javascript">
+            mail2('tanisharandhawa', 'berkeley.edu', '-1', '', 'tanisharandhawa@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr>
+</table>
+   <h3>Officers</h3>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <h4>Public Relations</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+      <p>
+         Alicia Audong:<br>
+         <script type="text/javascript">
+            mail2('michelleyang', 'gmail.com', '-1', '', 'michelleyang@gmail.com')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Public Relations</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+      <p>
+         Vy Luu:<br>
+         <script type="text/javascript">
+            mail2('vyluu9', 'berkeley.edu', '-1', '', 'vyluu9@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <h4>Webmaster</h4>
+	<img src="/officers/sp16/sophia.png" style="width:200px">
+<p>
+         Sophia Liu:<br>
+         <script type="text/javascript">
+            mail2('bliu67', 'berkeley.edu', '-1', '', 'bliu67@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>Social Coordinator</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+<p>
+         Hannah He:<br>
+         <script type="text/javascript">
+            mail2('hahe', 'berkeley.edu', '-1', '', 'hahe@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Intersocietal Coordinator</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+      <p>
+        Mindy Huang:<br>
+	<script type="text/javascript">
+	   mail2('mindyahuang', 'berkeley.edu', '-1', '', 'mindyahuang@berkeley.edu')
+	</script>
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <h4>Membership Director</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+      <p>
+        Lucie Kresl:<br>
+         <script type="text/javascript">
+            mail2('19lkresl', 'berkeley.edu', '-1', '', '19lkresl@berkeley.edu')
+         </script>
+      </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>Elementary Outreach</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+      <p>
+        Sarah Spivack:<br>
+         <script type="text/javascript">
+            mail2('sespivack', 'berkeley.edu', '-1', '', 'sespivack@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Middle and High School Outreach</h4>
+	<img src="/officers/sp16/kavya.png" style="width:200px">
+      <p>
+         Kavya Madhavan:<br>
+         <script type="text/javascript">
+            mail2('kavya.madhaven', 'berkeley.edu', '-1', '', 'kavya.madhavan@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+      <h4>Historian</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+      <p>
+         Rachel Huang:<br>
+         <script type="text/javascript">
+            // mail2('anniepan', 'berkeley.edu', '-1', '', 'anniepan@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>Mentorship Program Liason</h4>
+	<img src="/officers/sp16/tamika.png" style="width:200px">
+      <p>
+         Tamika Bassman<br>
+         <script type="text/javascript">
+            mail2('tbassman', 'berkeley.edu', '-1', '', 'tbassman@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+
+<td><div class="contactprofile">
+      <h4>Mini University</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+      <p>
+         Lucy Lei<br>
+         <script type="text/javascript">
+            mail2('lei.lucy404', 'berkeley.edu', '-1', '', 'lei.lucy404@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>  
+
+<td><div class="contactprofile">
+      <h4>Engineering Day</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+      <p>
+        Priscilla Khuu<br>
+         <script type="text/javascript">
+          mail2('pkhuu', 'berkeley.edu', '-1', '', 'pkhuu@berkeley.edu') 
+	</script>
+         <br />
+      </p>
+   </div></td>
+ 
+</tr><tr>
+<td><div class="contactprofile">
+      <h4>External Relations </h4>
+      	<img src="/officers/sp16/cynthia.png" style="width:200px">
+	<p>
+         Cynthia Tien:<br>
+         <script type="text/javascript">
+            mail2('cynttien', 'berkeley.edu', '-1', '', 'cynttien@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+
+   <td><div class="contactprofile">
+      <h4>Shadow an Engineer</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+	<p>
+        Cindy Wong:<br>
+         <script type="text/javascript">
+            mail2('cwong101', 'berkeley.edu', '-1', '', 'cwong101@berkeley.edu')
+         </script>
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Shadow an Engineer</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+	<p>
+         Shanaaz Deo:<br>
+         <script type="text/javascript">
+            mail2('akdeo123', 'berkeley.edu', '-1', '', 'akdeo123@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+</tr><tr>   
+   <td><div class="contactprofile">
+      <h4>Evening with Industry</h4>
+      	<img src="/officers/sp16/varsha.png" style="width:200px">
+	<p>
+         Varsha Venkat:<br>
+         <script type="text/javascript">
+           mail2('varshavenkat', 'berkeley.edu', '-1', '', 'varshavenket@berkeley.edu') 
+	</script>
+         <br />
+      </p>
+   </div></td>
+
+   <td><div class="contactprofile">
+      <h4>Evening with Industry</h4>
+      	<img src="/officers/sp16/meghna.png" style="width:200px">
+	<p>
+	Meghna Dasgupta:<br>
+	<script type="text/javascript">
+	   mail2('meghna.dasgupta', 'berkeley.edu', '-1', '', 'meghna.dasgupta@berkeley.edu')
+	</script>
+	<br  />
+      </p>
+   </div></td>
+
+<td><div class="contactprofile">
+      <h4>Professional Development Month</h4>
+	<img src="/officers/officer_photos/profile_placeholder.jpg" style="width:200px">
+	<p>
+        Aly Scheske:<br>
+        <script type="text/javascript">
+           mail2('scheskea', 'berkeley.edu', '-1', '', 'scheskea@berkeley.edu')
+        </script>
+        <br  />
+      </p>
+   </div></td>
+</tr><tr>
+<td><div class="contactprofile">
+      <h4>Alumni Chair</h4>
+	<img src="/officers/sp16/isabel.png" style="width:200px">
+	<p>
+        Isabel Yang:<br>
+        <script type="text/javascript">
+           mail2('isabelyang', 'berkeley.edu', '-1', '', 'isabelyang@berkeley.edu')
+        </script>
+        <br  />
+      </p>
+   </div></td>
+
+
+<td><div class="contactprofile">
+      <h4>Professional Development Month</h4>
+      	<img src="/officers/sp16/francesca.png" style="width:200px">
+	<p>
+        Francesca Ledesma:<br>
+        <script type="text/javascript">
+           mail2('fledesma', 'berkeley.edu', '-1', '', 'fledesma@berkeley.edu')
+        </script>
+        <br  />
+      </p>
+   </div></td>
+</tr>
+</table>
+
+   <h3>Advisors</h3>
+<table>
+<tr>
+   <td><div class="contactprofile">
+      <h4>Senior Advisor</h4>
+	<img src="/officers/sp16/amy.png" style="width:200px">
+      <p>
+         Amy Fong:<br>
+         <script type="text/javascript">
+            mail2('afong', 'berkeley.edu', '-1', '', 'afong@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+   <td><div class="contactprofile">
+      <h4>Faculty Advisor</h4>
+	<img src="/officers/amy_herr.png" style="width:200px">
+      <p>
+         Amy Herr:<br>
+         <script type="text/javascript">
+            mail2('aeh', 'berkeley.edu', '-1', '', 'aeh@berkeley.edu')
+         </script>
+         <br />
+      </p>
+   </div></td>
+<td><div class="contactprofile">
+         <h4>Section Counselor</h4>
+	<img src = "/officers/liz_buzzard.png" style="width:200px">
+         <p>
+           Liz Buzzard:<br>
+            <script type="text/javascript">
+               mail2('Liz.Buzzard1', 'gmail.com', '-1', '', 'Liz.Buzzard1@gmail.com')
+            </script>
+            <br />
+         </p>
+   </div></td>
+</tr><tr>
+   <td><div class="contactprofile">
+      <h4>CLCC Coach</h4>
+        <img src="/officers/sp16/darcie.png" style="width:200px">
+      <p>
+	<br>Darcie Maffioli:<br>
+	<script type="text/javascript">
+	   mail2('darcie.maffioli', 'gmail.com', '-1', '', 'darcie.maffioli@gmail.com')
+	   </script>
+	   <br />
+	</p>
+   </div></td>
+   </tr>
+</table>
+<!--#include virtua<img src="/officers/sp16/joy.png" style="width:200px">l="/header_footer/footer.html" -->
