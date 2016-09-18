@@ -35,7 +35,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/postjob", {redirectTo: ("https://docs.google.com/forms/d/e/1FAIpQLSeuHZNz-8IC_lN8T4N710FZQeU25OfmQfntWsyJFMpZXJbHCQ/viewform?embedded=true")})
     // Blog
     .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
-
+    .when("/officers", {templateUrl: "partials/officers.html", controller: "OfficersCtrl"})
     .when("/sponsors", {templateUrl: "partials/sponsors.html", controller: "SponsorCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
     // else 404
