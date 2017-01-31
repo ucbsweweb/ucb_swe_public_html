@@ -443,7 +443,7 @@ border-width:medium;
 padding:10px;
 }
 
-#ohp-image {
+#ohp-image img{
     height: 800px;
     text-align: center;
 }
