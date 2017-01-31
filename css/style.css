@@ -291,7 +291,7 @@ color:#000;
 }
 
 .circle {
-	border-radius: 50%; 
+	border-radius: 50%;
 	float:left;
 	color:#000;
 	width:100px;
@@ -441,6 +441,11 @@ border-width:medium;
 
 #gmTable td,#membershipLevels td {
 padding:10px;
+}
+
+#ohp-image {
+    height: 800px;
+    text-align: center;
 }
 /*** Table End ***/
 
