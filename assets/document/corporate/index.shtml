@@ -4,7 +4,7 @@
 <p>
 Thank you for your interest in sponsoring  UC Berkeley SWE!
 Support from our corporate partners enables us to achieve our goal of empowering women to reach their full potential as engineers.
-Please review  our Corporate Package below (<a href="SWE_Corporate_Sp16.pdf">PDF</a>)
+Please review  our Corporate Package below (<a href="SWE_Corporate_Fa17.pdf">PDF</a>)
 for a list of opportunities to get involved and email our VP of Corporate Relations
 if you have any questions or would like to participate in any of the events.
 A list of our current sponsors can be found <a href="/sponsors/">here</a>.
@@ -12,7 +12,7 @@ A list of our current sponsors can be found <a href="/sponsors/">here</a>.
 <iframe
 class="pdfViewer"
 id="portrait-viewer" 
-src="http://docs.google.com/gview?url=http://swe.berkeley.edu/corporatepackage/corporate2016_2017.pdf&embedded=true"
+src="http://docs.google.com/gview?url=http://swe.berkeley.edu/corporatepackage/SWE_Corporate_Fa17.pdf&embedded=true"
 frameborder="0">
 </iframe>
 <!--#include virtual="/header_footer/footer.html" -->
