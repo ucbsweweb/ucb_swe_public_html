@@ -419,13 +419,13 @@ footer {
 
 }
 
-.btn-member {
+#btn-member {
   background-color: RGBA(255,255,255,0.86);
   color: RGBA(70, 63, 102, 1.00);
   border-radius: 15px;
 }
 
-.btn-more {
+#btn-more {
   border-color: RGBA(255,255,255,0.86);
   background-color: RGBA(70, 63, 102, 0.00);
   color: RGBA(255,255,255,0.86);
