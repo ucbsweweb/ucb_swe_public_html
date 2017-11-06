@@ -62,11 +62,11 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 
   // Activates the Carousel
   $('.carousel').carousel({
-    interval: 10000
+    interval: 7000
   });
 
   $('#sweCarousel').carousel({
-    interval: 10000
+    interval: 7000
   });
 
   // Activates Tooltips for Social Links
@@ -80,7 +80,7 @@ app.controller('MembershipCtrl', function (/* $scope, $location, $http */) {
 
   // Activates the Carousel
   $('.carousel').carousel({
-    interval: 10000
+    interval: 7000
   });
 
   // Activates Tooltips for Social Links
