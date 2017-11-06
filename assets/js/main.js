@@ -67,7 +67,15 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 
   $('#sweCarousel').carousel({
     interval: 5000
-  });  
+  });
+
+  $('.carousel-control.left').click(function() {
+    $('#sweCarousel').carousel('prev');
+  });
+
+  $('.carousel-control.right').click(function() {
+    $('#sweCarousel').carousel('next');
+  });    
 
   // Activates Tooltips for Social Links
   $('.tooltip-social').tooltip({
