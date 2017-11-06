@@ -62,20 +62,12 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 
   // Activates the Carousel
   $('.carousel').carousel({
-    interval: 5000
+    interval: 10000
   });
 
   $('#sweCarousel').carousel({
-    interval: 5000
+    interval: 10000
   });
-
-  $('.carousel-control.left').click(function() {
-    $('#sweCarousel').carousel('prev');
-  });
-
-  $('.carousel-control.right').click(function() {
-    $('#sweCarousel').carousel('next');
-  });    
 
   // Activates Tooltips for Social Links
   $('.tooltip-social').tooltip({
@@ -88,7 +80,7 @@ app.controller('MembershipCtrl', function (/* $scope, $location, $http */) {
 
   // Activates the Carousel
   $('.carousel').carousel({
-    interval: 5000
+    interval: 10000
   });
 
   // Activates Tooltips for Social Links
