@@ -17,7 +17,9 @@
             <img src="assets/images/banner.jpg" alt="banner" style="width:100%;">
             <div class="carousel-caption">
               <h1>ASPIRE. ADVANCE. ACHIEVE.</h1>
+              <br>
               <p>Society of Women Engineers is a national nonprofit organization. SWE strives to highlight the achievements and contributions of women as leaders and engineers.</p>
+              <br>
               <p>Join UC Berkeley Society of Women Engineers.</p>
               <button type="button" class="btn" id="btn-member" onclick="window.location.href='/#/national'">Become a member</button>
               <button type="button" class="btn" id="btn-more" onclick="window.open('http://facebook.us15.list-manage.com/subscribe?u=e8d560b8b7495cb15d34fbe80&id=3948f4a434')">Join our mailing list</button>
@@ -37,11 +39,11 @@
             </div>
           </div>      
         </div>
-        <a class="left carousel-control" href="#sweCarousel" data-slide="prev">
+        <a class="left carousel-control" href="#sweCarousel" data-slide="prev" onclick="$('#sweCarousel').carousel('prev')">
           <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#sweCarousel" data-slide="next">
+        <a class="right carousel-control" href="#sweCarousel" data-slide="next" onclick="$('#sweCarousel').carousel('next')">
           <span class="glyphicon glyphicon-chevron-right"></span>
           <span class="sr-only">Next</span>
         </a>
