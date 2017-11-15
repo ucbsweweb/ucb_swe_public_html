@@ -27,7 +27,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/outreach", {templateUrl: "partials/outreach.html", controller: "ResourceCtrl"})
     .when("/miniu", {templateUrl: "partials/miniu.html", controller: "ResourceCtrl"})    
     .when("/science", {templateUrl: "partials/science.html", controller: "ResourceCtrl"})
-    // .when("/ohp", {templateUrl: "partials/ohp.html", controller: "ResourceCtrl"})
+    .when("/ohp", {templateUrl: "partials/ohp.html", controller: "ResourceCtrl"})
     // .when("/ohp-specifics", {templateUrl: "partials/ohp-specifics.html", controller: "PageCtrl"})
     // .when("/ohp-register", {templateUrl: "partials/ohp-register.html", controller: "PageCtrl"})
     // .when("/ohp-host", {templateUrl: "partials/ohp-host.html", controller: "PageCtrl"})
