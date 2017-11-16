@@ -40,16 +40,16 @@ h2 {
 }
 
 .table {
-    width: 50%;
-    margin: 0px auto;
+    width: 90% !important;
+    margin: 0px auto !important;
 }
 
 .table td {
-   text-align: center;   
+   text-align: center !important;   
 }
 
 .table th {
-   text-align: center;   
+   text-align: center !important;   
 }
 
 .dropdown {
