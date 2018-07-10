@@ -11,7 +11,7 @@ body {
 background:#FFF;
 background-image:url(/header_footer/images/ps_neutral.png);
 background-repeat:repeat;
-font-size:14px;
+font-size:13px;
 }
 
 p {
@@ -29,7 +29,7 @@ font-size:32px;
 color:#6b6290;
 margin:20px 0 20px 0;
 text-align:center;
-font-family:"Lato Light", "Century Gothic", sans-serif;
+font-family:"Lato Light", sans-serif;
 }
 
 h2 {
@@ -38,7 +38,7 @@ font-size:24px;
 color:#6b6290;
 margin:20px 0 8px 0;
 text-align:left;
-font-family:"Lato Light", "Century Gothic", sans-serif;
+font-family:"Lato Light", sans-serif;
 }
 
 h3 {
@@ -49,7 +49,7 @@ margin:12px 0 8px 0;
 text-align:left;
 width:1000px;
 border-bottom:medium solid #6b6290;
-font-family:"Lato Light", "Century Gothic", sans-serif;
+font-family:"Lato Light", sans-serif;
 }
 
 h4,h5 {
@@ -58,7 +58,7 @@ font-size:20px;
 color:#000;
 margin:12px 0 8px 0;
 text-align:left;
-font-family:"Lato Light", "Century Gothic", sans-serif;
+font-family:"Lato Light", sans-serif;
 }
 /*
 h1, h1, h3, h4, h5 {
@@ -112,15 +112,15 @@ height:773px;
 
 /*** Header Start ***/
 #header-wrapper {
-height:120px;
+height:80px;
 background:#f0efed;
 text-align:center;
-font-family:"Lato Light", "Century Gothic", sans-serif;
+font-family:"Lato Light", sans-serif;
 }
 
 #header {
 width:1000px;
-height:120px;
+height:80px;
 vertical-align:middle;
 text-align:center;
 margin:auto;
@@ -130,12 +130,12 @@ margin:auto;
 vertical-align:middle;
 float:left;
 width:100px;
-height:100px;
-margin:10px 25px 0px 0px;
+height:80px;
+margin:10px 32px 0px 0px;
 }
 
 #header a.header_text1 {
-margin-top:20px;
+margin-top:32px;
 color:#5b5478;
 font-size:24px;
 float:left;
@@ -156,28 +156,61 @@ color:#000;
 position:relative;
 top:-500px;
 background-color:rgba(0,0,0,.75);
-font-family:"Lato Light", "Century Gothic", sans-serif;
+font-family:"Lato Light", sans-serif;
 }
 
 #navbar-wrapper-blank {
 position:relative;
 top:-120px;
 background-color:#393939;
-font-family:"Lato Light", "Century Gothic", sans-serif;
+font-family:"Lato Light", sans-serif;
 }
 
-#navbar {
-width:1000px;
-height:25px;
-vertical-align:middle;
-margin:0 auto;
+.navbar { /*to change the height of the navbar*/
+	min-height:65px;
 }
+
+.container-fluid {
+	/*margin-right: 60px;*/
+	margin-right: 7rem;
+	margin-left: 7rem;
+}
+
+@media screen and (max-width: 700px) {
+  .container-fluid {
+	/*margin-right: 60px;*/
+	margin-right: 0rem;
+	margin-left: 0rem;
+}
+}
+
+.collapse {
+	margin-top: 8px;
+	float: right;
+}
+
+.nav-item {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	color: #A9A9A9;
+}
+
+.navbar li {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	color: #A9A9A9;
+}
+
 
 #navbar li {
 list-style:none;
-font-size:20px;
+font-size:30px;
 font-weight:700;
-float:left;
+float:right;
 margin:0;
 padding:1px;
 }
@@ -323,7 +356,7 @@ width:100%;
 height:70px;
 background:#5b5478;
 clear:both;
-font-family:"Lato Light", "Century Gothic", sans-serif;
+font-family:"Lato Light", sans-serif;
 }
 
 #footer {

@@ -24,6 +24,8 @@
     <!-- Our Website CSS Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <link rel="icon" href="/assets/images/favicon.png">
+
 </head>
 <body ng-app="sweweb">
 <!--[if lt IE 7]>
