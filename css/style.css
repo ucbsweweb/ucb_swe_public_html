@@ -11,7 +11,7 @@ body {
 background:#FFF;
 background-image:url(/header_footer/images/ps_neutral.png);
 background-repeat:repeat;
-font-size:13px;
+font-size:15px;
 }
 
 p {
@@ -166,30 +166,28 @@ background-color:#393939;
 font-family:"Lato Light", sans-serif;
 }
 
-.navbar { /*to change the height of the navbar*/
+.navbar {/* to change the height of the navbar*/
 	min-height:65px;
 }
 
-.container-fluid {
-	/*margin-right: 60px;*/
+/*.container-fluid {
 	margin-right: 7rem;
 	margin-left: 7rem;
-}
+}*/
 
-@media screen and (max-width: 700px) {
+/*@media screen and (max-width: 700px) {
   .container-fluid {
-	/*margin-right: 60px;*/
 	margin-right: 0rem;
 	margin-left: 0rem;
 }
-}
+}*/
 
 .collapse {
 	margin-top: 8px;
-	float: right;
+	/*float: right;*/
 }
 
-.nav-item {
+/*.nav-item {
 	font-family: "Lato", sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -204,7 +202,7 @@ font-family:"Lato Light", sans-serif;
 	letter-spacing: 2.5px;
 	color: #A9A9A9;
 }
-
+*/
 
 #navbar li {
 list-style:none;
