@@ -1,21 +1,18 @@
 <head>
- <!--    <meta charset="utf-8">
+    <title>UC Berkeley SWE</title>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="ACME Inc.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="../assets/js/angular.min.js"></script>
-    <script src="../assets/js/angular-route.min.js"></script>
-    <script src="../assets/js/main.js"></script> -->
-
-    <title>Home | UC Berkeley SWE</title>
-    <script src="assets/js/scroll.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 
 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
@@ -23,101 +20,9 @@
     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 </style>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <a class="navbar-brand" href="#">
-    <img src="../assets/images/swewhite.png" width="100" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#/about">About</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Get Involved
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#/national">National Membership</a>
-          <a class="dropdown-item" href="#/committees">Committees</a>
-          <!-- <div class="dropdown-divider"></div> -->
-          <a class="dropdown-item" href="#/officers">Officers</a>
-        </div>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Resources
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#/calendar">Event Calendar</a>
-          <a class="dropdown-item" href="#/GMslides">GM Slides</a>
-          <!-- <div class="dropdown-divider"></div> -->
-          <a class="dropdown-item" href="#/newsletters">Newsletters</a>
-          <a class="dropdown-item" href="#/alumnisignup">Alumni</a>
-
-        </div>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Outreach
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#/outreach">General Info</a>
-          <a class="dropdown-item" href="#/miniu">Mini-U</a>
-          <!-- <div class="dropdown-divider"></div> -->
-          <a class="dropdown-item" href="#/hsep">HSEP</a>
-          <a class="dropdown-item" href="#/ohp">Overnight Host Program</a>
-          <a class="dropdown-item" href="#/science">Science Saturdays</a>
-
-        </div>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Corporate
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#/pdm">PDM</a>
-          <a class="dropdown-item" href="#/corporatepackage">Corporate Package</a>
-          <a class="dropdown-item" href="#/sponsors">Current Sponsors</a>
-          <!-- <div class="dropdown-divider"></div> -->
-          <a class="dropdown-item" href="https://drive.google.com/open?id=15wg1wB7FpGIa8hYXRnyyLbb0mMC7jmxscvsaaQsxb34">Company Interest Form</a>
-        </div>
-      </li>
-
-  </div>
-</nav>
-<!-- NAVBAR END -->
-
-
-<div class="gradient">
-  <div class="conta">
-  <div class="gradientTitle">ASPIRE.  ADVANCE.  ACHIEVE.</div>
-  <div class="gradientCaption">Society of Women Engineers is a national nonprofit organization which strives to highlight the achievements of women as leaders and engineers. <b>Join the UC Berkeley SWE Chapter</b>.</div><!-- 
-  <div class="buttons">
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-light">Light</button> -->
-    <div class="con">
-  <section class="row">
-  <div class="mx-auto">
-    <button type="button" class="btn btn-light custom-button" onclick="window.location.href='/#/national'">Become a Member</button>
-    <button type="button" class="btn btn-light custom-button" onclick="window.open('http://facebook.us15.list-manage.com/subscribe?u=e8d560b8b7495cb15d34fbe80&id=3948f4a434')">Join our mailing list</button>
-  </div>
-</section>
-</div>
-
-</div>
-</div>
-
 <div class="section">
   <div class="container">
-    <!-- <div class="container">
+    <div class="container">
       <div id="sweCarousel" class="carousel slide"  data-interval="7000" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#sweCarousel" data-slide-to="0" class="active"></li>
@@ -138,15 +43,27 @@
               <hr>
             </div>
           </div>
+          <div class="item">
+            <img src="/assets/images/banner1.jpg" alt="banner1" style="width:100%;">
+            <div class="carousel-caption">
+              <p>Join UC Berkeley Society of Women Engineers.</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/assets/images/banner2.jpg" alt="banner2" style="width:100%;">
+            <div class="carousel-caption">
+              <p>Join UC Berkeley Society of Women Engineers.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
-    <br>
+    </div>
+
     <div class="row">
       <div class="col-lg-8 col-md-8">
         <h2><i class="fa fa-newspaper-o"></i> News </h2>
-      
-        <!-- <div>
+        <hr></hr>
+        <div>
           <h4> Upcoming Events </h4>
 
           <p><strong><a href="https://www.facebook.com/events/213143725944795/">Startup Spring: VC Q&A Workshop with Accel</a></strong>
@@ -164,11 +81,11 @@
             Mon. April 30, 6:30 - 8PM, Wozniak Lounge
           </p>
 
-        </div> -->
-        <!-- <hr></hr> -->
+        </div>
+        <hr></hr>
 
           <div>
-            <h4>Congratulations to our 2018 - 2019 Executive Board!</h4>
+            <h4>Congratulations to our 2018-2019 Executive Board!</h4>
               <p>
                 President: Varsha Venkat </br>
                 VP of Internal Relations: Mindy Huang </br>
@@ -180,20 +97,18 @@
           </div>
           </br>
           </br>
-          <hr></hr>
-          <br>
+
           <h2><i class="fa fa-pencil" aria-hidden="true"></i> SWE Medium Blog </h2>
-          
+          <hr></hr>
           <div>
             <p>Be sure to check out <a href="https://medium.com/berkeleyswe" target="_blank">SWE's blog on medium</a>! We will post stories showcasing current SWE members, advice from professional members, and other experiences from the community. If you are interested in sharing your story on our blog, please fill out the
             <a href="http://tinyurl.com/write-swe-blog" target="_blank">interest form </a> and we will be in touch soon. </p>
           </div>
           </br>
           </br>
-           <hr></hr>
-           <br>
+
           <h2><i class="fa fa-envelope-o"> </i> Get updates about SWE events</h2>
-         
+          <hr></hr>
           <div>
             <div id="mc_embed_signup">
               <form action="//facebook.us14.list-manage.com/subscribe/post?u=b0290bdeade685f69261939b3&amp;id=fb7f686370" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -212,10 +127,9 @@
           </div>
           </br>
           </br>
-          <hr></hr>
-          <br>
+
           <h2><i class="fa fa-link"></i> Links</h2>
-          
+          <hr></hr>
           <div class="col-lg-12 col-md-12 col-sm-12">
             <ul class="list-unstyled">
               <li><a href="http://swe.org/" target="_blank">Society of Women Engineers</a></li>
@@ -236,48 +150,3 @@
     </div>
   </div>
 </div>
-<br>
-<br>
-<br>
-
-
-<!-- FOOTER -->
-<div class="foot">
-<div class="section">
-  <div class="container">
-    <div class="text-center">
-      <br>
-      <br>
-      <!-- Social media -->
-      <div class="row">
-        <div class="mx-auto">
-        <a href="mailto:swe.berkeley@gmail.com" target="_"><i class="fa fa-envelope-o fa-2x fat" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/ucbswe"" target="_"><i class="fa fa-facebook-square fa-2x fat" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/ucb_swe target="_"><i class="fa fa-instagram fa-2x fat" aria-hidden="true"></i></a>
-        <a href="http://www.youtube.com/user/BerkeleySWE" target="_"><i class="fa fa-youtube fa-2x fat" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/UCB_SWE" target="_"><i class="fa fa-twitter fa-2x fat" aria-hidden="true"></i></a>
-        <a href="https://plus.google.com/104495537022402787912/posts" target="_"><i class="fa fa-google-plus fa-2x fat" aria-hidden="true"></i></a>
-      </div>
-      </div>
-
-      <br>
-      <br>
-      
-
-    <!-- </div class="copyright"> -->
-      <p class="center sweWhite">We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site. <small><a href="https://goo.gl/forms/7Mp7Y3XcSh9rUSth2" target="_">Bug Report</a></small></p>
-      <p class="center sweWhite"><strong>All Rights Reserved © 2018 SWE, UC Berkeley Section</strong></p>
-      <br>
-    <a href="https://www.ocf.berkeley.edu">
-    <img src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8.png"
-    alt="Hosted by the OCF" style="border: 0;" />
-    </a>
-    <br>
-    <br>
-    <br>
-    </div>
-    <!-- /.container -->
-  </div>
-</div>
-</div>
-<!-- FOOTER END -->

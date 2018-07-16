@@ -28,15 +28,15 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/miniu", {templateUrl: "partials/miniu.html", controller: "ResourceCtrl"})    
     .when("/science", {templateUrl: "partials/science.html", controller: "ResourceCtrl"})
     .when("/ohp", {templateUrl: "partials/ohp.html", controller: "ResourceCtrl"})
-    .when("/hsep", {templateUrl: "partials/hsep.html", controller: "ResourceCtrl"})
+    .when("/ohp", {templateUrl: "partials/hsep.html", controller: "ResourceCtrl"})
 
     // .when("/ohp-specifics", {templateUrl: "partials/ohp-specifics.html", controller: "PageCtrl"})
     // .when("/ohp-register", {templateUrl: "partials/ohp-register.html", controller: "PageCtrl"})
     // .when("/ohp-host", {templateUrl: "partials/ohp-host.html", controller: "PageCtrl"})
     // .when("/ohp-volunteer", {templateUrl: "partials/ohp-volunteer.html", controller: "PageCtrl"})
-    .when("/pdm", {templateUrl: "partials/pdm.html", controller: "ResourceCtrl"})
     .when("/corporatepackage", {templateUrl: "partials/corporatepackage.html", controller: "BlogCtrl"})
     .when("/calendar", {templateUrl: "partials/calendar.html", controller: "BlogCtrl"})
+    .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/services", {templateUrl: "partials/services.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
     .when("/postjob", {redirectTo: ("https://docs.google.com/forms/d/e/1FAIpQLSeuHZNz-8IC_lN8T4N710FZQeU25OfmQfntWsyJFMpZXJbHCQ/viewform?embedded=true")})
@@ -62,6 +62,15 @@ app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
 app.controller('PageCtrl', function (/* $scope, $location, $http */) {
   console.log("Page Controller reporting for duty.");
 
+  // Activates the Carousel
+  $('.carousel').carousel({
+    interval: 7000
+  });
+
+  $('#sweCarousel').carousel({
+    interval: 7000
+  });
+
   // Activates Tooltips for Social Links
   $('.tooltip-social').tooltip({
     selector: "a[data-toggle=tooltip]"
@@ -70,6 +79,11 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 
 app.controller('MembershipCtrl', function (/* $scope, $location, $http */) {
   console.log("Page Controller reporting for duty.");
+
+  // Activates the Carousel
+  $('.carousel').carousel({
+    interval: 7000
+  });
 
   // Activates Tooltips for Social Links
   $('.tooltip-social').tooltip({
