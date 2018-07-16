@@ -28,7 +28,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/miniu", {templateUrl: "partials/miniu.html", controller: "ResourceCtrl"})    
     .when("/science", {templateUrl: "partials/science.html", controller: "ResourceCtrl"})
     .when("/ohp", {templateUrl: "partials/ohp.html", controller: "ResourceCtrl"})
-    .when("/ohp", {templateUrl: "partials/hsep.html", controller: "ResourceCtrl"})
+    .when("/hsep", {templateUrl: "partials/hsep.html", controller: "ResourceCtrl"})
 
     // .when("/ohp-specifics", {templateUrl: "partials/ohp-specifics.html", controller: "PageCtrl"})
     // .when("/ohp-register", {templateUrl: "partials/ohp-register.html", controller: "PageCtrl"})
