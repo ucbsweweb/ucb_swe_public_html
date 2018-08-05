@@ -482,8 +482,10 @@ padding:10px;
 
 
 .jumbotron.hsep {
-	background-image: url("../assets/images/hsep/9.jpg");
+	background-image: url("../assets/images/hsep/spring2018hsep_grpcrop.jpg");
 	background-size: cover;
+	/*position: relative;*/
+	/*height: 70%;*/
 /*	padding-top: 18%;
     padding-bottom: 18%;*/
 }
@@ -502,7 +504,7 @@ padding:10px;
     text-transform: uppercase;
     text-shadow: 0.5px 0.5px black;
     line-height: 1.2em;
-    margin-top: 24%;
+    margin-top: 34%;
     margin-bottom: 4%;
     /*word-break: break-all;*/
     /*width: 50%;*/
@@ -510,6 +512,19 @@ padding:10px;
 /*.jumbotron h1 {
 	margin-top:;
 }*/
+
+.mainTitle {
+	text-align: center;
+    /*top: 75%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    color: black;
+    font-family: Lato;
+    font-size: 3.0vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.5px black;
+}
 
 #mov{
 	/*height: 550px;*/
@@ -542,6 +557,11 @@ padding:10px;
   	overflow-y: hidden; 
   	white-space: nowrap;
 }
+
+video {
+	height: 27.85vw;
+}
+
 
 .img{
   position:relative;
