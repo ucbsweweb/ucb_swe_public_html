@@ -31,7 +31,6 @@ font-weight:bold;
 font-size:32px;
 color:#6b6290;
 margin:20px 0 20px 0;
-text-align:center;
 font-family:"Lato Light", sans-serif;
 }
 
@@ -50,7 +49,6 @@ font-size:20px;
 color:#000;
 margin:12px 0 8px 0;
 text-align:left;
-width:1000px;
 /*border-bottom:medium solid #6b6290;*/
 font-family:"Lato Light", sans-serif;
 }
@@ -598,7 +596,6 @@ video {
 }
 
 .title {
-	text-align: center;
 	font-size: 2vw;
 	color: black;
 	font-weight: 700;

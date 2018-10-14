@@ -29,6 +29,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/science", {templateUrl: "partials/science.html", controller: "ResourceCtrl"})
     .when("/ohp", {templateUrl: "partials/ohp.html", controller: "ResourceCtrl"})
     .when("/hsep", {templateUrl: "partials/hsep.html", controller: "ResourceCtrl"})
+    .when("/pdm", {templateUrl: "partials/pdm.html", controller: "ResourceCtrl"})
 
     // .when("/ohp-specifics", {templateUrl: "partials/ohp-specifics.html", controller: "PageCtrl"})
     // .when("/ohp-register", {templateUrl: "partials/ohp-register.html", controller: "PageCtrl"})
