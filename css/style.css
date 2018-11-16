@@ -203,6 +203,9 @@ font-family:"Lato Light", sans-serif;
 	color: #A9A9A9;
 }
 */
+.red {
+	color: red;
+}
 
 #navbar li {
 list-style:none;
