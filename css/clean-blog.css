@@ -696,7 +696,7 @@ footer .ocf {
 }
 
 .btn-purple {
-  background-color: #551A8B;
+  background-color: #551A8B !important;
   color: white !important;
 }
 
