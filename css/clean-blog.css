@@ -59,6 +59,16 @@ h6 {
   color: #777777;
 }
 
+.purple-bold {
+  color: #551A8B;
+  font-weight: bold;
+}
+
+.tinywhitespace {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .lesswhitespace {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -677,6 +687,17 @@ footer .ocf {
   color: #212529;
   /*opacity: 0.7;*/
   background-color: #E8E8E8 !important;
+  border-color: #fff !important;
+}
+
+.btn-purple {
+  background-color: #551A8B;
+  color: white !important;
+}
+
+.btn-purple:hover, .btn-primary:focus, .btn-primary:active {
+  /*opacity: 0.7;*/
+  background-color: #8b6f94 !important;
   border-color: #fff !important;
 }
 
