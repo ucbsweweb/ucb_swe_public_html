@@ -64,6 +64,11 @@ h6 {
   font-weight: bold;
 }
 
+.science-img {
+  display: flex;
+  justify-content: space-between;
+}
+
 .tinywhitespace {
   margin-top: 50px;
   margin-bottom: 50px;
