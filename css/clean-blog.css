@@ -725,3 +725,12 @@ footer .ocf {
     margin-left: auto;
     margin-right: auto;
 }
+
+#calendar {
+    padding: 20px;
+    width: 70%;
+    height: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
