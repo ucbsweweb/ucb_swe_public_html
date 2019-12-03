@@ -81,7 +81,7 @@ h6 {
 
 .morewhitespace {
   margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 225px;
 }
 
 a {
@@ -718,4 +718,19 @@ footer .ocf {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+#accenture-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#calendar {
+    padding: 20px;
+    width: 70%;
+    height: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
