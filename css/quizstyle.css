@@ -56,12 +56,20 @@ body {
 
 .quiz-result {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
     font-weight: bold;
     text-align: center;
     padding: 20px;
 }
 
 .quiz-result.addBG {
-    background: #bc87ed;
+    background: #f7f7f7;
+}
+
+.result-text {
+    font-size: 4vh;
+}
+
+.purple {
+    color: #551A8B;
 }
