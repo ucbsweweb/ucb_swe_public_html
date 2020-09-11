@@ -61,7 +61,7 @@ var Quiz = function(){
     }
 
     this._showResult = function(result){
-        $('.quiz-result').addClass('addBG').html('<span class="result-text">You are <span class="purple">' + result + '</span>!</span><br>Check out <a href="https://docs.google.com/document/d/1FsTUxRtMSPylVBTQ2TafZmuJsaWWP9uO3HFf5YnyM3A/edit#heading=h.86pobrekl5ga" target="_">committee descriptions</a> to learn more about this role!');
+        $('.quiz-result').addClass('addBG').html('<span class="result-text">You are <span class="purple">' + result + '</span>!</span><br>Check Out the <a href="https://docs.google.com/document/d/1yGCa8K-L5a9NBfCqY85kQpu6KNJb8aIhJHOPuz2BjyY/edit" target="_">officer descriptions</a> to learn more about this role!');
     }
 
     this._bindEvents = function(){
