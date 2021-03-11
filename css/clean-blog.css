@@ -722,10 +722,10 @@ footer .ocf {
   padding: 25px 35px;
 }
 
-#gm-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #calendar {
