@@ -33,7 +33,7 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: 40px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 h3 {
@@ -52,7 +52,7 @@ h4 {
 
 h5 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Inter', sans-serif;
   color: #212529;
 }
@@ -121,6 +121,10 @@ a:hover {
 blockquote {
   font-style: italic;
   color: #868e96;
+}
+
+.rounded {
+  border-radius: 8px !important;
 }
 
 .section-heading {
@@ -518,10 +522,10 @@ header.masthead .page-heading .subheading {
 }
 
 header.masthead .site-heading .subheading {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.1;
-  display: flex;
+  display: block;
   margin: 15px 8vw;
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Inter', sans-serif;
