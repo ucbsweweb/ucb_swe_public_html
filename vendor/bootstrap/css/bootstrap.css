@@ -4379,7 +4379,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 10px;
 }
 
 .card > hr {
@@ -4432,7 +4432,7 @@ input[type="button"].btn-block {
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: 10px 0 0;
 }
 
 .card-header + .list-group .list-group-item:first-child {
@@ -4477,8 +4477,8 @@ input[type="button"].btn-block {
 
 .card-img-top {
   width: 100%;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card-img-bottom {
