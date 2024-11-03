@@ -195,6 +195,16 @@ width: auto;
   }
 }
 
+#calendar {
+  border: none;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
 
 @keyframes fadeInMove {
   from {
