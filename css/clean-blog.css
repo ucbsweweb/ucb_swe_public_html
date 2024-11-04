@@ -806,3 +806,8 @@ footer .ocf {
     margin-right: auto;
 }
 
+.corporate-card {
+  border: 2px solid #551A8B !important;
+  border-radius: 10px !important;
+  margin: 20px !important;
+}
