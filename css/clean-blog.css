@@ -33,7 +33,7 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: 40px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 h3 {
@@ -45,21 +45,21 @@ h3 {
 
 h4 {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 34px;
   font-family: 'Inter', sans-serif;
   color: #777777;
 }
 
 h5 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Inter', sans-serif;
   color: #212529;
 }
 
 h6 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   font-family: 'Inter', sans-serif;
   color: #777777;
@@ -121,6 +121,10 @@ a:hover {
 blockquote {
   font-style: italic;
   color: #868e96;
+}
+
+.rounded {
+  border-radius: 8px !important;
 }
 
 .section-heading {
@@ -191,6 +195,31 @@ width: auto;
   }
 }
 
+#calendar {
+  border: none;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+#mc_embed_signup .button {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #551A8B;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  background-color: none;
+  border-color: none;
+}
 
 @keyframes fadeInMove {
   from {
@@ -226,21 +255,24 @@ width: auto;
 #mainNav {
   position: absolute;
   /*border-bottom: 1px solid #e9ecef;*/
-  background-color: #551A8B;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
 }
 
 #mainNav .navbar-brand {
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
-  color: #fff;
+  color: #551A8B;
 }
 
 #mainNav .navbar-toggler {
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 800;
+  letter-spacing: 1px;
   padding: 13px;
   text-transform: uppercase;
-  color: #fff;
+  color: #551A8B;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -248,7 +280,18 @@ width: auto;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff;
+  color: #551A8B;
+}
+
+#submainNav .navbar-nav > li.nav-item {
+  padding: 1px;
+  margin: 1px;
+  border: 2px solid transparent; 
+}
+
+#submainNav .navbar-nav > li.nav-item:hover {
+  border: 2px solid #551A8B;
+  border-radius: 28px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -262,7 +305,7 @@ width: auto;
     color: #fff;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #551A8B;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
@@ -316,21 +359,23 @@ width: auto;
 #submainNav {
   position: absolute;
   /*border-bottom: 1px solid #e9ecef;*/
-  background-color: #551A8B;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
 }
 
 #submainNav .navbar-brand {
   font-weight: 800;
-  color: #fff;
+  color: #551A8B;
 }
 
 #submainNav .navbar-toggler {
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 800;
+  letter-spacing: 1px;
   padding: 13px;
   text-transform: uppercase;
-  color: #fff;
+  color: #551A8B;
 }
 
 #submainNav .navbar-nav > li.nav-item > a {
@@ -338,20 +383,20 @@ width: auto;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff;
+  color: #551A8B;
 }
 
 @media only screen and (min-width: 992px) {
   #submainNav .navbar-brand {
     padding: 10px 20px;
-    color: #fff;
+    color: #551A8B;
   }
   #submainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.8);
   }
   #submainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: #fff;
+    color: #551A8B;
   }
   #submainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -379,13 +424,13 @@ width: auto;
     background-color: #551A8B;
   }
   #submainNav.is-fixed .navbar-brand {
-    color: white;
+    color: #551A8B;
   }
   #submainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.8);
   }
   #submainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: white;
+    color: #551A8B;
   }
   #submainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -508,25 +553,30 @@ header.masthead .page-heading .subheading {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.1;
-  display: block;
+  display: flex;
   margin: 10px 0 0;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.subheading {
+  margin: 20px;
 }
 
 header.masthead .site-heading .subheading {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.1;
   display: block;
-  margin: 15px 0 0;
+  margin: 15px 8vw;
   color: rgba(255, 255, 255, 0.8);
-  font-family: Lato, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
-    font-size: 70px;
+    font-size: 55px;
+    font-family: 'Inter', sans-serif;
   }
 }
 
@@ -544,7 +594,7 @@ header.masthead .post-heading .subheading {
   font-size: 24px;
   font-weight: 600;
   margin: 10px 0 30px;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 header.masthead .post-heading .meta {
@@ -696,12 +746,12 @@ footer .ocf {
 .btn {
   font-size: 14px;
   font-weight: 800;
-  padding: 15px 25px;
+  padding: 10px 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0;
-  color: #212529;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-radius: 6px;
+  color: #551A8B;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn-primary {
@@ -756,3 +806,8 @@ footer .ocf {
     margin-right: auto;
 }
 
+.corporate-card {
+  border: 2px solid #551A8B !important;
+  border-radius: 10px !important;
+  margin: 20px !important;
+}
