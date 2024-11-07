@@ -811,3 +811,24 @@ footer .ocf {
   border-radius: 10px !important;
   margin: 20px !important;
 }
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.card-link {
+  font-size: 18px;
+}
+
+.outreach-card {
+  border-radius: 10px !important;
+}
+
+.only-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
