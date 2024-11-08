@@ -832,3 +832,22 @@ footer .ocf {
   border-top-left-radius: 10px !important;
   border-top-right-radius: 10px !important;
 }
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  color: white;
+  border-radius: 7px;
+  text-decoration: none;
+  padding: 5px 7px;
+  font-size: 12px;
+  margin: 0;
+  letter-spacing: 0.3px;
+  line-height: 120%;
+  font-weight: 500;
+  background-color: #9975B9;
+}
