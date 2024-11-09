@@ -851,3 +851,30 @@ footer .ocf {
   font-weight: 500;
   background-color: #9975B9;
 }
+
+/* Modal is hidden by default */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-dialog {
+  margin: 15% auto;
+}
+.modal-content {
+  background-color: white;
+}
+
+.swe-modal {
+  max-width: 80%;
+}
+
+.modal-body {
+  color: black;
+}
