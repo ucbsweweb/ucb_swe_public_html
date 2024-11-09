@@ -284,14 +284,16 @@ width: auto;
 }
 
 #submainNav .navbar-nav > li.nav-item {
-  padding: 1px;
-  margin: 1px;
-  border: 2px solid transparent; 
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  /* border: 1px solid transparent;  */
 }
 
 #submainNav .navbar-nav > li.nav-item:hover {
-  border: 2px solid #551A8B;
+  /* border: 2px solid #551A8B; */
   border-radius: 28px;
+  background-color: #eecd97;
 }
 
 @media only screen and (min-width: 992px) {
@@ -852,29 +854,11 @@ footer .ocf {
   background-color: #9975B9;
 }
 
-/* Modal is hidden by default */
-.modal {
-  display: none; 
-  position: fixed;
-  z-index: 1050;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.modal-dialog {
-  margin: 15% auto;
-}
-.modal-content {
-  background-color: white;
-}
-
-.swe-modal {
-  max-width: 80%;
-}
-
-.modal-body {
-  color: black;
+h7  {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #551A8B;
 }
