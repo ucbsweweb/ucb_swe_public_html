@@ -30,11 +30,23 @@
   <link rel="icon" href="img/favicon.png">
 
   <style>
-    .candidate-img {
+
+    .candidate-photo-wrapper {
+      height: 340px;
       width: 100%;
-      height: 320px;     /* you can change this */
-      object-fit: cover; /* crops instead of stretching */
+      overflow: hidden;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
     }
+    
+    .candidate-photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    
     </style>
 
   <!-- Upgrading FontAwesome Kit -->
@@ -121,7 +133,7 @@
     <!-- President Candidate -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/lauren.jpeg" alt="Lauren George Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/lauren.jpeg" alt="Lauren George Photo">
         <div class="card-body">
           <h5 class="card-title">Lauren George</h5>
           <h6 class="text-muted">President Candidate</h6>
@@ -135,7 +147,7 @@
     <!-- VP of Internal Candidate -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/alexa.JPG" alt="Alexa Piscil Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/alexa.JPG" alt="Alexa Piscil Photo">
         <div class="card-body">
           <h5 class="card-title">Alexa Piscil</h5>
           <h6 class="text-muted">Vice President of Internal Candidate</h6>
@@ -149,7 +161,7 @@
     <!-- VP of Corporate Candidate 1 -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/mahika.jpeg" alt="Mahika Behani Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/mahika.jpeg" alt="Mahika Behani Photo">
         <div class="card-body">
           <h5 class="card-title">Mahika Behani</h5>
           <h6 class="text-muted">Vice President of Corporate Candidate</h6>
@@ -163,7 +175,7 @@
     <!-- VP of Corporate Candidate 2 -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/sreshta.jpg" alt="Sreshta Yelisetti Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/sreshta.jpg" alt="Sreshta Yelisetti Photo">
         <div class="card-body">
           <h5 class="card-title">Sreshta Yelisetti</h5>
           <h6 class="text-muted">Vice President of Corporate Candidate</h6>
@@ -177,7 +189,7 @@
     <!-- Vice President of Outreach Candidate 1 -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/brenda.jpg" alt="Brenda Ngo Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/brenda.jpg" alt="Brenda Ngo Photo">
         <div class="card-body">
           <h5 class="card-title">Brenda Ngo</h5>
           <h6 class="text-muted">Vice President of Outreach Candidate</h6>
@@ -190,7 +202,7 @@
     <!-- Vice President of Outreach Candidate 2 -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/cecilia.jpg" alt="Cecilia Tran Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/cecilia.jpg" alt="Cecilia Tran Photo">
         <div class="card-body">
           <h5 class="card-title">Cecilia Tran</h5>
           <h6 class="text-muted">Vice President of Outreach Candidate</h6>
@@ -203,7 +215,7 @@
     <!-- Secretary Candidate 1 -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/oldiris.jpg" alt="Iris Li Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/oldiris.jpg" alt="Iris Li Photo">
         <div class="card-body">
           <h5 class="card-title">Iris Li</h5>
           <h6 class="text-muted">Secretary Candidate</h6>
@@ -216,7 +228,7 @@
     <!-- Secretary Candidate 2 -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/newiris.png" alt="Iris Li Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/newiris.png" alt="Iris Li Photo">
         <div class="card-body">
           <h5 class="card-title">Iris Li</h5>
           <h6 class="text-muted">Secretary Candidate</h6>
@@ -229,7 +241,7 @@
     <!-- Treasurer Candidate -->
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100" style="border-radius:12px;">
-        <img class="card-img-top" src="img/exec candidates/swetha.JPG" alt="Swetha Ashok Photo">
+        <img class="candidate-photo-wrapper" src="img/exec candidates/swetha.JPG" alt="Swetha Ashok Photo">
         <div class="card-body">
           <h5 class="card-title">Swetha Ashok</h5>
           <h6 class="text-muted">Treasurer Candidate</h6>
