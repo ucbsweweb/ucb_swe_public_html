@@ -30,26 +30,26 @@
   <link rel="icon" href="img/favicon.png">
 
   <style>
-    .candidate-photo-wrapper {
+    .candidate-card {
+      border-radius: 12px;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .candidate-photo {
       width: 100%;
       height: 340px;
-      overflow: hidden;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
       background-color: #f5f5f5;
+    }
+
+    .candidate-card .card-body {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
     }
-    
-    .candidate-photo-wrapper img {
-      width: 100%;
-      height: auto;
-      min-height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    </style>
+  </style>
 
   <!-- Upgrading FontAwesome Kit -->
   <script src="https://kit.fontawesome.com/0c5e23f27c.js" crossorigin="anonymous"></script>
@@ -124,138 +124,152 @@
   </header>
 
   <!-- Executive Candidates Section -->
-<div class="container" style="margin-top:40px; margin-bottom:60px;">
+  <div class="container" style="margin-top:40px; margin-bottom:60px;">
 
-  <h2 class="text-center" style="font-weight:700; margin-bottom:40px;">
-    Meet the Executive Candidates
-  </h2>
+    <h2 class="text-center" style="font-weight:700; margin-bottom:40px;">
+      Meet the Executive Candidates
+    </h2>
 
-  <div class="row">
+    <div class="row">
 
-    <!-- President Candidate -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/lauren.jpeg" alt="Lauren George Photo">
-        <div class="card-body">
-          <h5 class="card-title">Lauren George</h5>
-          <h6 class="text-muted">President Candidate</h6>
-          <p class="card-text">
-            Hi everyone! My name is Lauren George (she/her), and I’m a junior majoring in Engineering, Math, and Statistics. I currently serve as the VP of K–12 Outreach, and seeing the impact our amazing officers have on the community has been incredibly inspiring. As President, my goal is to continue expanding our reach to new communities while also strengthening the fun and sense of community that makes SWE so special.
-          </p>
+      <!-- President Candidate -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/lauren.jpeg');"
+            aria-label="Lauren George Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Lauren George</h5>
+            <h6 class="text-muted">President Candidate</h6>
+            <p class="card-text">
+              Hi everyone! My name is Lauren George (she/her), and I’m a junior majoring in Engineering, Math, and Statistics. I currently serve as the VP of K–12 Outreach, and seeing the impact our amazing officers have on the community has been incredibly inspiring. As President, my goal is to continue expanding our reach to new communities while also strengthening the fun and sense of community that makes SWE so special.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- VP of Internal Candidate -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/alexa.JPG" alt="Alexa Piscil Photo">
-        <div class="card-body">
-          <h5 class="card-title">Alexa Piscil</h5>
-          <h6 class="text-muted">Vice President of Internal Candidate</h6>
-          <p class="card-text">
-            Hi everyone, my name is Alexa Piscil (pronouns she/her) and I am a bioengineering second year who is this year's OHP co-officer and running for next year's VP Internal. As an Exec, I aim to bring energy and excitement to SWE through fun retreats and interactive GMs. I hope to create a comfortable SWE culture where all members are welcomed and feel proud to take part in our SWE community.
-          </p>
+      <!-- VP of Internal Candidate -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/alexa.JPG');"
+            aria-label="Alexa Piscil Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Alexa Piscil</h5>
+            <h6 class="text-muted">Vice President of Internal Candidate</h6>
+            <p class="card-text">
+              Hi everyone, my name is Alexa Piscil (pronouns she/her) and I am a bioengineering second year who is this year's OHP co-officer and running for next year's VP Internal. As an Exec, I aim to bring energy and excitement to SWE through fun retreats and interactive GMs. I hope to create a comfortable SWE culture where all members are welcomed and feel proud to take part in our SWE community.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- VP of Corporate Candidate 1 -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/mahika.jpeg" alt="Mahika Behani Photo">
-        <div class="card-body">
-          <h5 class="card-title">Mahika Behani</h5>
-          <h6 class="text-muted">Vice President of Corporate Candidate</h6>
-          <p class="card-text">
-            Hi! My name is Mahika Behani (she/her), and I’m a junior studying Environmental Engineering as well as Environmental Economics & Policy. I’m currently an officer for Startup Spring, and I’m running to be your next VP Corporate. From the day I started Berkeley as a scared, shy freshman who had never been to the United States before, to now, 6 semesters later, SWE has been an integral part of my college experience. I’d love to have the chance and opportunity to give back to the people who showed 10 year old me that she can be a woman in STEM, despite what the world says.
-          </p>
+      <!-- VP of Corporate Candidate 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/mahika.jpeg');"
+            aria-label="Mahika Behani Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Mahika Behani</h5>
+            <h6 class="text-muted">Vice President of Corporate Candidate</h6>
+            <p class="card-text">
+              Hi! My name is Mahika Behani (she/her), and I’m a junior studying Environmental Engineering as well as Environmental Economics &amp; Policy. I’m currently an officer for Startup Spring, and I’m running to be your next VP Corporate. From the day I started Berkeley as a scared, shy freshman who had never been to the United States before, to now, 6 semesters later, SWE has been an integral part of my college experience. I’d love to have the chance and opportunity to give back to the people who showed 10 year old me that she can be a woman in STEM, despite what the world says.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- VP of Corporate Candidate 2 -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/sreshta.jpg" alt="Sreshta Yelisetti Photo">
-        <div class="card-body">
-          <h5 class="card-title">Sreshta Yelisetti</h5>
-          <h6 class="text-muted">Vice President of Corporate Candidate</h6>
-          <p class="card-text">
-            Hi everyone! My name is Sreshta Yelisetti (she/her), and I am a second-year Bioengineering and EECS major. I am currently a Career Options in Engineering Officer, and I am running for VP Corporate. I truly enjoy being part of a community like SWE that allows me to be involved in projects that encourage more women to explore and feel confident in engineering. Through this role, I hope to create more engaging events, strengthen connections with industry, empower women to grow into strong leaders, and make the club a welcoming and supportive space for all members.
-          </p>
+      <!-- VP of Corporate Candidate 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/sreshta.jpg');"
+            aria-label="Sreshta Yelisetti Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Sreshta Yelisetti</h5>
+            <h6 class="text-muted">Vice President of Corporate Candidate</h6>
+            <p class="card-text">
+              Hi everyone! My name is Sreshta Yelisetti (she/her), and I am a second-year Bioengineering and EECS major. I am currently a Career Options in Engineering Officer, and I am running for VP Corporate. I truly enjoy being part of a community like SWE that allows me to be involved in projects that encourage more women to explore and feel confident in engineering. Through this role, I hope to create more engaging events, strengthen connections with industry, empower women to grow into strong leaders, and make the club a welcoming and supportive space for all members.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Vice President of Outreach Candidate 1 -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/brenda.jpg" alt="Brenda Ngo Photo">
-        <div class="card-body">
-          <h5 class="card-title">Brenda Ngo</h5>
-          <h6 class="text-muted">Vice President of Outreach Candidate</h6>
-          <p class="card-text">
-            Hi! My name’s Brenda Ngo, pronouns she/her, and I’m this semester’s HSEP Co-Chair. I’m currently a junior studying Integrative Biology and I’ll be running for VP Outreach for the 2026-27 term. This Spring ‘26 is my fourth semester as a dedicated SWE Outreach member, working to give K-12 students more opportunities to learn about STEM. This work means a lot to me and I’m excited to continue growing our community!
+      <!-- Vice President of Outreach Candidate 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/brenda.jpg');"
+            aria-label="Brenda Ngo Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Brenda Ngo</h5>
+            <h6 class="text-muted">Vice President of Outreach Candidate</h6>
+            <p class="card-text">
+              Hi! My name’s Brenda Ngo, pronouns she/her, and I’m this semester’s HSEP Co-Chair. I’m currently a junior studying Integrative Biology and I’ll be running for VP Outreach for the 2026-27 term. This Spring ‘26 is my fourth semester as a dedicated SWE Outreach member, working to give K-12 students more opportunities to learn about STEM. This work means a lot to me and I’m excited to continue growing our community!
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Vice President of Outreach Candidate 2 -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/cecilia.jpg" alt="Cecilia Tran Photo">
-        <div class="card-body">
-          <h5 class="card-title">Cecilia Tran</h5>
-          <h6 class="text-muted">Vice President of Outreach Candidate</h6>
-          <p class="card-text">
-            I’m Cecilia Tran (she/her), a 3rd year studying Computer Science & Data Science. I currently serve as an Outreach Advisor and I’m excited to be running to be YOUR next VP Outreach! As VP Outreach, I plan to focus on 3 main pillars: making Outreach events more accessible, strengthening community engagement, and maximizing the impact and reach of our events.
+      <!-- Vice President of Outreach Candidate 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/cecilia.jpg');"
+            aria-label="Cecilia Tran Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Cecilia Tran</h5>
+            <h6 class="text-muted">Vice President of Outreach Candidate</h6>
+            <p class="card-text">
+              I’m Cecilia Tran (she/her), a 3rd year studying Computer Science &amp; Data Science. I currently serve as an Outreach Advisor and I’m excited to be running to be YOUR next VP Outreach! As VP Outreach, I plan to focus on 3 main pillars: making Outreach events more accessible, strengthening community engagement, and maximizing the impact and reach of our events.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Secretary Candidate 1 -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/oldiris.jpg" alt="Iris Li Photo">
-        <div class="card-body">
-          <h5 class="card-title">Iris Li</h5>
-          <h6 class="text-muted">Secretary Candidate</h6>
-          <p class="card-text">
-            Hello! My name is Iris (pronouns: she/her) and I'm a third year student studying EECS. Currently, I serve as the webmaster for SWE and am running for the role of Secretary for the upcoming school year. I have been involved with SWE since freshmen fall and I'm looking to continue my work in furthering SWE's reach and impact. Outside of SWE, you can catch me hiking Berkeley's hilly trails, self-learning the guitar, or occasionally but not always taking a fat nap.
+      <!-- Secretary Candidate 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/oldiris.jpg');"
+            aria-label="Iris Li Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Iris Li</h5>
+            <h6 class="text-muted">Secretary Candidate</h6>
+            <p class="card-text">
+              Hello! My name is Iris (pronouns: she/her) and I'm a third year student studying EECS. Currently, I serve as the webmaster for SWE and am running for the role of Secretary for the upcoming school year. I have been involved with SWE since freshmen fall and I'm looking to continue my work in furthering SWE's reach and impact. Outside of SWE, you can catch me hiking Berkeley's hilly trails, self-learning the guitar, or occasionally but not always taking a fat nap.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Secretary Candidate 2 -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/newiris.png" alt="Iris Li Photo">
-        <div class="card-body">
-          <h5 class="card-title">Iris Li</h5>
-          <h6 class="text-muted">Secretary Candidate</h6>
-          <p class="card-text">
-            Hello! My name is Iris Li (she/her), and I’m currently serving as Public Relations Co-Chair. I’m a junior studying Data and Cognitive Science, and I’m running for Secretary! I love being able to contribute to bringing more members into our SWE community through outreach. Since joining SWE, the friendships, professional development opportunities, and focus on social good have made me really happy to be part of this community. I hope to continue contributing in this way as Secretary. I also enjoy going to cafés, walking around with friends, and discovering new albums :)
+      <!-- Secretary Candidate 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/newiris.png');"
+            aria-label="Iris Li Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Iris Li</h5>
+            <h6 class="text-muted">Secretary Candidate</h6>
+            <p class="card-text">
+              Hello! My name is Iris Li (she/her), and I’m currently serving as Public Relations Co-Chair. I’m a junior studying Data and Cognitive Science, and I’m running for Secretary! I love being able to contribute to bringing more members into our SWE community through outreach. Since joining SWE, the friendships, professional development opportunities, and focus on social good have made me really happy to be part of this community. I hope to continue contributing in this way as Secretary. I also enjoy going to cafés, walking around with friends, and discovering new albums :)
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Treasurer Candidate -->
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100" style="border-radius:12px;">
-        <img class="candidate-photo-wrapper" src="img/exec candidates/swetha.JPG" alt="Swetha Ashok Photo">
-        <div class="card-body">
-          <h5 class="card-title">Swetha Ashok</h5>
-          <h6 class="text-muted">Treasurer Candidate</h6>
-          <p class="card-text">
-            Hi! My name is Swetha Ashok (she/her/hers) and I am a sophomore studying Electrical Engineering and Computer Science. I am dedicated to fostering inclusive engineering environments and disabling barriers to tech fields, goals I have worked to further in the positions I have held in SWE. In my current position as Academic Chair, I support the SWE community by creating pathways for students to explore higher education and research, while as Advocacy Chair last semester I focused on highlighting campus resources and disability inclusion. I am running to be your Treasurer next year!
+      <!-- Treasurer Candidate -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 candidate-card">
+          <div class="candidate-photo" style="background-image: url('img/exec candidates/swetha.JPG');"
+            aria-label="Swetha Ashok Photo"></div>
+          <div class="card-body">
+            <h5 class="card-title">Swetha Ashok</h5>
+            <h6 class="text-muted">Treasurer Candidate</h6>
+            <p class="card-text">
+              Hi! My name is Swetha Ashok (she/her/hers) and I am a sophomore studying Electrical Engineering and Computer Science. I am dedicated to fostering inclusive engineering environments and disabling barriers to tech fields, goals I have worked to further in the positions I have held in SWE. In my current position as Academic Chair, I support the SWE community by creating pathways for students to explore higher education and research, while as Advocacy Chair last semester I focused on highlighting campus resources and disability inclusion. I am running to be your Treasurer next year!
+            </p>
+          </div>
         </div>
       </div>
+
     </div>
 
   </div>
-
-</div>
 
   <!-- Main Content  -->
   <div class="container-fluid" style="background-color: #F5F5F5">
@@ -304,7 +318,7 @@
   <div class="container">
     <div class="row">
       <!-- Google Calendar Section -->
-      <div class="col-lg-9 col-md-8 mb-3"> <!-- 3/4 width for large screens -->
+      <div class="col-lg-9 col-md-8 mb-3">
         <h5 class="text-center">Upcoming Events</h5>
         <br>
         <iframe id="calendar"
@@ -313,7 +327,7 @@
       </div>
 
       <!-- Mailing List Section -->
-      <div class="col-lg-3 col-md-4 mb-3"> <!-- 1/4 width for large screens -->
+      <div class="col-lg-3 col-md-4 mb-3">
         <br>
         <br>
         <img class="img-fluid mx-auto d-block" style="height: 140px" src="img/home/swemail.png"
@@ -339,8 +353,8 @@
                 </div>
                 <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text"
                     name="b_1606a32baceee9c302dac928e_8fb106a112" tabindex="-1" value=""></div>
-                     <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary mx-auto d-block" style="margin-top: 10px;"
-                      value="Subscribe"></a>
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                  class="btn btn-primary mx-auto d-block" style="margin-top: 10px;" value="Subscribe">
               </div>
             </form>
           </div>
@@ -351,7 +365,6 @@
 
       </div>
     </div>
-
 
     <div class="lesswhitespace"></div>
   </div>
