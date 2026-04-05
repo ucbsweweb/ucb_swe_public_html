@@ -1016,12 +1016,44 @@
     </div>
   </footer>
 
+  <!-- Popout Window for Officer Fa26 Apps-->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content text-center">
+        
+        <div class="modal-header">
+          <h5 class="modal-title">Welcome!</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <p>Welcome to SWE @ UC Berkeley 💙</p>
+          <p>Check out how to get involved below!</p>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Got it</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+
+  <!-- Script for Popout Window for Officer Fa26 Apps-->
+  <script>
+    $(document).ready(function() {
+      $('#welcomeModal').modal('show');
+    });
+  </script>
+
+  
 
 </body>
 
