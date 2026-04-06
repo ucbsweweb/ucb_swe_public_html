@@ -30,6 +30,28 @@
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.css" rel="stylesheet">
   <link rel="icon" href="img/favicon.png">
+  <style>
+    /* Show dropdown on hover */
+    .nav-item.dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+    
+    /* Position nested dropdown */
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+    }
+    
+    /* Show nested menu on hover */
+    .dropdown-submenu:hover > .dropdown-menu {
+      display: block;
+    }
+    </style>
 
   <!-- Upgrading FontAwesome Kit -->
   <script src="https://kit.fontawesome.com/0c5e23f27c.js" crossorigin="anonymous"></script>
@@ -61,8 +83,33 @@
           <li class="nav-item">
             <a class="nav-link" href="calendar.html">Calendar</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="involved.html">Get Involved</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button">
+              Get Involved
+            </a>
+          
+            <!-- FIRST DROPDOWN -->
+            <div class="dropdown-menu">
+          
+              <!-- FALL -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Fall</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="miniu.html">Mini University</a>
+                  <a class="dropdown-item" href="engineeringday.html">Engineering Day</a>
+                </div>
+              </div>
+          
+              <!-- SPRING -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Spring</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="techday.html">Tech Day</a>
+                  <a class="dropdown-item" href="ohp.html">Overnight Host Program</a>
+                </div>
+              </div>
+          
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="outreach.html">Outreach</a>
