@@ -31,21 +31,20 @@
   <link href="css/clean-blog.css" rel="stylesheet">
   <link rel="icon" href="img/favicon.png">
   <style>
-    /* force dropdown to appear on hover */
-    .nav-item.dropdown:hover > .dropdown-menu {
-      display: block;
+    /* FORCE dropdown to show on hover */
+    .navbar .dropdown:hover > .dropdown-menu {
+      display: block !important;
       opacity: 1;
       visibility: visible;
-      margin-top: 0;
     }
     
-    /* fix Bootstrap hiding */
-    .dropdown-menu {
+    /* make sure dropdown is positioned correctly */
+    .navbar .dropdown-menu {
       display: none;
       position: absolute;
     }
     
-    /* submenu positioning */
+    /* submenu */
     .dropdown-submenu {
       position: relative;
     }
@@ -53,12 +52,11 @@
     .dropdown-submenu .dropdown-menu {
       top: 0;
       left: 100%;
-      display: none;
+      display: none !important;
     }
     
-    /* show submenu */
     .dropdown-submenu:hover > .dropdown-menu {
-      display: block;
+      display: block !important;
     }
     </style>
 
