@@ -31,8 +31,32 @@
   <link href="css/clean-blog.css" rel="stylesheet">
   <link rel="icon" href="img/favicon.png">
   <style>
-    .dropdown-menu {
-      background: red !important;
+    /* FORCE dropdown to show on hover */
+    .navbar .dropdown:hover > .dropdown-menu {
+      display: block !important;
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* make sure dropdown is positioned correctly */
+    .navbar .dropdown-menu {
+      display: none;
+      position: absolute;
+    }
+    
+    /* submenu */
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      display: none !important;
+    }
+    
+    .dropdown-submenu:hover > .dropdown-menu {
+      display: block !important;
     }
     </style>
 
@@ -71,30 +95,15 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="outreachDropdown"
-               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               role="button" data-toggle="dropdown">
               Outreach
             </a>
           
             <div class="dropdown-menu">
-          
-              <!-- FALL -->
-              <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">Fall</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="miniu.html">Mini University</a>
-                  <a class="dropdown-item" href="engineeringday.html">Engineering Day</a>
-                </div>
-              </div>
-          
-              <!-- SPRING -->
-              <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">Spring</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="techday.html">Tech Day</a>
-                  <a class="dropdown-item" href="ohp.html">Overnight Host Program</a>
-                </div>
-              </div>
-          
+              <a class="dropdown-item" href="miniu.html">Mini University (Fall)</a>
+              <a class="dropdown-item" href="engineeringday.html">Engineering Day (Fall)</a>
+              <a class="dropdown-item" href="techday.html">Tech Day (Spring)</a>
+              <a class="dropdown-item" href="ohp.html">Overnight Host Program (Spring)</a>
             </div>
           </li>
           <li class="nav-item">
