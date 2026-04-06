@@ -31,9 +31,18 @@
   <link href="css/clean-blog.css" rel="stylesheet">
   <link rel="icon" href="img/favicon.png">
   <style>
-    /* enable hover for main dropdown */
+    /* force dropdown to appear on hover */
     .nav-item.dropdown:hover > .dropdown-menu {
       display: block;
+      opacity: 1;
+      visibility: visible;
+      margin-top: 0;
+    }
+    
+    /* fix Bootstrap hiding */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
     }
     
     /* submenu positioning */
@@ -47,7 +56,7 @@
       display: none;
     }
     
-    /* show submenu on hover */
+    /* show submenu */
     .dropdown-submenu:hover > .dropdown-menu {
       display: block;
     }
