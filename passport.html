@@ -728,17 +728,15 @@
         createEventCards(data.items);
 
     } catch (error) {
-  console.error("Passport Data error:", error);
+      console.error("Calendar error:", error);
 
-  eventsElement.textContent = "—";
-  pointsElement.textContent = "—";
-
-  stampGrid.innerHTML = `
-    <div class="upcoming-event-status">
-      ${error.message}
-    </div>
-  `;
-}
+      upcomingEventsContainer.innerHTML = `
+        <div class="upcoming-event-status">
+          Upcoming events could not be loaded.
+        </div>
+      `;
+    }
+  }
 
   loadUpcomingEvents();
 
@@ -747,9 +745,10 @@
 </script>
   
   <script>
+    <script>
   const PASSPORT_DATA_CSV =
-  "https://docs.google.com/spreadsheets/d/1PCQ-NEEnl05p1WmXtwXIhoPtYNIiHzjT38w7TQymOfA/export?format=csv&gid=708055683";
-  
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQviBvhyznIyVMphgZ3dMJqKGdiE55ehioDgURH4QAaGMMDDVSKyK177_ZzZ_tJlSmehOtRoD2PV65N/pub?gid=708055683&single=true&output=csv";
+
   function parseCSV(csvText) {
     const rows = [];
     let row = [];
@@ -917,28 +916,31 @@
         .join("");
 
     } catch (error) {
-  console.error("Calendar error:", error);
+      console.error("Passport Data error:", error);
 
-  upcomingEventsContainer.innerHTML = `
-    <div class="upcoming-event-status">
-      Calendar error: ${error.message}
-    </div>
-  `;
-}
+      eventsElement.textContent = "—";
+      pointsElement.textContent = "—";
+
+      stampGrid.innerHTML = `
+        <div class="upcoming-event-status">
+          Passport data could not be loaded.
+        </div>
+      `;
+    }
   }
 
   loadPassportData();
-
+</script>
 </script>
 
 <script>
-const memberNameElement =
+  const memberNameElement =
     document.getElementById("memberName");
 
-const savedFirstName =
+  const savedFirstName =
     sessionStorage.getItem("memberFirstName");
 
-memberNameElement.textContent =
+  memberNameElement.textContent =
     savedFirstName || "Member";
 </script>
 
