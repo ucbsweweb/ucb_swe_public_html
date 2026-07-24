@@ -438,90 +438,27 @@
 </style>
 
 <script>
-  const MEMBER_CHECK_URL =
-    "https://script.google.com/macros/s/AKfycbx8dKaVN0OKe0Flgoshr0H8t2WHRlZsoRs1IlVSJpBAtOhTmJo3zpfLM_5_II3__IoQ/exec";
+  const loginForm = document.getElementById("memberLoginForm");
+  const emailInput = document.getElementById("memberEmail");
+  const loginMessage = document.getElementById("loginMessage");
 
-  const loginForm =
-    document.getElementById("memberLoginForm");
-
-  const emailInput =
-    document.getElementById("memberEmail");
-
-  const loginMessage =
-    document.getElementById("loginMessage");
-
-  const loginButton =
-    loginForm.querySelector("button[type='submit']");
-
-  loginForm.addEventListener("submit", async function (event) {
+  loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const email =
-      emailInput.value.trim().toLowerCase();
+    const email = emailInput.value.trim().toLowerCase();
 
     if (!email.endsWith("@berkeley.edu")) {
       loginMessage.textContent =
         "Please enter a valid @berkeley.edu email address.";
+
       return;
     }
 
-    loginMessage.textContent =
-      "Checking your SWE membership...";
+    loginMessage.textContent = "";
 
-    loginButton.disabled = true;
-    loginButton.textContent = "Checking...";
+    sessionStorage.setItem("memberEmail", email);
 
-    try {
-      const requestUrl =
-        MEMBER_CHECK_URL +
-        "?email=" +
-        encodeURIComponent(email) +
-        "&time=" +
-        Date.now();
-
-      const response = await fetch(requestUrl);
-      const result = await response.json();
-
-      if (!result.success) {
-        throw new Error(
-          result.message || "Membership check failed."
-        );
-      }
-
-      if (!result.registered) {
-        loginMessage.textContent =
-          "We could not find this email in the SWE member registration. Please register first.";
-        return;
-      }
-
-      sessionStorage.setItem(
-        "memberEmail",
-        result.member.email
-      );
-
-      sessionStorage.setItem(
-        "memberFullName",
-        result.member.fullName
-      );
-
-      sessionStorage.setItem(
-        "memberFirstName",
-        result.member.firstName
-      );
-
-      window.location.href =
-        "member-dashboard.html"; 
-
-    } catch (error) {
-      console.error(error);
-
-      loginMessage.textContent =
-        "We could not check your membership right now. Please try again.";
-
-    } finally {
-      loginButton.disabled = false;
-      loginButton.textContent = "Continue";
-    }
+    window.location.href = "member-dashboard.html";
   });
 </script>
 

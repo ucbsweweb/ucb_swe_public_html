@@ -244,23 +244,22 @@
   </style>
 
   <script>
-   const welcomeMessage = document.getElementById("welcomeMessage");
-  const memberEmailDisplay = document.getElementById("memberEmailDisplay");
+    const welcomeMessage = document.getElementById("welcomeMessage");
+    const memberEmailDisplay = document.getElementById("memberEmailDisplay");
+    const savedEmail = sessionStorage.getItem("memberEmail");
 
-  const savedEmail = sessionStorage.getItem("memberEmail");
-  const firstName = sessionStorage.getItem("memberFirstName");
-  const fullName = sessionStorage.getItem("memberFullName");
+    let displayName = "Member";
 
-if (!savedEmail) {
-    window.location.href = "members.html";
-}
+    if (savedEmail) {
+      memberEmailDisplay.textContent = savedEmail;
 
-memberEmailDisplay.textContent = savedEmail;
+      const localPart = savedEmail.split("@")[0];
+      displayName = localPart
+        .replace(/[._-]+/g, " ")
+        .replace(/\b\w/g, (char) => char.toUpperCase());
+    }
 
-welcomeMessage.textContent = `Welcome back, ${firstName}! 👋`;
-  </script>
-</body>
-</html>
+    welcomeMessage.textContent = `Welcome, ${displayName}`;
   </script>
 </body>
 
