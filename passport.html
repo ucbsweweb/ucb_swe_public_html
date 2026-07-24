@@ -35,6 +35,24 @@
       font-weight: 750;
     }
 
+    .passport-page-link {
+      display: inline-block;
+      margin: -18px 0 10px;
+      color: #7145db;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      text-decoration: underline;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 3px;
+      transition: color 0.2s ease;
+    }
+
+    .passport-page-link:hover,
+    .passport-page-link:focus-visible {
+      color: #4b2d8d;
+    }
+
     .passport-summary-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -341,6 +359,7 @@
       <h1 class="passport-welcome">
         Welcome back, <span id="memberName">Member</span> 👋💜
       </h1>
+      <a class="passport-page-link" href="leaderboard.html">Go to Leaderboards</a>
 
       <section class="passport-summary-grid">
         <div class="passport-summary-card">
@@ -480,6 +499,21 @@
       });
     }
 
+    function getStampImagePath(stampFile) {
+      const trimmedPath = String(stampFile || "").trim();
+
+      if (!trimmedPath) return "";
+      if (
+        trimmedPath.startsWith("img/") ||
+        trimmedPath.startsWith("/") ||
+        /^[a-z]+:\/\//i.test(trimmedPath)
+      ) {
+        return trimmedPath;
+      }
+
+      return `img/SWE Stamps 2/${trimmedPath}`;
+    }
+
     function openStampModal(imagePath, eventName, eventDate) {
       const modal = document.getElementById("stampModal");
       const modalImage = document.getElementById("stampModalImage");
@@ -588,8 +622,8 @@
         stampGrid.innerHTML = memberAttendance.map((row, index) => {
           const eventName = row[eventColumn] || "SWE Event";
           const stampFile = String(row[stampColumn] || "").trim();
-          const imagePath = `SWE Stamps 2/${stampFile}`;
-          
+          const imagePath = getStampImagePath(stampFile);
+
           return `
             <div class="stamp-item">
               <button
@@ -616,7 +650,7 @@
             const stampFile = String(row[stampColumn] || "").trim();
 
             openStampModal(
-              `SWE Stamps 2/${stampFile}`,
+              getStampImagePath(stampFile),
               eventName,
               formatAttendanceDate(timestamp)
             );
