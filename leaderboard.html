@@ -398,12 +398,44 @@
         </div>
 
         <div id="sectorLeaderboardRows">
-          <div class="leaderboard-row">
-            <span class="rank">—</span>
-            <span class="leaderboard-name">Loading...</span>
-            <span class="leaderboard-points">—</span>
-          </div>
-        </div>
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
+
+        <div id="sectorLeaderboardRows">
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
+
+        <div id="sectorLeaderboardRows">
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
+
+        <div id="sectorLeaderboardRows">
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
+
+        <div id="sectorLeaderboardRows">
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
       </section>
 
       <!-- Committee Showdown -->
@@ -422,12 +454,44 @@
         </div>
 
         <div id="committeeLeaderboardRows">
-          <div class="leaderboard-row">
-            <span class="rank">—</span>
-            <span class="leaderboard-name">Loading...</span>
-            <span class="leaderboard-points">—</span>
-          </div>
-        </div>
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
+
+        <div id="committeeLeaderboardRows">
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
+
+        <div id="committeeLeaderboardRows">
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
+
+        <div id="committeeLeaderboardRows">
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>>
+
+        <div id="committeeLeaderboardRows">
+  <div class="leaderboard-row">
+    <span class="rank">—</span>
+    <span class="leaderboard-name">Loading...</span>
+    <span class="leaderboard-points">—</span>
+  </div>
+</div>
       </section>
 
     </div>
@@ -521,51 +585,18 @@ const COMMITTEE_CSV =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQviBvhyznIyVMphgZ3dMJqKGdiE55ehioDgURH4QAaGMMDDVSKyK177_ZzZ_tJlSmehOtRoD2PV65N/pub?gid=298590804&single=true&output=csv";
 
   function parseSimpleCSV(csvText) {
-    const rows = [];
-    let currentRow = [];
-    let currentValue = "";
-    let inQuotes = false;
-
-    for (let i = 0; i < csvText.length; i += 1) {
-      const char = csvText[i];
-
-      if (char === '"') {
-        if (inQuotes && csvText[i + 1] === '"') {
-          currentValue += '"';
-          i += 1;
-        } else {
-          inQuotes = !inQuotes;
-        }
-      } else if (char === "," && !inQuotes) {
-        currentRow.push(currentValue.trim());
-        currentValue = "";
-      } else if ((char === "\n" || char === "\r") && !inQuotes) {
-        if (char === "\r" && csvText[i + 1] === "\n") {
-          i += 1;
-        }
-        currentRow.push(currentValue.trim());
-
-        if (currentRow.some(function (cell) { return cell.length > 0; })) {
-          rows.push(currentRow);
-        }
-
-        currentRow = [];
-        currentValue = "";
-      } else {
-        currentValue += char;
-      }
-    }
-
-    if (currentValue.length > 0 || currentRow.length > 0) {
-      currentRow.push(currentValue.trim());
-      if (currentRow.some(function (cell) { return cell.length > 0; })) {
-        rows.push(currentRow);
-      }
-    }
-
-    return rows.slice(1).filter(function (row) {
-      return row[0] && row[1] !== "";
-    });
+    return csvText
+      .trim()
+      .split(/\r?\n/)
+      .slice(1)
+      .map(function (line) {
+        return line.split(",").map(function (cell) {
+          return cell.replace(/^"|"$/g, "").trim();
+        });
+      })
+      .filter(function (row) {
+        return row[0] && row[1] !== "";
+      });
   }
 
   function rankClass(index) {

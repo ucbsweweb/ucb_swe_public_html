@@ -1,316 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="UC Berkeley SWE member passport">
-  <meta name="author" content="UC Berkeley SWE">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
   <title>Passport</title>
 
+  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900' rel='stylesheet'
+    type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900' rel='stylesheet'
+    type='text/css'>
+
+  <!-- Custom styles for this template -->
   <link href="css/clean-blog.css" rel="stylesheet">
   <link rel="icon" href="img/favicon.png">
+
+  <!-- Upgrading FontAwesome Kit -->
   <script src="https://kit.fontawesome.com/0c5e23f27c.js" crossorigin="anonymous"></script>
 
-  <style>
-    .passport-page {
-      min-height: 100vh;
-      padding: 125px 25px 90px;
-      background: radial-gradient(circle at top left, #ffffff 0%, #fbf8ff 48%, #f5f0ff 100%);
-      font-family: "Inter", sans-serif;
-    }
+<style>
 
-    .passport-container {
-      max-width: 1280px;
-      margin: 0 auto;
+    .upcoming-events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.upcoming-event-card {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(125, 122, 188, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(70, 50, 120, 0.09);
+}
+
+.upcoming-event-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #7145db;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.upcoming-event-title {
+  margin: 0 0 12px;
+  color: #281968;
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.upcoming-event-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 8px 0;
+  color: #6e6884;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.upcoming-event-info i {
+  width: 17px;
+  margin-top: 3px;
+  color: #876fc1;
+}
+
+.upcoming-event-status {
+  grid-column: 1 / -1;
+  padding: 28px;
+  color: #777086;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px dashed #d6cfee;
+  border-radius: 15px;
+}
+
+@media (max-width: 950px) {
+  .upcoming-events-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .upcoming-events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  .passport-page {
+    min-height: 100vh;
+    padding: 125px 25px 90px;
+    background:
+      radial-gradient(circle at top left, #ffffff 0%, #fbf8ff 48%, #f5f0ff 100%);
+    font-family: "Inter", sans-serif;
+  }
+
+  .passport-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .passport-welcome {
+    margin-bottom: 38px;
+    color: #281968;
+    font-size: 38px;
+    font-weight: 750;
+  }
+
+  .passport-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 52px;
+  align-items: stretch;
+}
+
+  .passport-summary-card {
+    position: relative;
+    min-height: 215px;
+    padding: 30px 34px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(125, 122, 188, 0.16);
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(70, 50, 120, 0.1);
+  }
+
+  .passport-summary-card::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: -45px;
+    left: -20px;
+    height: 75px;
+    background: #eee7ff;
+    border-radius: 50% 50% 0 0;
+  }
+
+  .passport-summary-card:nth-child(2)::after {
+    border-top: 3px solid #7d49ef;
+  }
+
+  .passport-summary-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .passport-summary-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 82px;
+    flex-shrink: 0;
+    color: #7145db;
+    font-size: 36px;
+    background: #eee7ff;
+    border-radius: 50%;
+  }
+
+  .passport-summary-label {
+    margin: 8px 0 7px;
+    color: #35276d;
+    font-size: 16px;
+    font-weight: 650;
+  }
+
+  .passport-summary-number {
+    margin: 0;
+    color: #24165e;
+    font-size: 38px;
+    font-weight: 750;
+  }
+
+  .passport-summary-message {
+    margin: 5px 0 0;
+    color: #6e6884;
+    font-size: 15px;
+  }
+
+  .passport-section-title {
+    margin: 0 0 24px;
+    color: #281968;
+    font-size: 29px;
+    font-weight: 750;
+  }
+
+  .stamp-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(110px, 1fr));
+    gap: 32px 25px;
+    margin-bottom: 55px;
+  }
+
+  .stamp-item {
+    text-align: center;
+  }
+
+  .stamp-shape {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 13px;
+    color: #6542bd;
+    font-size: 42px;
+    background: #e9e1ff;
+    border: 4px solid #c4b3f4;
+    box-shadow:
+      inset 0 0 0 7px rgba(255, 255, 255, 0.45),
+      0 7px 18px rgba(72, 52, 130, 0.1);
+  }
+
+  .stamp-square {
+    border-radius: 4px;
+    clip-path: polygon(
+      0 8%, 4% 8%, 4% 2%, 10% 2%, 10% 8%,
+      16% 8%, 16% 2%, 22% 2%, 22% 8%,
+      28% 8%, 28% 2%, 34% 2%, 34% 8%,
+      40% 8%, 40% 2%, 46% 2%, 46% 8%,
+      52% 8%, 52% 2%, 58% 2%, 58% 8%,
+      64% 8%, 64% 2%, 70% 2%, 70% 8%,
+      76% 8%, 76% 2%, 82% 2%, 82% 8%,
+      88% 8%, 88% 2%, 94% 2%, 94% 8%,
+      100% 8%, 100% 92%, 94% 92%, 94% 98%,
+      88% 98%, 88% 92%, 82% 92%, 82% 98%,
+      76% 98%, 76% 92%, 70% 92%, 70% 98%,
+      64% 98%, 64% 92%, 58% 92%, 58% 98%,
+      52% 98%, 52% 92%, 46% 92%, 46% 98%,
+      40% 98%, 40% 92%, 34% 92%, 34% 98%,
+      28% 98%, 28% 92%, 22% 92%, 22% 98%,
+      16% 98%, 16% 92%, 10% 92%, 10% 98%,
+      4% 98%, 4% 92%, 0 92%
+    );
+  }
+
+  .stamp-circle {
+    border-radius: 50%;
+    clip-path: polygon(
+      50% 0%, 58% 10%, 69% 4%, 74% 16%,
+      87% 13%, 88% 27%, 100% 31%, 94% 43%,
+      100% 53%, 89% 61%, 93% 74%, 79% 76%,
+      75% 89%, 63% 84%, 54% 100%, 45% 86%,
+      31% 94%, 27% 79%, 13% 82%, 14% 67%,
+      0 61%, 8% 49%, 0 38%, 13% 31%,
+      11% 18%, 25% 16%, 31% 4%, 42% 10%
+    );
+  }
+
+  .stamp-green {
+    color: #5c842a;
+    background: #edf5de;
+    border-color: #9fb778;
+  }
+
+  .stamp-pink {
+    color: #bd3484;
+    background: #ffe3f2;
+    border-color: #ef9fc9;
+  }
+
+  .stamp-orange {
+    color: #b84e16;
+    background: #fff0e4;
+    border-color: #f5a272;
+  }
+
+  .stamp-date {
+    color: #392a6b;
+    font-size: 14px;
+    font-weight: 650;
+  }
+
+  .upcoming-events-empty {
+    min-height: 130px;
+    padding: 30px;
+    color: #777086;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px dashed #d6cfee;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 700px) {
+  .passport-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+    .stamp-grid {
+      grid-template-columns: repeat(4, minmax(110px, 1fr));
+    }
+  }
+
+  @media (max-width: 700px) {
+    .passport-page {
+      padding: 110px 18px 65px;
     }
 
     .passport-welcome {
-      margin-bottom: 38px;
-      color: #281968;
-      font-size: 38px;
-      font-weight: 750;
-    }
-
-    .passport-summary-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 30px;
-      margin-bottom: 52px;
-      align-items: stretch;
+      font-size: 30px;
     }
 
     .passport-summary-card {
-      position: relative;
-      min-height: 215px;
-      padding: 30px 34px;
-      overflow: hidden;
-      background: rgba(255, 255, 255, 0.96);
-      border: 1px solid rgba(125, 122, 188, 0.16);
-      border-radius: 18px;
-      box-shadow: 0 12px 32px rgba(70, 50, 120, 0.1);
-    }
-
-    .passport-summary-card::after {
-      content: "";
-      position: absolute;
-      right: -20px;
-      bottom: -45px;
-      left: -20px;
-      height: 75px;
-      background: #eee7ff;
-      border-radius: 50% 50% 0 0;
-    }
-
-    .passport-summary-card:nth-child(2)::after {
-      border-top: 3px solid #7d49ef;
-    }
-
-    .passport-summary-content {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      align-items: flex-start;
-      gap: 24px;
-    }
-
-    .passport-summary-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 82px;
-      height: 82px;
-      flex-shrink: 0;
-      color: #7145db;
-      font-size: 36px;
-      background: #eee7ff;
-      border-radius: 50%;
-    }
-
-    .passport-summary-label {
-      margin: 8px 0 7px;
-      color: #35276d;
-      font-size: 16px;
-      font-weight: 650;
-    }
-
-    .passport-summary-number {
-      margin: 0;
-      color: #24165e;
-      font-size: 38px;
-      font-weight: 750;
-    }
-
-    .passport-summary-message {
-      margin: 5px 0 0;
-      color: #6e6884;
-      font-size: 15px;
-    }
-
-    .passport-section-title {
-      margin: 0 0 24px;
-      color: #281968;
-      font-size: 29px;
-      font-weight: 750;
+      min-height: 175px;
+      padding: 25px;
     }
 
     .stamp-grid {
-      display: grid;
-      grid-template-columns: repeat(6, minmax(110px, 1fr));
-      gap: 32px 25px;
-      margin-bottom: 55px;
+      grid-template-columns: repeat(2, minmax(110px, 1fr));
     }
 
-    .stamp-item {
-      text-align: center;
+    .stamp-shape {
+      width: 110px;
+      height: 110px;
     }
-
-    .passport-stamp-button {
-      display: block;
-      margin: 0 auto;
-      padding: 0;
-      background: none;
-      border: 0;
-      cursor: pointer;
-    }
-
-    .passport-stamp-image {
-      width: 125px;
-      height: 125px;
-      object-fit: contain;
-      transition: transform 0.2s ease, filter 0.2s ease;
-    }
-
-    .passport-stamp-button:hover .passport-stamp-image,
-    .passport-stamp-button:focus-visible .passport-stamp-image {
-      transform: scale(1.06) rotate(-2deg);
-      filter: drop-shadow(0 8px 12px rgba(65, 45, 120, 0.16));
-    }
-
-    .passport-stamp-button:focus-visible {
-      outline: 3px solid #8b73d4;
-      outline-offset: 7px;
-      border-radius: 8px;
-    }
-
-    .stamp-modal {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      background: rgba(31, 20, 70, 0.52);
-    }
-
-    .stamp-modal.is-open {
-      display: flex;
-    }
-
-    .stamp-modal-card {
-      position: relative;
-      width: min(420px, 100%);
-      padding: 38px 34px 34px;
-      text-align: center;
-      background: #ffffff;
-      border: 1px solid rgba(125, 122, 188, 0.18);
-      border-radius: 20px;
-      box-shadow: 0 24px 60px rgba(39, 24, 91, 0.28);
-    }
-
-    .stamp-modal-close {
-      position: absolute;
-      top: 12px;
-      right: 16px;
-      padding: 0;
-      color: #5c4b85;
-      font-size: 30px;
-      line-height: 1;
-      background: none;
-      border: 0;
-      cursor: pointer;
-    }
-
-    .stamp-modal-image {
-      width: 190px;
-      height: 190px;
-      margin-bottom: 20px;
-      object-fit: contain;
-    }
-
-    .stamp-modal-card h3 {
-      margin: 0 0 9px;
-      color: #281968;
-      font-family: "Inter", sans-serif;
-      font-size: 24px;
-      font-weight: 750;
-    }
-
-    .stamp-modal-card p {
-      margin: 0;
-      color: #746d86;
-      font-size: 16px;
-    }
-
-    .upcoming-events-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .upcoming-event-card {
-      padding: 24px;
-      background: rgba(255, 255, 255, 0.96);
-      border: 1px solid rgba(125, 122, 188, 0.16);
-      border-radius: 16px;
-      box-shadow: 0 10px 28px rgba(70, 50, 120, 0.09);
-    }
-
-    .upcoming-event-date {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 14px;
-      color: #7145db;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .upcoming-event-title {
-      margin: 0 0 12px;
-      color: #281968;
-      font-size: 20px;
-      font-weight: 750;
-    }
-
-    .upcoming-event-info {
-      display: flex;
-      align-items: flex-start;
-      gap: 9px;
-      margin: 8px 0;
-      color: #6e6884;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .upcoming-event-info i {
-      width: 17px;
-      margin-top: 3px;
-      color: #876fc1;
-    }
-
-    .upcoming-event-status {
-      grid-column: 1 / -1;
-      padding: 28px;
-      color: #777086;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px dashed #d6cfee;
-      border-radius: 15px;
-    }
-
-    @media (max-width: 1050px) {
-      .stamp-grid {
-        grid-template-columns: repeat(4, minmax(110px, 1fr));
-      }
-    }
-
-    @media (max-width: 700px) {
-      .passport-page {
-        padding: 110px 18px 65px;
-      }
-
-      .passport-welcome {
-        font-size: 30px;
-      }
-
-      .passport-summary-grid,
-      .upcoming-events-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .passport-summary-card {
-        min-height: 175px;
-        padding: 25px;
-      }
-
-      .stamp-grid {
-        grid-template-columns: repeat(2, minmax(110px, 1fr));
-      }
-
-      .passport-stamp-image {
-        width: 110px;
-        height: 110px;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
+
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="submainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -319,401 +352,566 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
-        Menu <i class="fas fa-bars"></i>
+        Menu
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="officers.html">Officers</a></li>
-          <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
-          <li class="nav-item"><a class="nav-link" href="involved.html">Get Involved</a></li>
-          <li class="nav-item"><a class="nav-link" href="outreach.html">Outreach</a></li>
-          <li class="nav-item"><a class="nav-link" href="corporate.html">Corporate</a></li>
-          <li class="nav-item"><a class="nav-link" href="e-i.html">E&amp;I</a></li>
-          <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="officers.html">Officers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calendar.html">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="involved.html">Get Involved</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="outreach.html">Outreach</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="corporate.html">Corporate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="e-i.html">E&I</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="members.html">Members</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="passport-page">
-    <div class="passport-container">
-      <h1 class="passport-welcome">
-        Welcome back, <span id="memberName">Member</span> 👋💜
-      </h1>
+ <!-- Passport Main Content -->
+<main class="passport-page">
+  <div class="passport-container">
 
-      <section class="passport-summary-grid">
-        <div class="passport-summary-card">
-          <div class="passport-summary-content">
-            <div class="passport-summary-icon"><i class="fas fa-ticket-alt"></i></div>
-            <div>
-              <p class="passport-summary-label">Events Attended</p>
-              <p class="passport-summary-number" id="eventsAttended">—</p>
-              <p class="passport-summary-message">Keep it up!</p>
-            </div>
+    <h1 class="passport-welcome">
+      Welcome back, <span id="memberName">NAME</span> 👋💜
+    </h1>
+
+    <!-- Summary Cards -->
+    <section class="passport-summary-grid">
+
+      <div class="passport-summary-card">
+        <div class="passport-summary-content">
+          <div class="passport-summary-icon">
+            <i class="fas fa-ticket-alt"></i>
           </div>
-        </div>
 
-        <div class="passport-summary-card">
-          <div class="passport-summary-content">
-            <div class="passport-summary-icon"><i class="far fa-star"></i></div>
-            <div>
-              <p class="passport-summary-label">Total Points</p>
-              <p class="passport-summary-number" id="totalPoints">—</p>
-            </div>
+          <div>
+            <p class="passport-summary-label">
+              Events Attended
+            </p>
+
+            <p class="passport-summary-number" id="eventsAttended">
+              8
+            </p>
+
+            <p class="passport-summary-message">
+              Keep it up!
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="passport-section-title">Event Stamps</h2>
-        <div class="stamp-grid" id="stampGrid">
-          <div class="upcoming-event-status">Loading event stamps...</div>
-        </div>
-      </section>
-
-      <div class="stamp-modal" id="stampModal" aria-hidden="true">
-        <div class="stamp-modal-card" role="dialog" aria-modal="true" aria-labelledby="stampModalEvent">
-          <button class="stamp-modal-close" id="stampModalClose" type="button" aria-label="Close stamp details">&times;</button>
-          <img class="stamp-modal-image" id="stampModalImage" src="" alt="">
-          <h3 id="stampModalEvent"></h3>
-          <p id="stampModalDate"></p>
         </div>
       </div>
 
-      <section>
-        <h2 class="passport-section-title">Upcoming Events</h2>
-        <div class="upcoming-events-grid" id="upcomingEvents">
-          <div class="upcoming-event-status">Loading upcoming events...</div>
-        </div>
-      </section>
-    </div>
-  </main>
+      <div class="passport-summary-card">
+        <div class="passport-summary-content">
+          <div class="passport-summary-icon">
+            <i class="far fa-star"></i>
+          </div>
 
+          <div>
+            <p class="passport-summary-label">
+              Total Points
+            </p>
+
+            <p class="passport-summary-number" id="totalPoints">
+              120
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </section>
+
+    <!-- Event Stamps -->
+    <section>
+      <h2 class="passport-section-title">
+        Event Stamps
+      </h2>
+
+      <div class="stamp-grid" id="stampGrid">
+
+        <div class="stamp-item">
+          <div class="stamp-shape stamp-square">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="stamp-date">9/3/24</div>
+        </div>
+
+        <div class="stamp-item">
+          <div class="stamp-shape stamp-circle stamp-green">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="stamp-date">9/17/24</div>
+        </div>
+
+        <div class="stamp-item">
+          <div class="stamp-shape stamp-square stamp-pink">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="stamp-date">9/24/24</div>
+        </div>
+
+        <div class="stamp-item">
+          <div class="stamp-shape stamp-circle stamp-orange">
+            <i class="fas fa-tools"></i>
+          </div>
+          <div class="stamp-date">10/3/24</div>
+        </div>
+
+        <div class="stamp-item">
+          <div class="stamp-shape stamp-square">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="stamp-date">10/10/24</div>
+        </div>
+
+        <div class="stamp-item">
+          <div class="stamp-shape stamp-circle stamp-green">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="stamp-date">10/17/24</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section>
+      <h2 class="passport-section-title">
+        Upcoming Events
+      </h2>
+
+      <div class="upcoming-events-grid" id="upcomingEvents">
+  <div class="upcoming-event-status">
+    Loading upcoming events...
+  </div>
+</div>
+    </section>
+
+  </div>
+</main>
+ <!-- Footer -->
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
-            <li class="list-inline-item"><a href="https://www.facebook.com/SWE-UC-Berkeley-110515020740706/" target="_blank"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/ucb_swe" target="_blank"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
-            <li class="list-inline-item"><a href="https://www.tiktok.com/@ucb_swe" target="_blank"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-tiktok fa-stack-1x fa-inverse"></i></span></a></li>
-            <li class="list-inline-item"><a href="https://www.youtube.com/user/BerkeleySWE" target="_blank"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-youtube fa-stack-1x fa-inverse"></i></span></a></li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/company/uc-berkeley-swe" target="_blank"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i></span></a></li>
-            <li class="list-inline-item"><a href="https://www.redbubble.com/people/ucbswe/shop" target="_blank"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fa fa-shopping-bag fa-stack-1x fa-inverse"></i></span></a></li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/SWE-UC-Berkeley-110515020740706/" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/ucb_swe" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.tiktok.com/@ucb_swe" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-tiktok fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/user/BerkeleySWE" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/uc-berkeley-swe" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.redbubble.com/people/ucbswe/shop" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-shopping-bag fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
           </ul>
           <br>
+
           <a class="ocf" href="https://www.ocf.berkeley.edu">
-            <img src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8.png" alt="Hosted by the OCF" style="border: 1;">
+            <img src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8.png" alt="Hosted by the OCF"
+              style="border: 1;" />
           </a>
-          <p class="copyright text-muted">Copyright &copy; Society of Women Engineers 2026<br>4 McLaughlin Hall, Berkeley, CA 94720<br><br><i>UC Berkeley SWE acknowledges that UC Berkeley sits on the territory of xučyun (Huichin), the ancestral and unceded land of the Chochenyo speaking Ohlone people.</i></p>
+
+          <p class="copyright text-muted">Copyright &copy; Society of Women Engineers 2026<br>4 McLaughlin Hall,
+            Berkeley, CA 94720<br><br><i>UC Berkeley SWE acknowledges that UC Berkeley sits on the territory of xučyun
+              (Huichin), the ancestral and unceded land of the Chochenyo speaking Ohlone people.</i>
+          </p>
         </div>
+
       </div>
     </div>
   </footer>
 
+  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
 
   <script>
-    const GOOGLE_CALENDAR_API_KEY = "AIzaSyBg7lcVoXNd8nZFMykXG6OwXLutNr_TXqU";
-    const SWE_CALENDAR_ID = "phrivnjgo1i6s4iisp61ige25g@group.calendar.google.com";
+  const GOOGLE_CALENDAR_API_KEY =
+    "AIzaSyBg7lcVoXNd8nZFMykXG6OwXLutNr_TXqU";
 
-    const PASSPORT_DATA_CSV =
-      "https://docs.google.com/spreadsheets/d/1PCQ-NEEnl05p1WmXtwXIhoPtYNIiHzjT38w7TQymOfA/export?format=csv&gid=708055683";
+  const SWE_CALENDAR_ID =
+    "phrivnjgo1i6s4iisp61ige25g@group.calendar.google.com";
 
-    const ATTENDANCE_CSV =
-      "https://docs.google.com/spreadsheets/d/e/2PACX-1vQviBvhyznIyVMphgZ3dMJqKGdiE55ehioDgURH4QAaGMMDDVSKyK177_ZzZ_tJlSmehOtRoD2PV65N/pub?gid=923555706&single=true&output=csv";
+  const upcomingEventsContainer =
+    document.getElementById("upcomingEvents");
 
-    function parseCSV(csvText) {
-      const rows = [];
-      let row = [];
-      let cell = "";
-      let insideQuotes = false;
+  function escapeEventHtml(value) {
+    const element = document.createElement("div");
+    element.textContent = String(value || "");
+    return element.innerHTML;
+  }
 
-      for (let i = 0; i < csvText.length; i++) {
-        const char = csvText[i];
-        const nextChar = csvText[i + 1];
+  function formatEventDate(event) {
+    const startValue = event.start.dateTime || event.start.date;
+    const date = new Date(startValue);
 
-        if (char === '"' && insideQuotes && nextChar === '"') {
-          cell += '"';
+    return date.toLocaleDateString("en-US", {
+      weekday: "short",
+      month: "short",
+      day: "numeric"
+    });
+  }
+
+  function formatEventTime(event) {
+    if (event.start.date && !event.start.dateTime) {
+      return "All day";
+    }
+
+    const start = new Date(event.start.dateTime);
+    const end = new Date(event.end.dateTime);
+
+    const startTime = start.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "2-digit"
+    });
+
+    const endTime = end.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "2-digit"
+    });
+
+    return `${startTime}–${endTime}`;
+  }
+
+  function createEventCards(events) {
+    if (!Array.isArray(events) || events.length === 0) {
+      return `
+        <div class="upcoming-event-status">
+          No upcoming SWE events are currently listed.
+        </div>
+      `;
+    }
+
+    return events.map(function (event) {
+      const title = escapeEventHtml(event.summary || "SWE Event");
+      const location = escapeEventHtml(event.location || "");
+
+      const locationSection = location
+        ? `
+          <p class="upcoming-event-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>${location}</span>
+          </p>
+        `
+        : "";
+
+      return `
+        <article class="upcoming-event-card">
+          <div class="upcoming-event-date">
+            <i class="far fa-calendar-alt"></i>
+            <span>${formatEventDate(event)}</span>
+          </div>
+
+          <h3 class="upcoming-event-title">
+            ${title}
+          </h3>
+
+          <p class="upcoming-event-info">
+            <i class="far fa-clock"></i>
+            <span>${formatEventTime(event)}</span>
+          </p>
+
+          ${locationSection}
+        </article>
+      `;
+    }).join("");
+  }
+
+  async function loadUpcomingEvents() {
+    if (!upcomingEventsContainer) {
+      return;
+    }
+
+    try {
+      const timeMin = new Date().toISOString();
+      const requestUrl =
+        "https://www.googleapis.com/calendar/v3/calendars/" +
+        encodeURIComponent(SWE_CALENDAR_ID) +
+        "/events?key=" + encodeURIComponent(GOOGLE_CALENDAR_API_KEY) +
+        "&timeMin=" + encodeURIComponent(timeMin) +
+        "&singleEvents=true&orderBy=startTime&maxResults=6";
+
+      const response = await fetch(requestUrl, { cache: "no-store" });
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error?.message || "Calendar request failed.");
+      }
+
+      upcomingEventsContainer.innerHTML = createEventCards(data.items || []);
+    } catch (error) {
+      console.error("Passport calendar error:", error);
+      upcomingEventsContainer.innerHTML = `
+        <div class="upcoming-event-status">
+          ${error.message || "Unable to load upcoming events right now."}
+        </div>
+      `;
+    }
+  }
+
+  loadUpcomingEvents();
+  setInterval(loadUpcomingEvents, 300000);
+</script>
+  
+  <script>
+  const PASSPORT_DATA_CSV =
+  "https://docs.google.com/spreadsheets/d/1PCQ-NEEnl05p1WmXtwXIhoPtYNIiHzjT38w7TQymOfA/export?format=csv&gid=708055683";
+  
+  function parseCSV(csvText) {
+    const rows = [];
+    let row = [];
+    let cell = "";
+    let insideQuotes = false;
+
+    for (let i = 0; i < csvText.length; i++) {
+      const char = csvText[i];
+      const nextChar = csvText[i + 1];
+
+      if (char === '"' && insideQuotes && nextChar === '"') {
+        cell += '"';
+        i++;
+      } else if (char === '"') {
+        insideQuotes = !insideQuotes;
+      } else if (char === "," && !insideQuotes) {
+        row.push(cell);
+        cell = "";
+      } else if (
+        (char === "\n" || char === "\r") &&
+        !insideQuotes
+      ) {
+        if (char === "\r" && nextChar === "\n") {
           i++;
-        } else if (char === '"') {
-          insideQuotes = !insideQuotes;
-        } else if (char === "," && !insideQuotes) {
-          row.push(cell);
-          cell = "";
-        } else if ((char === "\n" || char === "\r") && !insideQuotes) {
-          if (char === "\r" && nextChar === "\n") i++;
-          row.push(cell);
-          if (row.some(value => value.trim() !== "")) rows.push(row);
-          row = [];
-          cell = "";
-        } else {
-          cell += char;
-        }
-      }
-
-      row.push(cell);
-      if (row.some(value => value.trim() !== "")) rows.push(row);
-      return rows;
-    }
-
-    function normalize(value) {
-      return String(value || "").trim().toLowerCase();
-    }
-
-    function escapeHtml(value) {
-      const element = document.createElement("div");
-      element.textContent = String(value || "");
-      return element.innerHTML;
-    }
-
-    function formatAttendanceDate(timestamp) {
-      const date = new Date(timestamp);
-      if (Number.isNaN(date.getTime())) return timestamp || "Date unavailable";
-      return date.toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric"
-      });
-    }
-
-    function openStampModal(imagePath, eventName, eventDate) {
-      const modal = document.getElementById("stampModal");
-      const modalImage = document.getElementById("stampModalImage");
-      const modalEvent = document.getElementById("stampModalEvent");
-      const modalDate = document.getElementById("stampModalDate");
-
-      modalImage.src = imagePath;
-      modalImage.alt = `${eventName} stamp`;
-      modalEvent.textContent = eventName;
-      modalDate.textContent = eventDate;
-      modal.classList.add("is-open");
-      modal.setAttribute("aria-hidden", "false");
-    }
-
-    function closeStampModal() {
-      const modal = document.getElementById("stampModal");
-      modal.classList.remove("is-open");
-      modal.setAttribute("aria-hidden", "true");
-    }
-
-    function initializeStampModal() {
-      const modal = document.getElementById("stampModal");
-      const closeButton = document.getElementById("stampModalClose");
-
-      closeButton.addEventListener("click", closeStampModal);
-      modal.addEventListener("click", event => {
-        if (event.target === modal) closeStampModal();
-      });
-      document.addEventListener("keydown", event => {
-        if (event.key === "Escape") closeStampModal();
-      });
-    }
-
-    async function loadPassportSummary(signedInEmail) {
-      const eventsElement = document.getElementById("eventsAttended");
-      const pointsElement = document.getElementById("totalPoints");
-
-      try {
-        const response = await fetch(
-          PASSPORT_DATA_CSV + "&cache=" + Date.now(),
-          { cache: "no-store" }
-        );
-        if (!response.ok) throw new Error("Could not load Passport Data.");
-
-        const rows = parseCSV(await response.text());
-        if (rows.length < 2) throw new Error("Passport Data is empty.");
-
-        const headers = rows[0].map(normalize);
-        const emailColumn = headers.indexOf("berkeley email");
-        const eventsColumn = headers.indexOf("events attended");
-        const pointsColumn = headers.indexOf("points");
-
-        if (emailColumn === -1 || eventsColumn === -1 || pointsColumn === -1) {
-          throw new Error("Passport Data headers do not match.");
         }
 
-        const memberRow = rows.slice(1).find(row =>
-          normalize(row[emailColumn]) === normalize(signedInEmail)
-        );
+        row.push(cell);
 
-        if (!memberRow) throw new Error("Signed-in member was not found in Passport Data.");
+        if (row.some(value => value.trim() !== "")) {
+          rows.push(row);
+        }
 
-        eventsElement.textContent = memberRow[eventsColumn] || "0";
-        pointsElement.textContent = memberRow[pointsColumn] || "0";
-      } catch (error) {
-        console.error("Passport summary error:", error);
-        eventsElement.textContent = "—";
-        pointsElement.textContent = "—";
+        row = [];
+        cell = "";
+      } else {
+        cell += char;
       }
     }
 
-    async function loadMemberStamps(signedInEmail) {
-      const stampGrid = document.getElementById("stampGrid");
-      stampGrid.innerHTML = '<div class="upcoming-event-status">Loading event stamps...</div>';
+    row.push(cell);
 
-      try {
-        const response = await fetch(
-          ATTENDANCE_CSV + "&cache=" + Date.now(),
-          { cache: "no-store" }
-        );
-        if (!response.ok) throw new Error("Could not load attendance data.");
-
-        const rows = parseCSV(await response.text());
-        if (rows.length < 2) throw new Error("Attendance data is empty.");
-
-        const headers = rows[0].map(normalize);
-        const timestampColumn = headers.indexOf("timestamp");
-        const emailColumn = headers.indexOf("email");
-        const eventColumn = headers.indexOf("event");
-        const stampColumn = headers.indexOf("stamp");
-
-        if (timestampColumn === -1 || emailColumn === -1 || eventColumn === -1 || stampColumn === -1) {
-          throw new Error("Attendance headers do not match.");
-        }
-
-        const memberAttendance = rows.slice(1).filter(row =>
-          normalize(row[emailColumn]) === normalize(signedInEmail) &&
-          String(row[stampColumn] || "").trim() !== ""
-        );
-
-        if (!memberAttendance.length) {
-          stampGrid.innerHTML = '<div class="upcoming-event-status">No event stamps earned yet.</div>';
-          return;
-        }
-
-        stampGrid.innerHTML = memberAttendance.map((row, index) => {
-          const eventName = row[eventColumn] || "SWE Event";
-          const stampFile = String(row[stampColumn] || "").trim();
-          const imagePath = `SWE Stamps 2/${stampFile}`;
-          
-          return `
-            <div class="stamp-item">
-              <button
-                class="passport-stamp-button"
-                type="button"
-                data-stamp-index="${index}"
-                aria-label="View details for ${escapeHtml(eventName)}"
-              >
-                <img
-                  class="passport-stamp-image"
-                  src="${escapeHtml(imagePath)}"
-                  alt="${escapeHtml(eventName)} stamp"
-                >
-              </button>
-            </div>
-          `;
-        }).join("");
-
-        stampGrid.querySelectorAll(".passport-stamp-button").forEach(button => {
-          button.addEventListener("click", () => {
-            const row = memberAttendance[Number(button.dataset.stampIndex)];
-            const timestamp = row[timestampColumn] || "";
-            const eventName = row[eventColumn] || "SWE Event";
-            const stampFile = String(row[stampColumn] || "").trim();
-
-            openStampModal(
-              `SWE Stamps 2/${stampFile}`,
-              eventName,
-              formatAttendanceDate(timestamp)
-            );
-          });
-        });
-      } catch (error) {
-        console.error("Attendance stamp error:", error);
-        stampGrid.innerHTML = '<div class="upcoming-event-status">Event stamps could not be loaded.</div>';
-      }
+    if (row.some(value => value.trim() !== "")) {
+      rows.push(row);
     }
 
-    function formatEventDate(event) {
-      const startValue = event.start.dateTime || event.start.date;
-      return new Date(startValue).toLocaleDateString("en-US", {
-        weekday: "short",
-        month: "short",
-        day: "numeric"
+    return rows;
+  }
+
+  function normalize(value) {
+    return String(value || "")
+      .trim()
+      .toLowerCase();
+  }
+
+  async function loadPassportData() {
+    const signedInEmail =
+      sessionStorage.getItem("memberEmail");
+
+    const eventsElement =
+      document.getElementById("eventsAttended");
+
+    const pointsElement =
+      document.getElementById("totalPoints");
+
+    const stampGrid =
+      document.getElementById("stampGrid");
+
+    eventsElement.textContent = "—";
+    pointsElement.textContent = "—";
+    stampGrid.innerHTML = "";
+
+    if (!signedInEmail) {
+      window.location.href = "members.html";
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        PASSPORT_DATA_CSV + "&cache=" + Date.now(),
+        { cache: "no-store" }
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          "Could not load Passport Data."
+        );
+      }
+
+      const csvText = await response.text();
+      const rows = parseCSV(csvText);
+
+      const headers = rows[0].map(normalize);
+
+      const emailColumn =
+        headers.indexOf("berkeley email");
+
+      const eventsColumn =
+        headers.indexOf("events attended");
+
+      const pointsColumn =
+        headers.indexOf("points");
+
+      const stampsColumn =
+        headers.indexOf("stamps");
+
+      if (
+        emailColumn === -1 ||
+        eventsColumn === -1 ||
+        pointsColumn === -1 ||
+        stampsColumn === -1
+      ) {
+        throw new Error(
+          "Passport Data headers do not match."
+        );
+      }
+
+      const memberRow = rows.slice(1).find(function (row) {
+        return normalize(row[emailColumn]) ===
+          normalize(signedInEmail);
       });
-    }
 
-    function formatEventTime(event) {
-      if (event.start.date && !event.start.dateTime) return "All day";
-
-      const start = new Date(event.start.dateTime);
-      const end = new Date(event.end.dateTime);
-      const options = { hour: "numeric", minute: "2-digit" };
-      return `${start.toLocaleTimeString("en-US", options)}–${end.toLocaleTimeString("en-US", options)}`;
-    }
-
-    function createEventCards(events) {
-      if (!Array.isArray(events) || events.length === 0) {
-        return '<div class="upcoming-event-status">No upcoming SWE events are currently listed.</div>';
+      if (!memberRow) {
+        throw new Error(
+          "The signed-in email was not found in Passport Data."
+        );
       }
 
-      return events.map(event => {
-        const title = escapeHtml(event.summary || "SWE Event");
-        const location = escapeHtml(event.location || "");
-        const locationSection = location
-          ? `<p class="upcoming-event-info"><i class="fas fa-map-marker-alt"></i><span>${location}</span></p>`
-          : "";
+      eventsElement.textContent =
+        memberRow[eventsColumn] || "0";
 
-        return `
-          <article class="upcoming-event-card">
-            <div class="upcoming-event-date"><i class="far fa-calendar-alt"></i><span>${formatEventDate(event)}</span></div>
-            <h3 class="upcoming-event-title">${title}</h3>
-            <p class="upcoming-event-info"><i class="far fa-clock"></i><span>${formatEventTime(event)}</span></p>
-            ${locationSection}
-          </article>
+      pointsElement.textContent =
+        memberRow[pointsColumn] || "0";
+
+      const stampsText =
+        memberRow[stampsColumn] || "";
+
+      const stamps = stampsText
+        .split(",")
+        .map(function (stamp) {
+          return stamp.trim();
+        })
+        .filter(Boolean);
+
+      if (stamps.length === 0) {
+        stampGrid.innerHTML = `
+          <div class="upcoming-event-status">
+            No event stamps earned yet.
+          </div>
         `;
-      }).join("");
-    }
-
-    async function loadUpcomingEvents() {
-      const container = document.getElementById("upcomingEvents");
-
-      try {
-        const timeMin = new Date().toISOString();
-        const requestUrl =
-          "https://www.googleapis.com/calendar/v3/calendars/" +
-          encodeURIComponent(SWE_CALENDAR_ID) +
-          "/events?key=" + encodeURIComponent(GOOGLE_CALENDAR_API_KEY) +
-          "&timeMin=" + encodeURIComponent(timeMin) +
-          "&singleEvents=true&orderBy=startTime&maxResults=6";
-
-        const response = await fetch(requestUrl, { cache: "no-store" });
-        const data = await response.json();
-        if (!response.ok) throw new Error(data.error?.message || "Calendar request failed.");
-
-        container.innerHTML = createEventCards(data.items || []);
-      } catch (error) {
-        console.error("Calendar error:", error);
-        container.innerHTML = `<div class="upcoming-event-status">${escapeHtml(error.message || "Unable to load upcoming events right now.")}</div>`;
-      }
-    }
-
-    async function initializePassport() {
-      const signedInEmail = sessionStorage.getItem("memberEmail");
-      const firstName = sessionStorage.getItem("memberFirstName");
-
-      if (!signedInEmail) {
-        window.location.href = "members.html";
         return;
       }
 
-      document.getElementById("memberName").textContent = firstName || "Member";
-      initializeStampModal();
+      stampGrid.innerHTML = stamps
+        .map(function (stampId) {
+          return `
+            <div class="stamp-item">
+              <div class="stamp-shape stamp-square">
+                <span style="font-size: 15px; font-weight: 700;">
+                  ${stampId}
+                </span>
+              </div>
+            </div>
+          `;
+        })
+        .join("");
 
-      await Promise.all([
-        loadPassportSummary(signedInEmail),
-        loadMemberStamps(signedInEmail),
-        loadUpcomingEvents()
-      ]);
+    } catch (error) {
+  console.error("Calendar error:", error);
 
-      setInterval(loadUpcomingEvents, 300000);
-    }
+  upcomingEventsContainer.innerHTML = `
+    <div class="upcoming-event-status">
+      Calendar error: ${error.message}
+    </div>
+  `;
+}
+  }
 
-    initializePassport();
-  </script>
+  loadPassportData();
+
+</script>
+
+<script>
+const memberNameElement =
+    document.getElementById("memberName");
+
+const savedFirstName =
+    sessionStorage.getItem("memberFirstName");
+
+memberNameElement.textContent =
+    savedFirstName || "Member";
+</script>
+
 </body>
+
 </html>
