@@ -39,7 +39,7 @@
 
     .upcoming-events-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
 }
 
@@ -126,16 +126,15 @@
   }
 
   .passport-summary-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 52px;
-  align-items: stretch;
-}
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-bottom: 52px;
+  }
 
   .passport-summary-card {
     position: relative;
-    min-height: 215px;
+    min-height: 195px;
     padding: 30px 34px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.96);
@@ -304,11 +303,10 @@
     border-radius: 15px;
   }
 
-  @media (max-width: 700px) {
-  .passport-summary-grid {
-    grid-template-columns: 1fr;
-  }
-}
+  @media (max-width: 1050px) {
+    .passport-summary-grid {
+      grid-template-columns: 1fr;
+    }
 
     .stamp-grid {
       grid-template-columns: repeat(4, minmax(110px, 1fr));
@@ -437,7 +435,23 @@
         </div>
       </div>
 
-      
+      <div class="passport-summary-card">
+        <div class="passport-summary-content">
+          <div class="passport-summary-icon">
+            <i class="far fa-star"></i>
+          </div>
+
+          <div>
+            <p class="passport-summary-label">
+              Current Rank
+            </p>
+
+            <p class="passport-summary-number" id="memberRank">
+              —
+            </p>
+          </div>
+        </div>
+      </div>
 
     </section>
 
@@ -605,7 +619,9 @@
   }
 
   function formatEventDate(event) {
-    const startValue = event.start.dateTime || event.start.date;
+    const startValue =
+      event.start.dateTime || event.start.date;
+
     const date = new Date(startValue);
 
     return date.toLocaleDateString("en-US", {
@@ -646,8 +662,13 @@
     }
 
     return events.map(function (event) {
-      const title = escapeEventHtml(event.summary || "SWE Event");
-      const location = escapeEventHtml(event.location || "");
+      const title = escapeEventHtml(
+        event.summary || "SWE Event"
+      );
+
+      const location = escapeEventHtml(
+        event.location || ""
+      );
 
       const locationSection = location
         ? `
@@ -681,38 +702,47 @@
   }
 
   async function loadUpcomingEvents() {
-    if (!upcomingEventsContainer) {
-      return;
-    }
-
     try {
       const timeMin = new Date().toISOString();
+
       const requestUrl =
         "https://www.googleapis.com/calendar/v3/calendars/" +
         encodeURIComponent(SWE_CALENDAR_ID) +
-        "/events?key=" + encodeURIComponent(GOOGLE_CALENDAR_API_KEY) +
+        "/events" +
+        "?key=" + encodeURIComponent(GOOGLE_CALENDAR_API_KEY) +
         "&timeMin=" + encodeURIComponent(timeMin) +
-        "&singleEvents=true&orderBy=startTime&maxResults=6";
+        "&singleEvents=true" +
+        "&orderBy=startTime" +
+        "&maxResults=6";
 
-      const response = await fetch(requestUrl, { cache: "no-store" });
+      const response = await fetch(requestUrl);
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error?.message || "Calendar request failed.");
+        throw new Error(
+          data.error?.message || "Calendar request failed."
+        );
       }
 
-      upcomingEventsContainer.innerHTML = createEventCards(data.items || []);
+      upcomingEventsContainer.innerHTML =
+        createEventCards(data.items);
+
     } catch (error) {
-      console.error("Passport calendar error:", error);
-      upcomingEventsContainer.innerHTML = `
-        <div class="upcoming-event-status">
-          ${error.message || "Unable to load upcoming events right now."}
-        </div>
-      `;
-    }
-  }
+  console.error("Passport Data error:", error);
+
+  eventsElement.textContent = "—";
+  pointsElement.textContent = "—";
+
+  stampGrid.innerHTML = `
+    <div class="upcoming-event-status">
+      ${error.message}
+    </div>
+  `;
+}
 
   loadUpcomingEvents();
+
+  // Refresh the calendar every five minutes.
   setInterval(loadUpcomingEvents, 300000);
 </script>
   

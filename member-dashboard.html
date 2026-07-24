@@ -65,46 +65,26 @@
   <section class="members-content-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 mx-auto">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <div class="member-login-content">
-            <h2 id="welcomeMessage">Welcome back, Member! 👋💜</h2>
+            <h2 id="welcomeMessage">Welcome, Member</h2>
             <p class="member-subtitle">Choose where you'd like to go next.</p>
 
-            <div class="dashboard-actions">
-
-              <a href="passport.html" class="dashboard-choice-card passport-choice">
-                <div class="dashboard-choice-icon">
+            <div class="member-login-card">
+              <div class="dashboard-actions">
+                <a href="passport.html" class="dashboard-action-button passport-button">
                   <i class="fas fa-passport"></i>
-                </div>
-
-                <div class="dashboard-choice-text">
-                  <h3>Passport</h3>
-                  <p>Your digital passport of SWE events.</p>
-                </div>
-
-                <div class="dashboard-choice-arrow">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </a>
-
-              <a href="leaderboard.html" class="dashboard-choice-card leaderboard-choice">
-                <div class="dashboard-choice-icon">
+                  <span>Passport</span>
+                </a>
+                <a href="leaderboard.html" class="dashboard-action-button leaderboard-button">
                   <i class="fas fa-trophy"></i>
-                </div>
+                  <span>Leaderboard</span>
+                </a>
+              </div>
 
-                <div class="dashboard-choice-text">
-                  <h3>Leaderboard</h3>
-                  <p>See where each sector stands in Committee Clash and Sector Showdown.</p>
-                </div>
-
-                <div class="dashboard-choice-arrow">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </a>
-
+              <p class="dashboard-message">You are signed in as <strong id="memberEmailDisplay">your Berkeley email</strong>.</p>
+              <p class="member-note">This page is ready for passport content, event tracking, and member resources.</p>
             </div>
-
-            <p class="dashboard-message">Signed in as <strong id="memberEmailDisplay">your Berkeley email</strong>.</p>
           </div>
         </div>
       </div>
@@ -196,174 +176,175 @@
       font-size: 18px;
     }
 
+    .member-login-card {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 44px;
+      background: rgba(255, 255, 255, 0.97);
+      border: 1px solid rgba(125, 122, 188, 0.16);
+      border-radius: 16px;
+      box-shadow: 0 14px 35px rgba(72, 53, 120, 0.12);
+      text-align: left;
+    }
+
     .dashboard-actions {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px;
-      margin-bottom: 28px;
+      gap: 16px;
+      margin-bottom: 24px;
     }
 
-    .dashboard-choice-card {
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      min-height: 210px;
-      padding: 34px 30px;
-      overflow: hidden;
-      color: #342d58;
-      text-decoration: none;
-      background: rgba(255, 255, 255, 0.98);
-      border: 1px solid rgba(125, 122, 188, 0.2);
-      border-radius: 22px;
-      box-shadow: 0 14px 34px rgba(72, 53, 120, 0.11);
-      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-    }
-
-    .dashboard-choice-card::after {
-      content: "";
-      position: absolute;
-      right: -45px;
-      bottom: -72px;
-      left: -25px;
-      height: 112px;
-      background: #eee7ff;
-      border-radius: 50% 50% 0 0;
-    }
-
-    .leaderboard-choice::after {
-      background: #e8edff;
-    }
-
-    .dashboard-choice-card:hover {
-      color: #342d58;
-      text-decoration: none;
-      transform: translateY(-5px);
-      border-color: rgba(113, 109, 180, 0.45);
-      box-shadow: 0 20px 42px rgba(72, 53, 120, 0.17);
-    }
-
-    .dashboard-choice-icon {
-      position: relative;
-      z-index: 2;
+    .dashboard-action-button {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 104px;
-      height: 104px;
-      flex-shrink: 0;
-      color: #6037bd;
-      font-size: 44px;
-      background: #eee7ff;
-      border-radius: 50%;
-      transition: transform 0.22s ease;
-    }
-
-    .leaderboard-choice .dashboard-choice-icon {
-      color: #4563c7;
-      background: #e7edff;
-    }
-
-    .dashboard-choice-card:hover .dashboard-choice-icon {
-      transform: scale(1.06);
-    }
-
-    .dashboard-choice-text {
-      position: relative;
-      z-index: 2;
-      flex: 1;
-    }
-
-    .dashboard-choice-text h3 {
-      margin: 0 0 10px;
-      color: #30235f;
-      font-family: "Inter", sans-serif;
-      font-size: 27px;
-      font-weight: 750;
-    }
-
-    .dashboard-choice-text p {
-      margin: 0;
-      color: #746d86;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .dashboard-choice-arrow {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      flex-shrink: 0;
-      color: #6e68ae;
-      font-size: 18px;
-      background: #f1ecff;
-      border-radius: 50%;
-      transition: transform 0.22s ease, color 0.22s ease, background 0.22s ease;
-    }
-
-    .leaderboard-choice .dashboard-choice-arrow {
-      color: #536bd1;
-      background: #edf1ff;
-    }
-
-    .dashboard-choice-card:hover .dashboard-choice-arrow {
+      gap: 10px;
+      padding: 18px 20px;
       color: #ffffff;
-      background: #716db4;
-      transform: translateX(4px);
+      font-family: "Inter", sans-serif;
+      font-size: 17px;
+      font-weight: 650;
+      text-decoration: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #716db4, #876fc1);
+      box-shadow: 0 8px 20px rgba(113, 109, 180, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .leaderboard-choice:hover .dashboard-choice-arrow {
-      background: #5f73d8;
+    .dashboard-action-button:hover {
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(113, 109, 180, 0.28);
+      text-decoration: none;
+    }
+
+    .leaderboard-button {
+      background: linear-gradient(90deg, #5b6fd8, #6f8ef6);
     }
 
     .dashboard-message {
-      margin: 24px 0 0;
-      color: #706a83;
-      font-size: 15px;
+      margin-bottom: 12px;
+      color: #342d58;
+      font-size: 18px;
       line-height: 1.6;
-      text-align: center;
     }
 
-    @media (max-width: 760px) {
+    .member-note {
+      margin-top: 18px;
+      color: #918ba0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 576px) {
       .dashboard-actions {
         grid-template-columns: 1fr;
-      }
-
-      .dashboard-choice-card {
-        min-height: 170px;
-        padding: 28px 24px;
-      }
-
-      .dashboard-choice-icon {
-        width: 82px;
-        height: 82px;
-        font-size: 35px;
-      }
-
-      .dashboard-choice-text h3 {
-        font-size: 23px;
       }
     }
   </style>
 
   <script>
-    const welcomeMessage = document.getElementById("welcomeMessage");
-    const memberEmailDisplay = document.getElementById("memberEmailDisplay");
+   const welcomeMessage = document.getElementById("welcomeMessage");
+  const memberEmailDisplay = document.getElementById("memberEmailDisplay");
 
-    const savedEmail = sessionStorage.getItem("memberEmail");
-    const savedFirstName = sessionStorage.getItem("memberFirstName");
+  const savedEmail = sessionStorage.getItem("memberEmail");
+  const firstName = sessionStorage.getItem("memberFirstName");
+  const fullName = sessionStorage.getItem("memberFullName");
 
-    if (!savedEmail) {
-      window.location.href = "members.html";
-    } else {
-      memberEmailDisplay.textContent = savedEmail;
-      welcomeMessage.textContent =
-        `Welcome back, ${savedFirstName || "Member"}! 👋💜`;
-    }
+if (!savedEmail) {
+    window.location.href = "members.html";
+}
+
+memberEmailDisplay.textContent = savedEmail;
+
+welcomeMessage.textContent = `Welcome back, ${firstName}! 👋`;
   </script>
 </body>
+</html>
+  </script>
+</body>
+
+</html>
+
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/SWE-UC-Berkeley-110515020740706/" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/ucb_swe" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.tiktok.com/@ucb_swe" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-tiktok fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/user/BerkeleySWE" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/uc-berkeley-swe" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.redbubble.com/people/ucbswe/shop" target="_">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-shopping-bag fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <br>
+
+          <a class="ocf" href="https://www.ocf.berkeley.edu">
+            <img src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8.png" alt="Hosted by the OCF"
+              style="border: 1;" />
+          </a>
+
+          <p class="copyright text-muted">Copyright &copy; Society of Women Engineers 2026<br>4 McLaughlin Hall,
+            Berkeley, CA 94720<br><br><i>UC Berkeley SWE acknowledges that UC Berkeley sits on the territory of xučyun
+              (Huichin), the ancestral and unceded land of the Chochenyo speaking Ohlone people.</i>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
 </html>
