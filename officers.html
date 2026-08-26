@@ -31,10 +31,53 @@
   <link href="css/clean-blog.css" rel="stylesheet">
   <link rel="icon" href="img/favicon.png">
   <style>
+    /* Keep every officer photo the same square size */
+    .rowAbout a {
+      display: block;
+      overflow: hidden;
+      border-radius: 0.25rem;
+    }
+
     .rowAbout img {
       width: 100%;
       aspect-ratio: 1 / 1;
       object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* Optional zoom levels for individual headshots */
+    .zoom-110 {
+      transform: scale(1.10);
+    }
+
+    .zoom-115 {
+      transform: scale(1.15);
+    }
+
+    .zoom-120 {
+      transform: scale(1.20);
+    }
+
+    .zoom-125 {
+      transform: scale(1.25);
+    }
+
+    /* Optional crop positioning for individual headshots */
+    .face-high {
+      object-position: center 30%;
+    }
+
+    .face-low {
+      object-position: center 70%;
+    }
+
+    .face-left {
+      object-position: 35% center;
+    }
+
+    .face-right {
+      object-position: 65% center;
     }
   </style>
 
