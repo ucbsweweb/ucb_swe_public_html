@@ -547,43 +547,49 @@
       });
     }
 
-    async function loadPassportSummary(signedInEmail) {
-      const eventsElement = document.getElementById("eventsAttended");
-      const pointsElement = document.getElementById("totalPoints");
+  async function loadPassportSummary(signedInEmail) {
+  const eventsElement = document.getElementById("eventsAttended");
+  const pointsElement = document.getElementById("totalPoints");
 
-      try {
-        const response = await fetch(
-          PASSPORT_DATA_CSV + "&cache=" + Date.now(),
-          { cache: "no-store" }
-        );
-        if (!response.ok) throw new Error("Could not load Passport Data.");
+  try {
+    const response = await fetch(
+      PASSPORT_DATA_CSV + "&cache=" + Date.now(),
+      { cache: "no-store" }
+    );
 
-        const rows = parseCSV(await response.text());
-        if (rows.length < 2) throw new Error("Passport Data is empty.");
+    if (!response.ok) throw new Error("Could not load Passport Data.");
 
-        const headers = rows[0].map(normalize);
-        const emailColumn = headers.indexOf("berkeley email");
-        const eventsColumn = headers.indexOf("events attended");
-        const pointsColumn = headers.indexOf("points");
+    const rows = parseCSV(await response.text());
+    if (rows.length < 2) throw new Error("Passport Data is empty.");
 
-        if (emailColumn === -1 || eventsColumn === -1 || pointsColumn === -1) {
-          throw new Error("Passport Data headers do not match.");
-        }
+    const headers = rows[0].map(normalize);
+    const emailColumn = headers.indexOf("berkeley email");
+    const eventsColumn = headers.indexOf("events attended");
 
-        const memberRow = rows.slice(1).find(row =>
-          normalize(row[emailColumn]) === normalize(signedInEmail)
-        );
-
-        if (!memberRow) throw new Error("Signed-in member was not found in Passport Data.");
-
-        eventsElement.textContent = memberRow[eventsColumn] || "0";
-        pointsElement.textContent = memberRow[pointsColumn] || "0";
-      } catch (error) {
-        console.error("Passport summary error:", error);
-        eventsElement.textContent = "—";
-        pointsElement.textContent = "—";
-      }
+    if (emailColumn === -1 || eventsColumn === -1) {
+      throw new Error("Passport Data headers do not match.");
     }
+
+    const memberRow = rows.slice(1).find(row =>
+      normalize(row[emailColumn]) === normalize(signedInEmail)
+    );
+
+    if (!memberRow) {
+      throw new Error("Signed-in member was not found in Passport Data.");
+    }
+
+    const eventsAttended = Number(memberRow[eventsColumn]) || 0;
+    const totalPoints = eventsAttended * 10;
+
+    eventsElement.textContent = eventsAttended;
+    pointsElement.textContent = totalPoints;
+
+  } catch (error) {
+    console.error("Passport summary error:", error);
+    eventsElement.textContent = "—";
+    pointsElement.textContent = "—";
+  }
+}
 
     async function loadMemberStamps(signedInEmail) {
       const stampGrid = document.getElementById("stampGrid");

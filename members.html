@@ -122,7 +122,7 @@
             <form id="memberLoginForm">
 
               <label for="memberEmail">
-                Berkeley Email
+                Email
               </label>
 
               <div class="member-email-wrapper">
@@ -134,7 +134,7 @@
                   id="memberEmail"
                   name="memberEmail"
                   class="member-email-input"
-                  placeholder="name@berkeley.edu"
+                  placeholder="name@example.com"
                   autocomplete="email"
                   required
                 >
@@ -165,7 +165,7 @@
             </p>
 
             <p class="member-note">
-              Use the Berkeley email connected to your SWE membership.
+              Use the email connected to your SWE membership.
             </p>
 
           </div>
@@ -468,12 +468,6 @@
     const email =
       emailInput.value.trim().toLowerCase();
 
-    if (!email.endsWith("@berkeley.edu")) {
-      loginMessage.textContent =
-        "Please enter a valid @berkeley.edu email address.";
-      return;
-    }
-
     loginMessage.textContent =
       "Checking your SWE membership...";
 
@@ -499,7 +493,7 @@
 
       if (!result.registered) {
         loginMessage.textContent =
-          "We could not find this email in the SWE member registration. Please register first.";
+          "You are not registered as a SWE member. Please register first.";
         return;
       }
 
@@ -522,10 +516,10 @@
         "member-dashboard.html"; 
 
     } catch (error) {
-      console.error(error);
+      console.error("Membership check error:", error);
 
       loginMessage.textContent =
-        "We could not check your membership right now. Please try again.";
+        "Membership check error: " + (error.message || String(error));
 
     } finally {
       loginButton.disabled = false;
