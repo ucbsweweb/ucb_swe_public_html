@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Leaderboard</title>
+  <title>Sector Showdown</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
   .leaderboard-container {
     position: relative;
     z-index: 2;
-    max-width: 1250px;
+    max-width: 900px;
     margin: 0 auto;
   }
 
@@ -87,26 +87,40 @@
   }
 
   .page-switch-link {
-    display: inline-block;
-    margin-top: 8px;
-    color: #7145db;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 3px;
-    transition: color 0.2s ease;
-  }
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
 
-  .page-switch-link:hover,
-  .page-switch-link:focus-visible {
-    color: #4b2d8d;
-  }
+  color: #4f3785;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+
+  background: #eee7ff;
+  border: 1px solid #cbbcf4;
+
+  border-radius: 12px;
+  box-shadow: 0 5px 16px rgba(50, 43, 70, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.page-switch-link:hover,
+.page-switch-link:focus-visible {
+  color: #3d286f;
+  text-decoration: none;
+  border-color: #a991e8;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(50, 43, 70, 0.12);
+}
 
   .leaderboard-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: 34px;
   }
 
@@ -305,6 +319,13 @@
       font-size: 15px;
     }
 
+    .page-switch-link {
+      position: static;
+      margin-top: 14px;
+      padding: 11px 17px;
+      font-size: 14px;
+    }
+
     .leaderboard-card {
       padding: 24px 20px 18px;
     }
@@ -393,8 +414,8 @@
       </div>
 
       <div>
-        <h1>Leaderboards</h1>
-        <p>See how sectors and committees are stacking up!</p>
+        <h1>Sector Showdown</h1>
+        <p>See how each SWE sector is stacking up!</p>
         <a class="page-switch-link" href="passport.html">Go to Passport</a>
       </div>
     </div>
@@ -424,32 +445,7 @@
           </div>
         </div>
       </section>
-
-      <!-- Committee Showdown -->
-      <section class="leaderboard-card">
-        <div class="leaderboard-card-title">
-          <div class="leaderboard-card-icon">
-            <i class="fas fa-users"></i>
-          </div>
-
-          <h2>Committee Clash</h2>
-        </div>
-
-        <div class="leaderboard-table-heading">
-          <span class="name-heading">Committee</span>
-          <span class="points-heading">Points</span>
-        </div>
-
-        <div id="committeeLeaderboardRows">
-          <div class="leaderboard-row">
-            <span class="rank">—</span>
-            <span class="leaderboard-name">Loading...</span>
-            <span class="leaderboard-points">—</span>
-          </div>
-        </div>
-      </section>
-
-    </div>
+</div>
   </div>
 </main>
 
@@ -536,10 +532,111 @@
   const SECTOR_CSV =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQviBvhyznIyVMphgZ3dMJqKGdiE55ehioDgURH4QAaGMMDDVSKyK177_ZzZ_tJlSmehOtRoD2PV65N/pub?gid=1467213230&single=true&output=csv";
 
-const COMMITTEE_CSV =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQviBvhyznIyVMphgZ3dMJqKGdiE55ehioDgURH4QAaGMMDDVSKyK177_ZzZ_tJlSmehOtRoD2PV65N/pub?gid=298590804&single=true&output=csv";
+  const MEMBER_ACCESS_CSV =
+    "https://docs.google.com/spreadsheets/d/1PCQ-NEEnl05p1WmXtwXIhoPtYNIiHzjT38w7TQymOfA/gviz/tq?tqx=out:csv&sheet=Members";
 
-  function parseSimpleCSV(csvText) {
+  function normalize(value) {
+    return String(value || "").trim().toLowerCase();
+  }
+
+  async function verifyOfficerAccess() {
+    const signedInEmail = sessionStorage.getItem("memberEmail");
+
+    if (!signedInEmail) {
+      window.location.href = "members.html";
+      return false;
+    }
+
+    try {
+      const response = await fetch(
+        MEMBER_ACCESS_CSV + "&cache=" + Date.now(),
+        { cache: "no-store" }
+      );
+
+      if (!response.ok) {
+        throw new Error("Could not load member access data.");
+      }
+
+      const csvText = await response.text();
+      const rows = parseAccessCSV(csvText);
+
+      if (rows.length < 2) {
+        throw new Error("Members sheet is empty.");
+      }
+
+      const headers = rows[0].map(normalize);
+      const emailColumn = headers.indexOf("email address");
+      const officerColumn = headers.indexOf("officer?");
+
+      if (emailColumn === -1 || officerColumn === -1) {
+        throw new Error("Members sheet headers do not match.");
+      }
+
+      const memberRow = rows.slice(1).find(function (row) {
+        return normalize(row[emailColumn]) === normalize(signedInEmail);
+      });
+
+      const isOfficer =
+        memberRow && normalize(memberRow[officerColumn]) === "yes";
+
+      sessionStorage.setItem(
+        "memberIsOfficer",
+        isOfficer ? "yes" : "no"
+      );
+
+      if (!isOfficer) {
+        window.location.href = "passport.html";
+        return false;
+      }
+
+      return true;
+    } catch (error) {
+      console.error("Officer access error:", error);
+      window.location.href = "passport.html";
+      return false;
+    }
+  }
+
+  function parseAccessCSV(csvText) {
+    const rows = [];
+    let row = [];
+    let cell = "";
+    let insideQuotes = false;
+
+    for (let i = 0; i < csvText.length; i++) {
+      const char = csvText[i];
+      const nextChar = csvText[i + 1];
+
+      if (char === '"' && insideQuotes && nextChar === '"') {
+        cell += '"';
+        i++;
+      } else if (char === '"') {
+        insideQuotes = !insideQuotes;
+      } else if (char === "," && !insideQuotes) {
+        row.push(cell);
+        cell = "";
+      } else if ((char === "\n" || char === "\r") && !insideQuotes) {
+        if (char === "\r" && nextChar === "\n") i++;
+        row.push(cell);
+        if (row.some(function (value) { return value.trim() !== ""; })) {
+          rows.push(row);
+        }
+        row = [];
+        cell = "";
+      } else {
+        cell += char;
+      }
+    }
+
+    row.push(cell);
+    if (row.some(function (value) { return value.trim() !== ""; })) {
+      rows.push(row);
+    }
+
+    return rows;
+  }
+
+function parseSimpleCSV(csvText) {
     const rows = [];
     let currentRow = [];
     let currentValue = "";
@@ -652,13 +749,21 @@ const COMMITTEE_CSV =
     }
   }
 
-  loadLeaderboard(SECTOR_CSV, "sectorLeaderboardRows");
-  loadLeaderboard(COMMITTEE_CSV, "committeeLeaderboardRows");
+  async function initializeSectorShowdown() {
+    const allowed = await verifyOfficerAccess();
 
-  setInterval(function () {
+    if (!allowed) {
+      return;
+    }
+
     loadLeaderboard(SECTOR_CSV, "sectorLeaderboardRows");
-    loadLeaderboard(COMMITTEE_CSV, "committeeLeaderboardRows");
-  }, 300000);
+
+    setInterval(function () {
+      loadLeaderboard(SECTOR_CSV, "sectorLeaderboardRows");
+    }, 300000);
+  }
+
+  initializeSectorShowdown();
 </script>
 </body>
 
