@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sector Showdown</title>
+  <title>Committee Clash</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +92,7 @@
   right: 0;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .page-switch-link {
@@ -114,6 +114,13 @@
   border-radius: 9px;
   box-shadow: 0 2px 7px rgba(50, 43, 70, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.page-switch-links.single-button .page-switch-link {
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 11px;
 }
 
 .page-switch-link:hover,
@@ -330,13 +337,13 @@
       position: static;
       margin-top: 14px;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
     }
 
     .page-switch-link {
       position: static;
-      padding: 8px 14px;
-      font-size: 13px;
+      padding: 11px 17px;
+      font-size: 14px;
     }
 
     .leaderboard-card {
@@ -427,11 +434,24 @@
       </div>
 
       <div>
-        <h1>Sector Showdown</h1>
-        <p>See how each SWE sector is stacking up!</p>
+        <h1>Committee Clash</h1>
+        <p>See how SWE committee members are stacking up!</p>
         <div class="page-switch-links">
-          <a class="page-switch-link" href="committeeclash.html">View Committee Clash</a>
-          <a class="page-switch-link" href="passport.html">Go to Passport</a>
+          <a
+            id="sectorShowdownLink"
+            class="page-switch-link"
+            href="sectorshowdown.html"
+            style="display: none;"
+          >
+            View Sector Showdown
+          </a>
+
+          <a
+            class="page-switch-link"
+            href="passport.html"
+          >
+            Go to Passport
+          </a>
         </div>
       </div>
     </div>
@@ -445,15 +465,15 @@
             <i class="fas fa-users"></i>
           </div>
 
-          <h2>Sector Showdown</h2>
+          <h2>Committee Clash</h2>
         </div>
 
         <div class="leaderboard-table-heading">
-          <span class="name-heading">Sector</span>
+          <span class="name-heading">Member</span>
           <span class="points-heading">Points</span>
         </div>
 
-        <div id="sectorLeaderboardRows">
+        <div id="committeeLeaderboardRows">
           <div class="leaderboard-row">
             <span class="rank">—</span>
             <span class="leaderboard-name">Loading...</span>
@@ -545,8 +565,8 @@
   <script src="js/clean-blog.min.js"></script>
 
   <script>
-  const SECTOR_CSV =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQviBvhyznIyVMphgZ3dMJqKGdiE55ehioDgURH4QAaGMMDDVSKyK177_ZzZ_tJlSmehOtRoD2PV65N/pub?gid=1467213230&single=true&output=csv";
+  const COMMITTEE_CSV =
+  "PASTE_YOUR_PUBLISHED_COMMITTEE_CLASH_CSV_URL_HERE";
 
   const MEMBER_ACCESS_CSV =
     "https://docs.google.com/spreadsheets/d/1PCQ-NEEnl05p1WmXtwXIhoPtYNIiHzjT38w7TQymOfA/gviz/tq?tqx=out:csv&sheet=Members";
@@ -555,63 +575,185 @@
     return String(value || "").trim().toLowerCase();
   }
 
-  async function verifyOfficerAccess() {
-    const signedInEmail = sessionStorage.getItem("memberEmail");
+ async function verifyCommitteeAccess() {
 
-    if (!signedInEmail) {
-      window.location.href = "members.html";
-      return false;
-    }
+  const signedInEmail =
+    sessionStorage.getItem("memberEmail");
 
-    try {
-      const response = await fetch(
-        MEMBER_ACCESS_CSV + "&cache=" + Date.now(),
-        { cache: "no-store" }
-      );
-
-      if (!response.ok) {
-        throw new Error("Could not load member access data.");
-      }
-
-      const csvText = await response.text();
-      const rows = parseAccessCSV(csvText);
-
-      if (rows.length < 2) {
-        throw new Error("Members sheet is empty.");
-      }
-
-      const headers = rows[0].map(normalize);
-      const emailColumn = headers.indexOf("email address");
-      const officerColumn = headers.indexOf("officer?");
-
-      if (emailColumn === -1 || officerColumn === -1) {
-        throw new Error("Members sheet headers do not match.");
-      }
-
-      const memberRow = rows.slice(1).find(function (row) {
-        return normalize(row[emailColumn]) === normalize(signedInEmail);
-      });
-
-      const isOfficer =
-        memberRow && normalize(memberRow[officerColumn]) === "yes";
-
-      sessionStorage.setItem(
-        "memberIsOfficer",
-        isOfficer ? "yes" : "no"
-      );
-
-      if (!isOfficer) {
-        window.location.href = "passport.html";
-        return false;
-      }
-
-      return true;
-    } catch (error) {
-      console.error("Officer access error:", error);
-      window.location.href = "passport.html";
-      return false;
-    }
+  if (!signedInEmail) {
+    window.location.href = "members.html";
+    return false;
   }
+
+
+  try {
+
+    const response = await fetch(
+      MEMBER_ACCESS_CSV +
+      "&cache=" +
+      Date.now(),
+      {
+        cache: "no-store"
+      }
+    );
+
+
+    if (!response.ok) {
+      throw new Error(
+        "Could not load member access data."
+      );
+    }
+
+
+    const csvText =
+      await response.text();
+
+    const rows =
+      parseAccessCSV(csvText);
+
+
+    if (rows.length < 2) {
+      throw new Error(
+        "Members sheet is empty."
+      );
+    }
+
+
+    const headers =
+      rows[0].map(normalize);
+
+
+    const emailColumn =
+      headers.indexOf(
+        "email address"
+      );
+
+    const officerColumn =
+      headers.indexOf(
+        "officer?"
+      );
+
+    const committeeColumn =
+      headers.indexOf(
+        "committee member?"
+      );
+
+
+    if (
+      emailColumn === -1 ||
+      officerColumn === -1 ||
+      committeeColumn === -1
+    ) {
+
+      throw new Error(
+        "Members sheet headers do not match."
+      );
+
+    }
+
+
+    const memberRow =
+      rows
+        .slice(1)
+        .find(function (row) {
+
+          return (
+            normalize(row[emailColumn]) ===
+            normalize(signedInEmail)
+          );
+
+        });
+
+
+    if (!memberRow) {
+
+      window.location.href =
+        "passport.html";
+
+      return false;
+
+    }
+
+
+    /*
+     * ACCESS RULES
+     *
+     * Committee Member? = Yes
+     * OR
+     * Officer? = Yes
+     */
+
+    const isOfficer =
+      normalize(
+        memberRow[officerColumn]
+      ) === "yes";
+
+    const sectorShowdownLink =
+      document.getElementById("sectorShowdownLink");
+
+    const pageSwitchLinks =
+      document.querySelector(".page-switch-links");
+
+    if (isOfficer && sectorShowdownLink) {
+      sectorShowdownLink.style.display = "inline-flex";
+    } else if (pageSwitchLinks) {
+      pageSwitchLinks.classList.add("single-button");
+    }
+
+
+    const isCommitteeMember =
+      normalize(
+        memberRow[committeeColumn]
+      ) === "yes";
+
+
+    const hasCommitteeClashAccess =
+      isOfficer || isCommitteeMember;
+
+
+    sessionStorage.setItem(
+      "memberIsOfficer",
+      isOfficer ? "yes" : "no"
+    );
+
+
+    sessionStorage.setItem(
+      "memberIsCommittee",
+      hasCommitteeClashAccess
+        ? "yes"
+        : "no"
+    );
+
+
+    if (!hasCommitteeClashAccess) {
+
+      window.location.href =
+        "passport.html";
+
+      return false;
+
+    }
+
+
+    return true;
+
+  }
+
+  catch (error) {
+
+    console.error(
+      "Committee access error:",
+      error
+    );
+
+    window.location.href =
+      "passport.html";
+
+    return false;
+
+  }
+
+}
 
   function parseAccessCSV(csvText) {
     const rows = [];
@@ -765,21 +907,21 @@ function parseSimpleCSV(csvText) {
     }
   }
 
-  async function initializeSectorShowdown() {
-    const allowed = await verifyOfficerAccess();
+  async function initializeCommitteeClash() {
+    const allowed = await verifyCommitteeAccess();
 
     if (!allowed) {
       return;
     }
 
-    loadLeaderboard(SECTOR_CSV, "sectorLeaderboardRows");
+    loadLeaderboard(COMMITTEE_CSV, "committeeLeaderboardRows");
 
     setInterval(function () {
-      loadLeaderboard(SECTOR_CSV, "sectorLeaderboardRows");
+      loadLeaderboard(COMMITTEE_CSV, "committeeLeaderboardRows");
     }, 300000);
   }
 
-  initializeSectorShowdown();
+  initializeCommitteeClash();
 </script>
 </body>
 

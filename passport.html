@@ -94,10 +94,17 @@
     }
 
 
-    .passport-page-link {
+    .passport-access-links {
   position: absolute;
   top: 2px;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.passport-page-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -107,6 +114,7 @@
   font-weight: 700;
   letter-spacing: 0.01em;
   text-decoration: none;
+  white-space: nowrap;
   background: #eee7ff;
   border: 1px solid #cbbcf4;
   border-radius: 12px;
@@ -573,11 +581,12 @@
       }
 
 
-      .passport-page-link {
+      .passport-access-links {
         position: static;
+        width: 100%;
         margin: -18px 0 30px;
-        padding: 11px 17px;
-        font-size: 14px;
+        flex-direction: column;
+        gap: 10px;
       }
 
 
@@ -780,22 +789,28 @@
       </h1>
 
 
-      <!--
-        OFFICERS ONLY
+      <!-- Special access links: hidden until member access is checked -->
+      <div class="passport-access-links">
 
-        Hidden by default.
-        JavaScript will show it only
-        when Officer? = Yes.
-      -->
+        <a
+          id="sectorShowdownLink"
+          class="passport-page-link"
+          href="sectorshowdown.html"
+          style="display: none;"
+        >
+          View Sector Showdown
+        </a>
 
-      <a
-        id="sectorShowdownLink"
-        class="passport-page-link"
-        href="sectorshowdown.html"
-        style="display: none;"
-      >
-        View Sector Showdown
-      </a>
+        <a
+          id="committeeClashLink"
+          class="passport-page-link"
+          href="committeeclash.html"
+          style="display: none;"
+        >
+          View Committee Clash
+        </a>
+
+      </div>
 
 
 
@@ -1417,200 +1432,96 @@
      * CHECK WHETHER MEMBER IS AN OFFICER
      */
 
-    async function loadOfficerAccess(
+    async function loadMemberAccess(
       signedInEmail
     ) {
 
       const sectorShowdownLink =
-        document.getElementById(
-          "sectorShowdownLink"
-        );
+        document.getElementById("sectorShowdownLink");
 
+      const committeeClashLink =
+        document.getElementById("committeeClashLink");
 
-      /*
-       * Always start hidden.
-       */
-
-      sectorShowdownLink.style.display =
-        "none";
-
+      sectorShowdownLink.style.display = "none";
+      committeeClashLink.style.display = "none";
 
       try {
-
-        const response =
-          await fetch(
-            MEMBER_ACCESS_CSV +
-            "&cache=" +
-            Date.now(),
-            {
-              cache: "no-store"
-            }
-          );
-
+        const response = await fetch(
+          MEMBER_ACCESS_CSV + "&cache=" + Date.now(),
+          { cache: "no-store" }
+        );
 
         if (!response.ok) {
-
-          throw new Error(
-            "Could not load member access data."
-          );
-
+          throw new Error("Could not load member access data.");
         }
 
-
-        const csvText =
-          await response.text();
-
-
-        const rows =
-          parseCSV(csvText);
-
+        const rows = parseCSV(await response.text());
 
         if (rows.length < 2) {
-
-          throw new Error(
-            "Members sheet is empty."
-          );
-
+          throw new Error("Members sheet is empty.");
         }
 
-
-        const headers =
-          rows[0].map(normalize);
-
-
-        /*
-         * Your sheet says:
-         *
-         * Email Address
-         * Officer?
-         */
-
-        const emailColumn =
-          headers.indexOf(
-            "email address"
-          );
-
-
-        const officerColumn =
-          headers.indexOf(
-            "officer?"
-          );
-
+        const headers = rows[0].map(normalize);
+        const emailColumn = headers.indexOf("email address");
+        const officerColumn = headers.indexOf("officer?");
+        const committeeColumn = headers.indexOf("committee member?");
 
         if (
           emailColumn === -1 ||
-          officerColumn === -1
+          officerColumn === -1 ||
+          committeeColumn === -1
         ) {
-
-          throw new Error(
-            "Members sheet headers do not match."
-          );
-
+          throw new Error("Members sheet headers do not match.");
         }
 
-
-        /*
-         * Find the person who logged in.
-         */
-
-        const memberRow =
-          rows
-            .slice(1)
-            .find(
-              row =>
-                normalize(
-                  row[emailColumn]
-                ) ===
-                normalize(
-                  signedInEmail
-                )
-            );
-
-
-        /*
-         * If they're not found,
-         * don't show Sector Showdown.
-         */
+        const memberRow = rows.slice(1).find(
+          row => normalize(row[emailColumn]) === normalize(signedInEmail)
+        );
 
         if (!memberRow) {
-
-          console.log(
-            "Member not found in access sheet."
-          );
-
-          return;
-
+          throw new Error("Member not found in access sheet.");
         }
-
-
-        /*
-         * Officer? must equal Yes.
-         */
 
         const isOfficer =
-          normalize(
-            memberRow[
-              officerColumn
-            ]
-          ) === "yes";
+          normalize(memberRow[officerColumn]) === "yes";
 
+        const isCommitteeMember =
+          normalize(memberRow[committeeColumn]) === "yes";
 
-        /*
-         * Show link only for officers.
-         */
+        // All officers can view Committee Clash too.
+        const hasCommitteeClashAccess =
+          isOfficer || isCommitteeMember;
 
         if (isOfficer) {
-
-          sectorShowdownLink.style.display =
-            "inline-block";
-
+          sectorShowdownLink.style.display = "inline-flex";
         }
 
-
-        /*
-         * Save this for sectorshowdown.html.
-         *
-         * We will use this in the next step
-         * to block general members from
-         * opening the leaderboard manually.
-         */
+        if (hasCommitteeClashAccess) {
+          committeeClashLink.style.display = "inline-flex";
+        }
 
         sessionStorage.setItem(
           "memberIsOfficer",
-          isOfficer
-            ? "yes"
-            : "no"
+          isOfficer ? "yes" : "no"
         );
 
-
+        sessionStorage.setItem(
+          "memberIsCommittee",
+          hasCommitteeClashAccess ? "yes" : "no"
+        );
       }
 
       catch (error) {
+        console.error("Member access error:", error);
 
-        console.error(
-          "Officer access error:",
-          error
-        );
+        sectorShowdownLink.style.display = "none";
+        committeeClashLink.style.display = "none";
 
-
-        /*
-         * If anything goes wrong,
-         * keep the leaderboard hidden.
-         */
-
-        sectorShowdownLink.style.display =
-          "none";
-
-
-        sessionStorage.setItem(
-          "memberIsOfficer",
-          "no"
-        );
-
+        sessionStorage.setItem("memberIsOfficer", "no");
+        sessionStorage.setItem("memberIsCommittee", "no");
       }
 
     }
-
 
 
     /*
@@ -2655,7 +2566,7 @@
 
         loadUpcomingEvents(),
 
-        loadOfficerAccess(
+        loadMemberAccess(
           signedInEmail
         )
 
