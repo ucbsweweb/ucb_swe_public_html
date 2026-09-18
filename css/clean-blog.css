@@ -283,6 +283,11 @@ width: auto;
   color: #551A8B;
 }
 
+#submainNav .navbar-nav {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
 #submainNav .navbar-nav > li.nav-item {
   padding: 0;
   margin: 0;
@@ -386,6 +391,7 @@ width: auto;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #551A8B;
+  white-space: nowrap;
 }
 
 @media only screen and (min-width: 992px) {
@@ -397,7 +403,7 @@ width: auto;
     color: rgba(255, 255, 255, 0.8);
   }
   #submainNav .navbar-nav > li.nav-item > a {
-    padding: 10px 20px;
+    padding: 10px 14px;
     color: #551A8B;
   }
   #submainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
