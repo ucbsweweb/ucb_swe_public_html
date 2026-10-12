@@ -2038,49 +2038,22 @@
         }
 
 
-        const memberAttendance =
-          rows
-            .slice(1)
-            .filter(
-
-              row =>
-
-                normalize(
-                  row[
-                    emailColumn
-                  ]
-                ) ===
-                normalize(
-                  signedInEmail
-                )
-
-                &&
-
-                String(
-                  row[
-                    stampColumn
-                  ] || ""
-                )
-                  .trim() !== ""
-
-            );
-
-
-        if (
-          !memberAttendance.length
-        ) {
-
-          stampGrid.innerHTML =
-            '<div class="upcoming-event-status">No event stamps earned yet.</div>';
-
-          return;
-
-        }
-
+        const memberAttendance = rows
+  .slice(1)
+  .filter(
+    row =>
+      normalize(row[emailColumn]) === normalize(signedInEmail) &&
+      String(row[stampColumn] || "").trim() !== ""
+  )
+  .reverse();
 
         stampGrid.innerHTML =
-          memberAttendance
-            .map(
+  memberAttendance
+    .sort((a, b) =>
+      new Date(b[timestampColumn]) -
+      new Date(a[timestampColumn])
+    )
+    .map(
               (
                 row,
                 index
