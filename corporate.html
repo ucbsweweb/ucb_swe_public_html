@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -13,27 +13,57 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
+  <!-- Custom fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
-    type='text/css'>
-  <link
-    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-    rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
 
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900' rel='stylesheet'
-    type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900' rel='stylesheet'
-    type='text/css'>
-
-
-  <!-- Custom styles for this template -->
+  <!-- Website CSS -->
   <link href="css/clean-blog.css" rel="stylesheet">
   <link rel="icon" href="img/favicon.png">
 
-  <!-- Upgrading FontAwesome Kit -->
+  <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/0c5e23f27c.js" crossorigin="anonymous"></script>
+
+  <!-- Uniform Sponsor Logo Styling -->
+  <style>
+    .sponsor-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 160px;
+      padding: 15px;
+    }
+
+    .sponsor-item a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .sponsor-logo {
+      width: 100%;
+      height: 110px;
+      object-fit: contain;
+      padding: 10px;
+    }
+
+    @media (max-width: 576px) {
+      .sponsor-item {
+        height: 130px;
+        padding: 10px;
+      }
+
+      .sponsor-logo {
+        height: 90px;
+      }
+    }
+  </style>
 
 </head>
 
@@ -45,38 +75,28 @@
       <a class="navbar-brand" href="index.html">
         <img src="img/swe.png" alt="SWE logo" height="28">
       </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+
+      <button class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
         aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="officers.html">Officers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="calendar.html">Calendar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="involved.html">Get Involved</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="outreach.html">Outreach</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="corporate.html">Corporate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="e-i.html">E&I</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="members.html">Members</a>
-            </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="officers.html">Officers</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="involved.html">Get Involved</a></li>
+          <li class="nav-item"><a class="nav-link" href="outreach.html">Outreach</a></li>
+          <li class="nav-item"><a class="nav-link" href="corporate.html">Corporate</a></li>
+          <li class="nav-item"><a class="nav-link" href="e-i.html">E&I</a></li>
+          <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
         </ul>
       </div>
     </div>
@@ -106,184 +126,297 @@
   <div class="container">
     <div class="row">
       <div class="card-group">
+
+        <!-- Company Interest Form -->
         <div class="corporate-card card text-center">
           <div class="card-body">
             <h5 class="card-title">Company Interest Form</h5>
-            <p class="card-text" style="font-size: 16px;">Thank you for your interest in sponsoring UC Berkeley SWE! We're glad you want to get
-              involved in our mission or empowering women to reach their full potential as engineers. Here is a company
-              sponsor interest form and we will keep you updated.</p>
+            <p class="card-text" style="font-size: 16px;">
+              Thank you for your interest in sponsoring UC Berkeley SWE!
+              We're glad you want to get involved in our mission or empowering
+              women to reach their full potential as engineers.
+              Here is a company sponsor interest form and we will keep you updated.
+            </p>
             <br><br><br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgRY4B8yEdqMHIo6jMmEaZmalk8XboaSI1joUPxYVmHOEamQ/viewform"
-              target="_" class="btn btn-primary">Interest Form</a>
+              target="_blank" class="btn btn-primary">
+              Interest Form
+            </a>
           </div>
         </div>
+
+        <!-- Corporate Package -->
         <div class="card text-center corporate-card">
           <div class="card-body">
             <h5 class="card-title">Corporate Package</h5>
-            <p class="card-text" style="font-size: 16px;">Support from our corporate partners enables us to achieve our goal of empowering women
-              to reach their full potential as engineers. Please review our Corporate Package below for a list of
-              opportunities to get involved and email our VP of Corporate Relations at <strong><a
-                  href="mailto:swe.berkeley@gmail.com" target="_">swe.berkeley@gmail.com</a></strong> if you
-              have any questions or would like to participate in any of the events.</p>
-            <a href="https://drive.google.com/file/d/1U-dSk82brSce1qyr34gxfa59X0-NiDV-/view" target="_"
-              class="btn btn-primary">Review Package</a>
+            <p class="card-text" style="font-size: 16px;">
+              Support from our corporate partners enables us to achieve our goal
+              of empowering women to reach their full potential as engineers.
+              Please review our Corporate Package below for a list of
+              opportunities to get involved and email our VP of Corporate Relations at
+              <strong>
+                <a href="mailto:swe.berkeley@gmail.com" target="_blank">
+                  swe.berkeley@gmail.com
+                </a>
+              </strong>
+              if you have any questions or would like to participate in any of the events.
+            </p>
+            <a href="https://drive.google.com/file/d/1U-dSk82brSce1qyr34gxfa59X0-NiDV-/view"
+              target="_blank" class="btn btn-primary">
+              Review Package
+            </a>
           </div>
         </div>
+
+        <!-- LinkedIn Opportunities -->
         <div class="card text-center corporate-card">
           <div class="card-body">
             <h5 class="card-title">Linkedin Jobs/Opportunities</h5>
-            <p class="card-text" style="font-size: 16px;">This group is the sole place to learn about any external jobs/opportunities that come
-              SWE's way, especially for students. Check the group out on Linkedin, and follow SWE on Linkedin!</p>
-            <a href="https://www.linkedin.com/company/uc-berkeley-swe" target="_" class="btn btn-primary">Follow SWE on
-              Linkedin</a>
+            <p class="card-text" style="font-size: 16px;">
+              This group is the sole place to learn about any external
+              jobs/opportunities that come SWE's way, especially for students.
+              Check the group out on Linkedin, and follow SWE on Linkedin!
+            </p>
+            <a href="https://www.linkedin.com/company/uc-berkeley-swe"
+              target="_blank" class="btn btn-primary">
+              Follow SWE on Linkedin
+            </a>
             <br><br>
-            <a href="https://www.linkedin.com/groups/12462059/" target="_" class="btn btn-primary">Join the SWE Jobs
-              <br> & Opportunities Group</a>
+            <a href="https://www.linkedin.com/groups/12462059/"
+              target="_blank" class="btn btn-primary">
+              Join the SWE Jobs<br>& Opportunities Group
+            </a>
           </div>
         </div>
+
       </div>
     </div>
+
     <div class="lesswhitespace"></div>
-    <h4>2024-2025 Sponsors (last updated: July 2024)</h4>
+
+    <!-- 2026-2027 Sponsors -->
+    <h4>2026-2027 Sponsors</h4>
     <br>
     <br>
-    <!-- Big Boi Sponsors -->
-    <div class="row align-items-center">
-      <!-- general motors -->
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://www.gm.com/" target="_"><img class="img-fluid center" src="img/corporate/sponsors/gm2.png"
-            alt="General Motors logo"></a>
-      </div>
-      <!-- -->
-      <!-- tanium -->
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://www.tanium.com/" target="_"><img class="img-fluid" src="img/corporate/sponsors/tanium.png"
-            alt="Tanium logo"></a>
-      </div>
-      <!-- proctor and gamble  -->
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://us.pg.com/" target="_"><img class="img-fluid" src="img/corporate/sponsors/pg.png"
-            alt="P&G logo"></a>
-      </div>
-      <!-- bloomberg -->
-      <div class="col-lg-3 col-md-4 col-sm-6 vcenter">
-        <a href="https://www.bloomberg.com/" target="_"><img class="img-fluid"
-            src="img/corporate/sponsors/bloomberg.png" alt="Bloomberg logo"></a>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://www.zs.com/" target=""><img class="img-fluid" src="img/corporate/sponsors/zsassociates.jpeg"
-            alt="ZS Associates logo"></a>
-      </div>
-    </div>
-    <!-- Row One -->
-    <div class="row align-items-center">
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://www.uber.com/" target="_"><img class="img-fluid" src="img/corporate/sponsors/uber.png"
-            alt="Uber logo"></a>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://www.pwc.com/" target="_"><img class="img-fluid" src="img/corporate/sponsors/pwc.png"
-            alt="PWC logo"></a>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://www.accenture.com/us-en" target="_"><img id="gm-logo" class="img-fluid"
-            src="img/corporate/sponsors/accenture.gif" alt="Accenture logo"> </a>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://syska.com/" target="_"><img class="img-fluid center" src="img/corporate/sponsors/syska.png"
-            alt="Syska Hennessy Group logo"></a>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 vcenter">
-        <a href="https://skydeck.berkeley.edu/" target="_"><img class="img-fluid"
-            src="img/corporate/sponsors/skydeck1.png" alt="Berkeley Skydeck logo"></a>
-      </div>
-    </div>
-    <!-- Row 2 -->
+
     <div class="row align-items-center">
 
-    </div>
-    <!-- Row Three -->
-    <div class="row align-items-center">
+      <!-- ROW 1: Major Companies -->
+
+      <!-- Apple -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/apple_logo 2.jpeg" alt="Apple logo">
+      </div>
+
+      <!-- Visa -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/visa logo .jpeg" alt="Visa logo">
+      </div>
+
+      <!-- General Motors -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <a href="https://www.gm.com/" target="_blank">
+          <img class="sponsor-logo" src="img/corporate/sponsors/gm2.png" alt="General Motors logo">
+        </a>
+      </div>
+
+      <!-- ASML -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/ASML-logo.jpeg" alt="ASML logo">
+      </div>
+
+      <!-- Bloomberg -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <a href="https://www.bloomberg.com/" target="_blank">
+          <img class="sponsor-logo" src="img/corporate/sponsors/bloomberg.png" alt="Bloomberg logo">
+        </a>
+      </div>
+
+      <!-- Capital One -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/capital_one_logo.jpeg" alt="Capital One logo">
+      </div>
+
+      <!-- ROW 2 -->
+
+      <!-- PwC -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <a href="https://www.pwc.com/" target="_blank">
+          <img class="sponsor-logo" src="img/corporate/sponsors/pwc.png" alt="PwC logo">
+        </a>
+      </div>
+
+      <!-- Workday -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/workday_logo 2.jpeg" alt="Workday logo">
+      </div>
+
+      <!-- Tokyo Electron -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/tokyo_electron_logo.jpeg" alt="Tokyo Electron logo">
+      </div>
+
+      <!-- KLA -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/KLA_corp._logo 2.jpeg" alt="KLA logo">
+      </div>
+
+      <!-- Cadence -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/cadence_logo.jpeg" alt="Cadence logo">
+      </div>
+
+      <!-- Jane Street -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/jane street.jpeg" alt="Jane Street logo">
+      </div>
+
+      <!-- ROW 3 -->
+
+      <!-- Rambus -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/Rambus_Logo.jpeg" alt="Rambus logo">
+      </div>
+
+      <!-- Verkada -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/verkada_logo.jpeg" alt="Verkada logo">
+      </div>
+
+      <!-- Vercel -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/vercel_logo.jpeg" alt="Vercel logo">
+      </div>
+
+      <!-- Crusoe -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/crusoe_logo.jpeg" alt="Crusoe logo">
+      </div>
+
+      <!-- Five Rings -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/five_rings_logo.jpeg" alt="Five Rings logo">
+      </div>
+
+      <!-- WestBridge Capital -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/WestBridge_Capital_logo.jpeg" alt="WestBridge Capital logo">
+      </div>
+
+      <!-- ROW 4 -->
+
+      <!-- SkyDeck -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <a href="https://skydeck.berkeley.edu/" target="_blank">
+          <img class="sponsor-logo" src="img/corporate/sponsors/skydeck1.png" alt="SkyDeck logo">
+        </a>
+      </div>
+
+      <!-- Powerhouse Ventures -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/partner-power-ventures_logo.jpeg" alt="Powerhouse Ventures logo">
+      </div>
+
+      <!-- IEEE EPS -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sponsor-item">
+        <img class="sponsor-logo" src="img/corporate/sponsors/eps_logo.jpeg" alt="IEEE EPS logo">
+      </div>
 
     </div>
-    <!-- Row Four -->
-    <div class="row align-items-center">
 
-    </div>
-    <!-- Row Five -->
-    <div class="row align-items-center">
-    </div>
   </div>
 
   <div class="lesswhitespace"></div>
+
   <!-- Footer -->
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+
           <ul class="list-inline text-center">
+
+            <!-- Facebook -->
             <li class="list-inline-item">
-              <a href="https://www.facebook.com/SWE-UC-Berkeley-110515020740706/" target="_">
+              <a href="https://www.facebook.com/SWE-UC-Berkeley-110515020740706/" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
+
+            <!-- Instagram -->
             <li class="list-inline-item">
-              <a href="https://www.instagram.com/ucb_swe" target="_">
+              <a href="https://www.instagram.com/ucb_swe" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
+
+            <!-- TikTok -->
             <li class="list-inline-item">
-              <a href="https://www.tiktok.com/@ucb_swe" target="_">
+              <a href="https://www.tiktok.com/@ucb_swe" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-tiktok fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
+
+            <!-- YouTube -->
             <li class="list-inline-item">
-              <a href="https://www.youtube.com/user/BerkeleySWE" target="_">
+              <a href="https://www.youtube.com/user/BerkeleySWE" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
+
+            <!-- LinkedIn -->
             <li class="list-inline-item">
-              <a href="https://www.linkedin.com/company/uc-berkeley-swe" target="_">
+              <a href="https://www.linkedin.com/company/uc-berkeley-swe" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
+
+            <!-- Redbubble -->
             <li class="list-inline-item">
-              <a href="https://www.redbubble.com/people/ucbswe/shop" target="_">
+              <a href="https://www.redbubble.com/people/ucbswe/shop" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fa fa-shopping-bag fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
+
           </ul>
+
           <br>
 
+          <!-- OCF Hosting -->
           <a class="ocf" href="https://www.ocf.berkeley.edu">
-            <img src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8.png" alt="Hosted by the OCF"
-              style="border: 1;" />
+            <img src="https://www.ocf.berkeley.edu/hosting-logos/ocfbadge_mini8.png"
+              alt="Hosted by the OCF" style="border: 1;">
           </a>
 
-          <p class="copyright text-muted">Copyright &copy; Society of Women Engineers 2026<br>4 McLaughlin Hall,
-            Berkeley, CA 94720<br><br><i>UC Berkeley SWE acknowledges that UC Berkeley sits on the territory of xučyun
-              (Huichin), the ancestral and unceded land of the Chochenyo speaking Ohlone people.</i>
+          <p class="copyright text-muted">
+            Copyright &copy; Society of Women Engineers 2026<br>
+            4 McLaughlin Hall, Berkeley, CA 94720<br><br>
+            <i>
+              UC Berkeley SWE acknowledges that UC Berkeley sits on the
+              territory of xučyun (Huichin), the ancestral and unceded
+              land of the Chochenyo speaking Ohlone people.
+            </i>
           </p>
-        </div>
 
+        </div>
       </div>
     </div>
   </footer>
@@ -292,9 +425,8 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Custom scripts for this template -->
+  <!-- Custom scripts -->
   <script src="js/clean-blog.min.js"></script>
 
 </body>
-
 </html>
